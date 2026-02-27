@@ -42,7 +42,7 @@ kind	类型系统	种类		A kind can be thought of as the “type of a type”	�
 universe	类型系统	宇宙		The language's grammar allows expressions that can be interpreted at different “levels” or “universes.”	语言的文法允许表达式在不同的宇宙层级中被解释。
 monotype	类型系统	单态类型
 polytype	类型系统	多态类型
-type scheme	类型系统	类型概型		A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
+type scheme	类型系统	类型概型	类型概型与几何学中的概型有相似之处；类型模式 - 和 pattern 撞车；类型系列 - 和 type family 撞车；类型范式 - 和 normal form/canonical form/paradigm 撞车；类型方案 - 比“德律风”好不到哪去	A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
 higher-ranked polymorphism	类型系统	高秩多态	允许将泛型函数作为函数参数传递，其保留泛型性
 dependent type	类型系统	依值类型	允许类型依赖于值
 Curry-Howard isomorphism	类型系统	柯里-霍华德同构	类型即命题，程序即证明	The central insight here is the **Curry-Howard isomorphism**, which establishes a formal duality between type systems and logical proof systems.	这里的核心洞见是柯里-霍华德同构，它建立了类型系统与逻辑证明系统之间的形式对偶性。
@@ -76,6 +76,7 @@ operational semantics	语义学	操作语义	以词项间的执行关系赋予�
 small-step (operational) semantics	语义学	小步语义, 小步操作语义	执行状态 + 转移关系
 big-step (operational) semantics	语义学	大步语义, 大步操作语义	值集 + 求值关系；大步语义的求值关系不必是组合性的
 contextual semantics	语义学	语境语义	分离小步语义中的基本归约规则和结构规则，引入空位和语境
+valuation function	语义学	值化函数	估值函数 - 听起来像经济学术语；求值函数 - 和 evaluation 撞车；赋值函数 - 和 assignment 撞车（虽然确实是“赋值”，但这个词已经快变成命令式/可变数据专用术语了）	a valuation function of type T → V that maps terms to their meaning as values	一个类型为 $T -> V$ 的值化函数，该函数将词项映射到以值表示的意义
 
 lifetime	Rust	生存期	“生命周期”原本对应于 Vue/React 中组件的 lifecycle 概念。lifetime 的概念中没有“生老病死”
 trait	Rust	特征	总不能一辈子管 telephone 叫“德律风”吧
