@@ -1,4 +1,4 @@
-术语	语境	翻译	备注	例句	例句翻译
+术语	领域	翻译	备注	例句	例句翻译
 parameter	通用	参数	形式参数
 argument	通用	实参	实际参数
 term	通用	词项	依练琪灏的 MLTT 讲义，翻译为“词项”；如果 term 前面有形容词，则把“词”字隐去，如“语法项” (syntactic term)
@@ -8,7 +8,7 @@ inference rule	形式系统	推理规则	泛指一切魔法横线，以及没有
 axiom	形式系统	公理	注意形式系统/推理规则意义上的“公理”不同于一般逻辑意义上的“公理”	If a rule has no premises, it is an axiom, a self-evident truth that requires no prior proof to hold.	如果一条规则没有前提，那么它就是一条公理，一个无需论证、不言自明的真命题。
 syntax	形式系统	语法		That is, a type system is a set of rules that operate on the (abstract) syntax of a programming language.	也就是说，类型系统是定义在程序设计语言（抽象）语法之上的一组规则
 grammar	形式系统	文法		More complex languages will naturally have more complex grammars	更复杂的语言自然会有更复杂的文法
-BNF	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
+BNF	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，不应译作“巴科斯范式”/“巴科斯-瑙尔范式”，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
 
 lambda calculus	演算系统	λ 演算		Any discussion of type systems starts with the lambda calculus, a formal system developed by Alonzo Church in the 1930s to express computation	任何类型系统的讨论都以 λ 演算开始，这是阿隆佐·邱奇于 1930 年代开发的一种用于表达计算的形式系统
 abstraction	演算系统	抽象
@@ -21,20 +21,23 @@ canonical form	演算系统	典范形式	取自 ice1000 的立方类型论讲义
 normal form	演算系统	正规形式	不用“范式”因为会和 canonical form 和 paradigm 撞车
 normalisation	演算系统	正规化
 normalising	演算系统	正规性
-confluence	演算系统	合流性	不同归约路径不会导致矛盾的结果
 strongly normalising	演算系统	强正规性	无论按何种策略求值，终必停机
+confluence	演算系统	合流性	不同归约路径不会导致矛盾的结果
 bound variable	演算系统	绑定变量	“绑定”刚好既是音译又是意译；不用“约束变量”因为会和 constraint 撞车
 free variable	演算系统	自由变量
+neutral term	演算系统	中性项
 
 de Bruijn index	演算系统实现	德布鲁因编号	取自 ice1000 的立方类型论讲义并音译了 de Bruijn
 de Bruijn level	演算系统实现	德布鲁因层级
 
-context	类型系统	语境	取自 ice1000 的立方类型论讲义	a given expression has a particular type within a specific context.	在特定语境中，给定的表达式具有特定的类型
+context	类型系统	语境, 类型语境	取自 ice1000 的立方类型论讲义	a given expression has a particular type within a specific context.	在特定语境中，给定的表达式具有特定的类型
 judgment	类型系统	判断		A judgment is an assertion that a piece of code has a certain property.	判断就是断言一段代码具有某种属性
 typing judgment	类型系统	类型判断		The most common kind of judgment you will encounter is a typing judgment, which asserts that a given expression has a particular type within a specific context.	最常见的判断就是类型判断，即断言在特定语境中，给定的表达式具有特定的类型
 well-typed	类型系统	良类型的		thereby proving it is well-typed	从而证明程序是良类型的
 soundness	类型系统	健全性	良类型的程序都行为良定
 completeness	类型系统	完备性	行为良定的程序都良类型
+progression	类型系统	进展性	良类型的词项要么已经是值，要么可以继续求值
+preservation	类型系统	保型性	良类型的词项求值一步后类型不变
 kind	类型系统	种类		A kind can be thought of as the “type of a type”	种类可被视作“类型之类型”
 universe	类型系统	宇宙		The language's grammar allows expressions that can be interpreted at different “levels” or “universes.”	语言的文法允许表达式在不同的宇宙层级中被解释。
 monotype	类型系统	单态类型
@@ -49,8 +52,15 @@ constructor	类型系统	构造子
 elimination rule	类型系统	消去规则
 eliminator	类型系统	消去子
 term former	类型系统	词项形成符		Note that we treat natElim not as a function, but as a term former that has to be applied to all of its arguments	注意我们不把 natElim 当作一个函数，而是当作一个词项形成符：它不能像函数那样部分应用，必须参数饱和才能构成有效的词项
-inhabitant	类型系统	居留元		 This allows us to create an inhabitant of any type	这使得我们可以创造出一个具有任何类型的居留元
+inhabitant	类型系统	居留元		This allows us to create an inhabitant of any type	这使得我们可以创造出一个具有任何类型的居留元
 inhabited	类型系统	有居留元的
+
+subtyping	子类型机制	子类型		If for each object $o_1$ of type $S$ there is another object $o_2$ of type $T$ such that for all programs $P$ defined in terms of $T$, the behavior of $P$ is unchanged when $o_1$ is substituted for $o_2$, then $S$ is a subtype of $T$	若对于任意 $S$ 类型的对象 $o_1$，都存在 $T$ 类型的对象 $o_2$，使得对于所有以 $T$ 定义的程序 $P$，当用 $o_1$ 替换 $o_2$ 时，$P$ 的行为不变，则称 $S$ 是 $T$ 的子类型
+Liskov substitution principle	子类型机制	里氏替换原则
+variance	子类型机制	型变
+covariance	子类型机制	协变
+contravariance	子类型机制	逆变
+invariance	子类型机制	无型变
 
 unification	类型系统实现	合一		The core insight of Algorithm W lies in its systematic approach to type inference through constraint generation and unification.	算法 W 的核心思想在于其通过生成约束和执行合一进行类型推断的系统性方法
 generalisation	类型系统实现	泛化		Generalisation, which turns a monotype into a polytype by quantifying over type variables not present in the environment.	泛化就是对单态类型中不存在于语境中的类型变量作全称量化，从而将单态类型变为多态类型
@@ -60,7 +70,12 @@ type reconstruction	类型系统实现	类型重建	也就是类型推断
 type deduction	类型系统实现	类型推导	通常指受限的、单向的、“从右到左”（信息从已知传播到未知）式的类型推导（如 C++ auto）
 bidirectional type checking	类型系统实现	双向类型检查		As a result, many modern statically-typed languages have converged on a practical and elegant middle ground: bidirectional type checking	因此，许多现代的静态类型语言最终采用了一种既实用又优雅的折中方案：双向类型检查
 
-context	语义学	语境		Informally, a context in this setting is a term with a “hole”	非正式地讲，语境是一个带有空位的词项
+context	语义学	语境, 求值语境		Informally, a context in this setting is a term with a “hole”	非正式地讲，语境是一个带有空位的词项
+denotational semantics	语义学	指称语义	将词项映射到适当的语义域来赋予词项意义
+operational semantics	语义学	操作语义	以词项间的执行关系赋予词项意义
+small-step (operational) semantics	语义学	小步语义, 小步操作语义	执行状态 + 转移关系
+big-step (operational) semantics	语义学	大步语义, 大步操作语义	值集 + 求值关系；大步语义的求值关系不必是组合性的
+contextual semantics	语义学	语境语义	分离小步语义中的基本归约规则和结构规则，引入空位和语境
 
 lifetime	Rust	生存期	“生命周期”原本对应于 Vue/React 中组件的 lifecycle 概念。lifetime 的概念中没有“生老病死”
 trait	Rust	特征	总不能一辈子管 telephone 叫“德律风”吧
