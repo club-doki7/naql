@@ -1,0 +1,42 @@
+术语	语境	翻译	备注	例句	例句翻译
+parameter	通用	参数	形式参数
+argument	通用	实参	实际参数
+term	通用	词项	依练琪灏的 MLTT 讲义，翻译为“词项”；如果 term 前面有形容词，则把“词”字隐去，如“语法项” (syntactic term)
+
+turnstile	形式系统	十字转门	即“可证”符号 ⊢
+inference rule	形式系统	推理规则	泛指一切魔法横线，以及没有被写成魔法横线但确是推理规则的东西	Typing judgments are derived using inference rules.	类型判断可由推理规则推导得出
+axiom	形式系统	公理	注意形式系统/推理规则意义上的“公理”不同于一般逻辑意义上的“公理”	If a rule has no premises, it is an axiom, a self-evident truth that requires no prior proof to hold.	如果一条规则没有前提，那么它就是一条公理，一个无需论证、不言自明的真命题。
+syntax	形式系统	语法		That is, a type system is a set of rules that operate on the (abstract) syntax of a programming language.	也就是说，类型系统是定义在程序设计语言（抽象）语法之上的一组规则
+grammar	形式系统	文法		More complex languages will naturally have more complex grammars	更复杂的语言自然会有更复杂的文法
+BNF	形式系统	巴科斯-瑙尔表示法	BNF 不是一种范式 / 正规形式	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
+
+context	类型系统	语境	取自 ice1000 的立方类型论讲义	a given expression has a particular type within a specific context.	在特定语境中，给定的表达式具有特定的类型
+lambda calculus	类型系统	λ 演算		Any discussion of type systems starts with the lambda calculus, a formal system developed by Alonzo Church in the 1930s to express computation	任何类型系统的讨论都以 λ 演算开始，这是阿隆佐·邱奇于 1930 年代开发的一种用于表达计算的形式系统
+judgment	类型系统	判断		A judgment is an assertion that a piece of code has a certain property.	判断就是断言一段代码具有某种属性
+typing judgment	类型系统	类型判断		The most common kind of judgment you will encounter is a typing judgment, which asserts that a given expression has a particular type within a specific context.	最常见的判断就是类型判断，即断言在特定语境中，给定的表达式具有特定的类型
+well-typed	类型系统	类型良定的		thereby proving it is well-typed	从而证明程序是类型良定的
+kind	类型系统	种类		A kind can be thought of as the “type of a type”	种类可被视作“类型之类型”
+universe	类型系统	宇宙		The language's grammar allows expressions that can be interpreted at different “levels” or “universes.”	语言的文法允许表达式在不同的宇宙层级中被解释。
+monotype	类型系统	单态类型
+polytype	类型系统	多态类型
+type scheme	类型系统	类型概型		A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
+higher-ranked polymorphism	类型系统	高秩多态	允许将泛型函数作为函数参数传递，其保留泛型性
+formation rule	类型系统	形成规则
+introduction rule	类型系统	构造规则	取自 ice1000 的立方类型论讲义
+constructor	类型系统	构造子
+elimination rule	类型系统	消去规则
+eliminator	类型系统	消去子
+term former	类型系统	词项形成符		Note that we treat natElim not as a function, but as a term former that has to be applied to all of its arguments	注意我们不把 natElim 当作一个函数，而是当作一个词项形成符：它不能像函数那样部分应用，必须参数饱和才能构成有效的词项
+Curry-Howard isomorphism	类型系统	柯里-霍华德同构	类型即命题，程序即证明	The central insight here is the **Curry-Howard isomorphism**, which establishes a formal duality between type systems and logical proof systems.	这里的核心洞见是柯里-霍华德同构，它建立了类型系统与逻辑证明系统之间的形式对偶性。
+
+unification	类型系统实现	合一		The core insight of Algorithm W lies in its systematic approach to type inference through constraint generation and unification.	算法 W 的核心思想在于其通过生成约束和执行合一进行类型推断的系统性方法
+generalisation	类型系统实现	泛化		Generalization, which turns a monotype into a polytype by quantifying over type variables not present in the environment.	泛化就是对单态类型中不存在于语境中的类型变量作全称量化，从而将单态类型变为多态类型
+instantiation	类型系统实现	实例化		Instantiation, which creates a fresh monotype from a polytype by replacing quantified variables with fresh type variables.	实例化，将多态类型（类型概型）中被量化的类型变量替换为全新的类型变量，从而将多态类型变成单态类型
+type inference	类型系统实现	类型推断		a related and historically significant challenge is type reconstruction, more commonly known as type inference	一个与之相关且具有重大历史意义的挑战是类型重建，它还有一个更常见的名字——类型推断
+type reconstruction	类型系统实现	类型重建	也就是类型推断
+type deduction	类型系统实现	类型推导	通常指受限的、单向的、“从右到左”式的类型推导（如 C++ auto）
+bidirectional type checking	类型系统实现	双向类型检查		As a result, many modern statically-typed languages have converged on a practical and elegant middle ground: bidirectional type checking	因此，许多现代的静态类型语言最终采用了一种既实用又优雅的折中方案：双向类型检查
+de Bruijn index	类型系统实现	德布鲁因编号	取自 ice1000 的立方类型论讲义，并音译了 de Bruijn
+de Bruijn level	类型系统实现	德布鲁因层级
+
+context	语义学	语境		Informally, a context in this setting is a term with a “hole”	非正式地讲，语境是一个带有空位的词项
