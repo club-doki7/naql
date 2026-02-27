@@ -24,8 +24,10 @@ $
 
 替换
 
+#let subst(e, x, e_1) = $#e thin [ #x := #e_1 ]$
+
 $
-  e [ x := e' ]
+  subst(e, x, e_1)
 $
 
 值化函数
