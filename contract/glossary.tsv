@@ -79,4 +79,4 @@ contextual semantics	语义学	语境语义	分离小步语义中的基本归约
 valuation function	语义学	值化函数	估值函数 - 听起来像经济学术语；求值函数 - 和 evaluation 撞车；赋值函数 - 和 assignment 撞车（虽然确实是“赋值”，但这个词已经快变成命令式/可变数据专用术语了）	a valuation function of type T → V that maps terms to their meaning as values	一个类型为 $T -> V$ 的值化函数，该函数将词项映射到以值表示的意义
 
 lifetime	Rust	生存期	“生命周期”原本对应于 Vue/React 中组件的 lifecycle 概念。lifetime 的概念中没有“生老病死”
-trait	Rust	特征	总不能一辈子管 telephone 叫“德律风”吧
+trait	Rust	特型	总不能一辈子管 telephone 叫“德律风”吧

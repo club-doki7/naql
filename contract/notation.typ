@@ -1,3 +1,5 @@
+#import "symlib.typ": *
+
 #set page(columns: 2)
 
 符号
@@ -24,8 +26,6 @@ $
 
 替换
 
-#let subst(e, x, e_1) = $#e thin [ #x := #e_1 ]$
-
 $
   subst(e, x, e_1)
 $
@@ -33,18 +33,17 @@ $
 值化函数
 
 $
-  [| e |] = v
+  val("棍母") = bot
 $
 
 小步求值
 
+
 $
-  e --> e'
+  e stepto e'
 $
 
 大步求值
-
-#let evalto = sym.arrow.b.double
 
 $
   e evalto v
@@ -58,15 +57,11 @@ $
 
 双向类型检查 - 综合
 
-#let inferto = $#math.op(sym.colon, limits: false)_arrow.t$
-
 $
   e inferto tau
 $
 
 双向类型检查 - 判定
-
-#let checkas = $#math.op(sym.colon, limits: false)_arrow.b$
 
 $
   e checkas tau
