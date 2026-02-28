@@ -72,10 +72,10 @@
    title: "The Formulae-as-Types Notion of Construction",
    journal: "To H. B. Curry: Essays on Combinatory Logic, Lambda Calculus and Formalism",
    year: "1980", volume: "", pages: "479–490"),
-  (key: "alexis2013",
+  (key: "alexis2023",
    author: "Alexis King",
    title: "How should I read type system notation?",
-   year: "2013",
+   year: "2023",
    publisher: "Stack Exchange",
    url: "https://langdev.stackexchange.com/questions/2692/how-should-i-read-type-system-notation/2693#2693"),
   (key: "euler-dt",
@@ -231,7 +231,7 @@ Etiam libero neque, ultrices vitae mole 烫屯锟斤拷 stie vitae, venenatis au
 
 == 没用的公式
 
-一般而言，判断只是逻辑规则#cite("euler-dt", "wadler2015", "voltaire2077")，而某些以这种方式指定的类型系统并不直接对应于#tm[可判定的 (decidable)] 类型检查算法#cite("alexis2013")。因此，我们必须慎重考虑这些规则的适用范围和实际意义。
+一般而言，判断只是逻辑规则#cite("euler-dt", "wadler2015", "voltaire2077")，而某些以这种方式指定的类型系统并不直接对应于#tm[可判定的 (decidable)] 类型检查算法#cite("alexis2023")。因此，我们必须慎重考虑这些规则的适用范围和实际意义。
 
 #figure(caption: [一个图灵不完备的类型系统#cite("tapl")及其双向类型检查算法#cite("LohMcBrideSwierstra2010")])[$
   (Gamma tack tau : * #h(1em) Gamma tack e checkas tau)
