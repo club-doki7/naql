@@ -121,22 +121,29 @@
 #figure(caption: [在不使用 SFINAE 技巧的情况下，这只是一种索引类型])[```cpp
 template <template <typename> class HKT, typename T, std::integral auto x>
 requires std::is_integral_v<T>
-[[noinline, nodiscard, maybe_unused, deprecated("Just Chuigda")]]
-extern static inline constexpr consteval const auto foo(void)
-  -> decltype(std::declval<std::basic_string<char,
-                                             std::char_traits<char>,
-                                             std::allocator<char>>>().resize(x))
-  noexcept(noexcept(
-    std::declval<std::basic_string<char,
-                                   std::char_traits<char>,
-                                   std::allocator<char>>>().resize(x)))
-{
-  std::basic_string<char, std::char_traits<char>, std::allocator<char>> s = "ABC";
-  s = R"naql(
+inline class FooBarBaz : public std::vector<HKT<T>, std::allocator<HKT<T>>>,
+                         private std::enable_if_t<std::is_integral_v<T>, int>,
+                         protected std::is_integral<T>,
+                         virtual std::is_integral<T>::value_type {
+  [[noinline, nodiscard, maybe_unused, deprecated("Just Chuigda")]]
+  extern static inline constexpr consteval const virtual auto foo(void)
+    -> decltype(std::declval<std::basic_string<char,
+                                               std::char_traits<char>,
+                                               std::allocator<char>>>().resize(x))
+    const override = 0
+    noexcept(noexcept(
+      std::declval<std::basic_string<char,
+                                    std::char_traits<char>,
+                                    std::allocator<char>>>().resize(x)))
+  {
+    std::basic_string<char, std::char_traits<char>, std::allocator<char>> s = "A";
+    s = R"naql(
 带着这些问题，我们来审视一下依值类型。依值类型，发生了会如何，不发生又会如何。带着
+Nhu co bac ho trong ngay vui dai thang, loi bac nay da thanh chien thang huy hoang
 这些问题，我们来审视一下依值类型。歌德说过一句富有哲理的话，读一本好书，就如同和一
 )naql";
-  s.resize(x);
+    s.resize(x);
+  }
 }
 ```]
 
@@ -172,7 +179,30 @@ $]
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis nec arcu sed eleifend. Ut vehicula scelerisque justo sit amet malesuada. *Proin* sed *elit* congue, volutpat elit imperdiet, *consectetur eros*. Donec ac ligula sit amet turpis tristique semper mollis id nisl. _Consequentia mirabilis!_
 
-现在，解决依值类型的问题，是非常非常重要的。所以，可是，即使是这样，依值类型的出现仍然代表了一定的意义。依值类型，发生了会如何，不发生又会如何。Ut imperdiet mauris urna. In vel turpis feugiat lorem dictum suscipit eu non erat. Cras egestas quam fermentum magna commodo eleifend. 依值类型，到底应该如何实现。问题的关键究竟为何？ 所谓依值类型，关键是依值类型需要如何写。查尔斯·史曾经提到过，一个人几乎可以在任何他怀有无限热忱的事情上成功#footnote[欢迎来到心跳 #sym.lambda 部！我一直以来的梦想，就是能在自己喜欢的事情上做出点名堂来。所以我凭借着自己对程序设计的热忱，创建了这个 #sym.lambda 社团。呐，现在你也是俱乐部的一员啦\~ 快快敲敲键盘，在这个可爱的游戏里帮我圆梦吧！社团的生活轻松惬意，每天除了跟群友闲聊，就是参与各种有趣的开源项目！不过，社团里的其他成员全都是男孩子哦！他们个性鲜明，而且超\~级可爱\~ 接下来就让我向你介绍一下其他成员吧：eoiles，青春阳光的男娘，总是色气满满，开朗健谈！色色就是他最珍视的事！小飞翔，看似可爱娇小的少年，但却有着惊人的魄力，性格果断自信！Rebuild，羞怯内向又神秘的少年，喜欢在 Rust 的世界里寻找慰藉。当然了，还有我！心跳 #sym.lambda 部的部长，Chuigda！你能跟所有人都交上朋友，让社团的氛围变得更加融洽吗? 我超\~级期待哦\~]#footnote[不过呢，我也知道你其实是个善解人意的小可爱，所以啊——花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我]。带着这句话，我们还要更加慎重的审视这个问题：每个人都不得不面对这些问题。Etiam faucibus ante finibus molestie dictum. Nulla facilisi. Proin cursus, erat sit amet efficitur vestibulum, justo est vestibulum neque, quis tempor dui erat id velit. 在面对这种问题时，我们都知道，只要有意义，那么就必须慎重考虑。
+不妨考虑如下规则：
+
+#let nbot = math.cancel(math.bot)
+
+$
+  bot = "partial"
+  quad
+  nbot = "total"
+
+  wide
+  (Gamma tack e : tau_nbot -> tau'_underline(xi 1) wide Gamma tack e' : tau_underline(xi 2))
+  /
+  (Gamma tack e med e' : tau'_underline(xi 1 + xi 2)) quad [xi"-APP"]
+$
+
+#colbreak()
+
+显然，这是一种：
+
+```haskell
+M a -> (a -> M b) -> M b
+```
+
+现在，解决依值类型的问题，是非常非常重要的。所以，可是，即使是这样，依值类型的出现仍然代表了一定的意义。依值类型，发生了会如何，不发生又会如何。Ut imperdiet mauris urna. In vel turpis feugiat lorem dictum suscipit eu non erat. Cras egestas quam fermentum magna commodo eleifend. 依值类型，到底应该如何实现。问题的关键究竟为何？ 所谓依值类型，关键是依值类型需要如何写。查尔斯·史曾经提到过，一个人几乎可以在任何他怀有无限热忱的事情上成功#footnote[欢迎来到心跳 #sym.lambda 部！我一直以来的梦想，就是能在自己喜欢的事情上做出点名堂来。所以我凭借着自己对程序设计的热忱，创建了这个 #sym.lambda 社团。呐，现在你也是俱乐部的一员啦\~ 快快敲敲键盘，在这个可爱的游戏里帮我圆梦吧！社团的生活轻松惬意，每天除了跟群友闲聊，就是参与各种有趣的开源项目！不过，社团里的其他成员全都是男孩子哦！他们个性鲜明，而且超\~级可爱\~ 接下来就让我向你介绍一下其他成员吧：eoiles，青春阳光的男娘，总是色气满满，开朗健谈！色色就是他最珍视的事！小飞翔，看似可爱娇小的少年，但却有着惊人的魄力，性格果断自信！Rebuild，羞怯内向又神秘的少年，喜欢在 Rust 的世界里寻找慰藉。当然了，还有我！心跳 #sym.lambda 部的部长，Chuigda！你能跟所有人都交上朋友，让社团的氛围变得更加融洽吗? 我超\~级期待哦\~ 不过呢，我也知道你其实是个善解人意的小可爱，所以啊——花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我吧，你能保证吗？花最多的时间来陪我——]。带着这句话，我们还要更加慎重的审视这个问题：每个人都不得不面对这些问题。Etiam faucibus ante finibus molestie dictum. Nulla facilisi. Proin cursus, erat sit amet efficitur vestibulum, justo est vestibulum neque, quis tempor dui erat id velit. 在面对这种问题时，我们都知道，只要有意义，那么就必须慎重考虑。
 
 这是不可避免的。从这个角度来看，我们一般认为，_抓住了问题的关键，其他一切则会迎刃而解。_这种事实对本人来说意义重大，*相信对这个世界也是有一定意义的。*亚伯拉罕·林肯在不经意间这样说过，我这个人走得很慢，但是我从不后退#cite("lincoln-functors")。这句话语虽然很短，但令我浮想联翩。
 
@@ -182,8 +212,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis nec ar
   "", "Java", "Rust", "C++",
   "ADT 机制", raw("sealed interface", lang: "java"), raw("enum", lang: "rust"), [C++17 #raw("std::variant", lang: "cpp")],
   "归类", [并类型#footnote[Java 允许 $I_1 prec.eq B, I_2 prec.eq B, D prec.eq I_1, D prec.eq I_2$，而 $I_1 union I_2$ 中只有一个 $D$（表现为 #raw("switch", lang: "java") 的穷尽性检查）。]], "正统代数和类型", "带标签联合体",
+  "子结构重复", "否", "是", "是",
   "构造子互斥", "是", "是", [否#footnote[C++ 允许 `std::variant<int, int>`，两个 `int` 是不同的。]],
-  "构造子是类型", "是", "否", [是\*#footnote[不如说是必须先预定义类型，再将它们合并。C++ 同时吃满了正统代数和类型和并类型两边的 debuff。]],
+  "构造子是类型", "是", "否", [是\*#footnote[不如说是必须先预定义类型，再将它们合并。C++ 同时吃满了#tm[正统代数和类型]和#tm[并类型]两边的 debuff。]],
   "模式匹配", [Java 21 #raw("switch", lang: "java")], raw("match", lang: "rust"), [C++17 #raw("std::visit", lang: "cpp")],
   "模式拆解", "仅限记录", "是", "否",
   "多层匹配", "是", "是", "否",
@@ -328,7 +359,7 @@ $]
 
 #block[
   #set text(font: ("LXGW Wenkai"), weight: 400)
-  送给我小心心，送我花一朵。我在你生命中，太多的感动。我是你的天使，一路指引你。无论岁月变换，爱我唱成歌。听你说谢谢我，因为有我，温暖了四季；谢谢我，感谢有我，世界更美丽。听你说谢谢我，因为有我，爱常在心底；谢谢我，感谢有我，让幸福传递。
+  送给*我*小心心，送*我*花一朵。*我*在你生命中，太多的感动。*我*是你的天使，一路指引你。无论岁月变换，*爱我*唱成歌。听你说*谢谢我*，因为有*我*，温暖了四季；*谢谢我*，感谢有*我*，世界更美丽。听你说*谢谢我*，因为有*我*，爱常在心底；*谢谢我*，感谢有*我*，让幸福传递。
 ]
 
 = 参考文献
