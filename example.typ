@@ -190,7 +190,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis nec ar
   "分支重叠", "是", "是", "否",
   "按值匹配", "部分", "是", "否",
   "守卫语句", "是", "是", "否",
-  "多重分派", "是 (手动实现元组)", "是", "否",
+  "多元匹配", "是 (手动实现元组)", "是", "否",
   "空安全", "较差 (JSR305)", "强制", "无"
 )]]
 
