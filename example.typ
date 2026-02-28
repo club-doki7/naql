@@ -16,6 +16,7 @@
    numbering: 2,
    pages: "177-207",
    doi: "10.3233/FI-2010-304",
+   // searching engine gives this link, and just works, don't know what magic bekhind
    url: "https://journals.sagepub.com/doi/10.3233/FI-2010-304"),
   (key: "pierce-revenge",
    author: "Pierce, B. C.",
@@ -175,14 +176,14 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis nec ar
 
 这是不可避免的。从这个角度来看，我们一般认为，_抓住了问题的关键，其他一切则会迎刃而解。_这种事实对本人来说意义重大，*相信对这个世界也是有一定意义的。*亚伯拉罕·林肯在不经意间这样说过，我这个人走得很慢，但是我从不后退#cite("lincoln-functors")。这句话语虽然很短，但令我浮想联翩。
 
-#align(center)[#figure(caption: [走的确实很慢，比死了的王八#footnote[指 Oracle: 甲骨文 → 王八壳子 → 死了的王八。]都慢])[#table(
+#align(center)[#figure(caption: [标委会走的确实很慢，比死了的王八#footnote[指 Oracle: 甲骨文 → 王八壳子 → 死了的王八。]都慢])[#table(
   columns: 4,
   stroke: 0.5pt,
   "", "Java", "Rust", "C++",
   "ADT 机制", raw("sealed interface", lang: "java"), raw("enum", lang: "rust"), [C++17 #raw("std::variant", lang: "cpp")],
-  "归类", "并类型", "正统代数和类型", "带标签联合体",
-  "构造子互斥", "是", "是", "否",
-  "构造子是类型", "是", "否", "是*",
+  "归类", [并类型#footnote[Java 允许 $I_1 prec.eq B, I_2 prec.eq B, D prec.eq I_1, D prec.eq I_2$，而 $I_1 union I_2$ 中只有一个 $D$（表现为 #raw("switch", lang: "java") 的穷尽性检查）。]], "正统代数和类型", "带标签联合体",
+  "构造子互斥", "是", "是", [否#footnote[C++ 允许 `std::variant<int, int>`，两个 `int` 是不同的。]],
+  "构造子是类型", "是", "否", [是\*#footnote[不如说是必须先预定义类型，再将它们合并。C++ 同时吃满了正统代数和类型和并类型两边的 debuff。]],
   "模式匹配", [Java 21 #raw("switch", lang: "java")], raw("match", lang: "rust"), [C++17 #raw("std::visit", lang: "cpp")],
   "模式拆解", "仅限记录", "是", "否",
   "多层匹配", "是", "是", "否",
@@ -208,7 +209,7 @@ Etiam libero neque, ultrices vitae mole 烫屯锟斤拷 stie vitae, venenatis au
 
 #sep 起初，安得烈、康纳、华特三人，在乌特勒支、斯特拉斯克莱德、诺丁汉之地，同心合意，著书立说。
 #sep 论到依值类型 #sym.lambda 演算的奥秘，并 Haskell 的实现，都记在下面。
-#sep 后来有第七通用设计局的白杨翻出来，又有 Gemini 和 Claude 帮助校对。
+#sep 后有心动 #sym.lambda 部的白杨翻出来，又有 Gemini 和 Claude 帮助校对。
 #sep 白杨说，你们须要记着，凡有智慧的，不可妄言程序设计语言理论，免得为自己在火狱中预备了位置；
 #sep 白杨又说，只有时时刻刻顾念读者的软弱，如同顾念婴孩，才能不被读者轻看。
 
@@ -276,7 +277,7 @@ $]
   content
 )
 
-#figure(caption: [另一个图灵不完备的类型系统及其双向类型检查算法#cite("LohMcBrideSwierstra2010")])[$
+#figure(caption: [另一个图灵不完备#footnote[至少设计上是图灵不完备的。吉拉德悖论通常会让类型检查器卡住，而不是允许非终止程序通过。]的类型系统及其双向类型检查算法#cite("LohMcBrideSwierstra2010")])[$
   (Gamma tack #mhl($rho checkas *$) #h(1em) #mhl($rho evalto tau$) #h(1em) Gamma tack e checkas tau)
   /
   (Gamma tack (e : #mhl($rho$)) inferto tau)
