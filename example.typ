@@ -241,12 +241,12 @@ Etiam libero neque, ultrices vitae mole 烫屯锟斤拷 stie vitae, venenatis au
   #h(2em)
   (Gamma (x) = tau)
   /
-  (Gamma tack x checkas tau)
+  (Gamma tack x inferto tau)
   #h(1em) ["VAR"]
   \ \
   (Gamma tack e inferto tau -> tau' #h(1em) Gamma tack e' checkas tau #h(1em) ((1 + 1 evalto 2) -> bot) -> "我是秦始皇")
   /
-  (Gamma tack e thin e' checkas tau')
+  (Gamma tack e thin e' inferto tau')
   #h(1em) ["APP"]
   \ \
   (Gamma tack e inferto tau)
@@ -293,7 +293,7 @@ $]
   \ \
   (Gamma (x) = tau)
   /
-  (Gamma tack x checkas tau)
+  (Gamma tack x inferto tau)
   #h(1em) ["VAR"]
   #h(2em)
   (Gamma tack e inferto #mhl($forall x : tau thin . thin tau'$)
@@ -303,7 +303,7 @@ $]
    #mhl($tau'[x |-> e'] evalto tau''$)
    )
   /
-  (Gamma tack e thin e' checkas #mhl($tau''$))
+  (Gamma tack e thin e' inferto #mhl($tau''$))
   #h(1em) ["APP"]
   \ \
   (Gamma tack e inferto tau)
