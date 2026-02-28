@@ -189,9 +189,9 @@ $
   nbot = "total"
 
   wide
-  (Gamma tack e : tau_nbot -> tau'_underline(xi 1) wide Gamma tack e' : tau_underline(xi 2))
+  (Gamma tack e : (tau_nbot -> tau'_underline(xi 1))_underline(xi f) wide Gamma tack e' : tau_underline(xi 2))
   /
-  (Gamma tack e med e' : tau'_underline(xi 1 + xi 2)) quad [xi"-APP"]
+  (Gamma tack e med e' : tau'_underline(xi f + xi 1 + xi 2)) quad [xi"-APP"]
 $
 
 #colbreak()
