@@ -48,15 +48,15 @@
   body
 }
 
-#let tm_fst(zh, explain, skip_paren: false) = if not skip_paren {
-  text(font: tm-fonts, style: "italic")[#zh (#explain)]
+#let tm_fst(zh, xpln, skip_paren: false) = if not skip_paren {
+  text(font: tm-fonts, style: "italic")[#zh (#xpln)]
 } else {
-  text(font: tm-fonts, style: "italic")[#zh #explain]
+  text(font: tm-fonts, style: "italic")[#zh #xpln]
 }
 
-#let tm(zh) = text(font: tm-fonts, style: "italic")[#zh]
+#let tm_lnk(zh, xpln, url, skip_paren: false) = link(url, tm_fst(zh, xpln, skip_paren))
 
-#let tm_linked(zh, en, url) = link(url)[#tm_fst(zh, en)]
+#let tm(zh) = text(font: tm-fonts, style: "italic")[#zh]
 
 #let dt = $. thin$
 #let tdt = $thin . thin$
