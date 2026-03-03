@@ -8,7 +8,7 @@ inference rule	形式系统	推理规则	泛指一切魔法横线，以及没有
 axiom	形式系统	公理	注意形式系统/推理规则意义上的“公理”不同于一般逻辑意义上的“公理”	If a rule has no premises, it is an axiom, a self-evident truth that requires no prior proof to hold.	如果一条规则没有前提，那么它就是一条公理，一个无需论证、不言自明的真命题。
 syntax	形式系统	语法	-	That is, a type system is a set of rules that operate on the (abstract) syntax of a programming language.	也就是说，类型系统是定义在程序设计语言（抽象）语法之上的一组规则
 grammar	形式系统	文法	-	More complex languages will naturally have more complex grammars	更复杂的语言自然会有更复杂的文法
-BNF	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，不应译作“巴科斯范式”/“巴科斯-瑙尔范式”，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
+Backus-Naur Form, BNF, [旧] Backus Normal Form	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，不应译作“巴科斯范式”/“巴科斯-瑙尔范式”，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
 -	-	-	-	-	-
 lambda calculus	演算系统	λ 演算	-	Any discussion of type systems starts with the lambda calculus, a formal system developed by Alonzo Church in the 1930s to express computation	任何类型系统的讨论都以 λ 演算开始，这是阿隆佐·邱奇于 1930 年代开发的一种用于表达计算的形式系统
 abstraction	演算系统	抽象	-	-	-
@@ -42,7 +42,7 @@ kind	类型系统	种类	-	A kind can be thought of as the “type of a type”	
 universe	类型系统	宇宙	-	The language's grammar allows expressions that can be interpreted at different “levels” or “universes.”	语言的文法允许表达式在不同的宇宙层级中被解释。
 monotype	类型系统	单态类型	-	-	-
 polytype	类型系统	多态类型	-	-	-
-type scheme	类型系统	类型概型	类型概型与几何学中的概型有相似之处；类型模式 - 和 pattern 撞车；类型系列 - 和 type family 撞车；类型范式 - 和 normal form/canonical form/paradigm 撞车；类型方案 - 比“德律风”好不到哪去	A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
+type scheme	类型系统	类型概型	类型概型与几何学中的概型有相似之处；类型模式 - 和 pattern 撞车；类型系列 - 和 type family 撞车；类型范式 - 和 normal form/canonical form/paradigm 撞车；类型方案 - 比“类型沙琪玛”好不到哪去	A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
 higher-ranked polymorphism	类型系统	高秩多态	允许将泛型函数作为函数参数传递，其保留泛型性	-	-
 dependent type	类型系统	依值类型	允许类型依赖于值	-	-
 Curry-Howard isomorphism	类型系统	柯里-霍华德同构	类型即命题，程序即证明	The central insight here is the **Curry-Howard isomorphism**, which establishes a formal duality between type systems and logical proof systems.	这里的核心洞见是柯里-霍华德同构，它建立了类型系统与逻辑证明系统之间的形式对偶性。
@@ -53,7 +53,7 @@ elimination rule	类型系统	消去规则	-	-	-
 eliminator	类型系统	消去子	-	-	-
 term former	类型系统	词项形成符	-	Note that we treat natElim not as a function, but as a term former that has to be applied to all of its arguments	注意我们不把 natElim 当作一个函数，而是当作一个词项形成符：它不能像函数那样部分应用，必须参数饱和才能构成有效的词项
 inhabitant	类型系统	居留元	-	This allows us to create an inhabitant of any type	这使得我们可以创造出一个具有任何类型的居留元
-inhabited	类型系统	有居留元的	-	-	-
+inhabited	类型系统	有居留元, 有居留元的	-	-	-
 -	-	-	-	-	-
 subtyping	子类型机制	子类型	-	If for each object $o_1$ of type $S$ there is another object $o_2$ of type $T$ such that for all programs $P$ defined in terms of $T$, the behavior of $P$ is unchanged when $o_1$ is substituted for $o_2$, then $S$ is a subtype of $T$	若对于任意 $S$ 类型的对象 $o_1$，都存在 $T$ 类型的对象 $o_2$，使得对于所有以 $T$ 定义的程序 $P$，当用 $o_1$ 替换 $o_2$ 时，$P$ 的行为不变，则称 $S$ 是 $T$ 的子类型
 Liskov substitution principle	子类型机制	里氏替换原则	-	-	-
