@@ -1,5 +1,5 @@
 #import "template.typ": *
-#import "contract/symlib.typ": *
+#import "../contract/symlib.typ": *
 
 #let fake-bib = (
   (key: "voltaire2077",

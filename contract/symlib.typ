@@ -5,3 +5,4 @@
 #let inferto = $#math.op(sym.colon, limits: false)_arrow.t$
 #let checkas = $#math.op(sym.colon, limits: false)_arrow.b$
 #let csharp = [C#sym.sharp]
+#let lambda = sym.lambda

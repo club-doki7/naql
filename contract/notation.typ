@@ -70,7 +70,10 @@ $
 公式编号
 
 #let sub-refl = $[prec.eq"-Refl"]$
+#let sub-asym = $[prec.eq"-Asym"]$
 
 $
   () / (T prec.eq T) wide #(sub-refl)
+  \ \
+  (T prec.eq S wide S prec.eq T) / (T = S) wide #(sub-asym)
 $

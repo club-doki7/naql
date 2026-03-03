@@ -6,7 +6,7 @@
 
 #let project(title: "", authors: (), author-cols: 3, body) = {
   set document(author: authors.map(a => a.name), title: title)
-  set page(numbering: "1", number-align: center)
+  // set page(numbering: "1", number-align: center)
   set text(lang: "en", font: en-fonts)
   set text(lang: "zh", font: zh-fonts)
 
@@ -43,7 +43,7 @@
   ))
 
   set par(justify: true)
-  show: columns.with(1)
+  // show: columns.with(1)
 
   body
 }
