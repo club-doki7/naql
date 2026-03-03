@@ -13,8 +13,8 @@ Backus-Naur Form, BNF, [旧] Backus Normal Form	形式系统	巴科斯-瑙尔表
 lambda calculus	演算系统	λ 演算	-	Any discussion of type systems starts with the lambda calculus, a formal system developed by Alonzo Church in the 1930s to express computation	任何类型系统的讨论都以 λ 演算开始，这是阿隆佐·邱奇于 1930 年代开发的一种用于表达计算的形式系统
 abstraction	演算系统	抽象	-	-	-
 application	演算系统	应用	-	-	-
-substitution	演算系统	替换操作	取自 ice1000 的立方类型论讲义，加上“操作”一词以彰显其名词性	-	-
-substitution set, substitution	演算系统	替换集	substitution 单独出现时偶尔也指替换集	-	-
+substitution	演算系统	替换, 替换操作	取自 ice1000 的立方类型论讲义，不清晰之处可加“操作”一词以彰显其名词性	-	-
+substitution set, substitution	演算系统	替换集	substitution 单独出现时偶尔也指替换集，Jeremy Mikkola 经常就把两者混着用	-	-
 reduction	演算系统	归约	-	-	-
 reducible expression, redex	演算系统	可归约项	-	-	-
 canonical form	演算系统	典范形式	取自 ice1000 的立方类型论讲义	-	-
@@ -30,13 +30,13 @@ neutral term	演算系统	中性项	-	-	-
 de Bruijn index	演算系统实现	德布鲁因编号	取自 ice1000 的立方类型论讲义并音译了 de Bruijn	-	-
 de Bruijn level	演算系统实现	德布鲁因层级	-	-	-
 -	-	-	-	-	-
-context	类型系统	语境, 类型语境	取自 ice1000 的立方类型论讲义	a given expression has a particular type within a specific context.	在特定语境中，给定的表达式具有特定的类型
-judgment	类型系统	判断	-	A judgment is an assertion that a piece of code has a certain property.	判断就是断言一段代码具有某种属性
-typing judgment	类型系统	类型判断	-	The most common kind of judgment you will encounter is a typing judgment, which asserts that a given expression has a particular type within a specific context.	最常见的判断就是类型判断，即断言在特定语境中，给定的表达式具有特定的类型
+context, type context, typing context	类型系统	语境, 类型语境	取自 ice1000 的立方类型论讲义	a given expression has a particular type within a specific context.	在特定语境中，给定的表达式具有特定的类型
+judgment, judgement	类型系统	判断	-	A judgment is an assertion that a piece of code has a certain property.	判断就是断言一段代码具有某种属性
+type judgement, typing judgement	类型系统	类型判断	-	The most common kind of judgment you will encounter is a typing judgment, which asserts that a given expression has a particular type within a specific context.	最常见的判断就是类型判断，即断言在特定语境中，给定的表达式具有特定的类型
 well-typed	类型系统	良类型的	-	thereby proving it is well-typed	从而证明程序是良类型的
 soundness	类型系统	健全性	良类型的程序都行为良定	-	-
 completeness	类型系统	完备性	行为良定的程序都良类型	-	-
-progression	类型系统	进展性	良类型的词项要么已经是值，要么可以继续求值	-	-
+progress	类型系统	进展性	良类型的词项要么已经是值，要么可以继续求值	-	-
 preservation	类型系统	保型性	良类型的词项求值一步后类型不变	-	-
 kind	类型系统	种类	-	A kind can be thought of as the “type of a type”	种类可被视作“类型之类型”
 universe	类型系统	宇宙	-	The language's grammar allows expressions that can be interpreted at different “levels” or “universes.”	语言的文法允许表达式在不同的宇宙层级中被解释。
