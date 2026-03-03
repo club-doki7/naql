@@ -4,6 +4,7 @@ argument	通用	实参	实际参数	-	-
 term	通用	词项	依练琪灏的 MLTT 讲义，翻译为“词项”；如果 term 前面有形容词，则把“词”字隐去，如“语法项” (syntactic term)	-	-
 -	-	-	-	-	-
 turnstile	形式系统	十字转门	即“可证”符号 ⊢	-	-
+double turnstile	形式系统	双十字转门	即“逻辑后果”/“逻辑蕴含”符号 ⊨	-	-
 inference rule	形式系统	推理规则	泛指一切魔法横线，以及没有被写成魔法横线但确是推理规则的东西	Typing judgments are derived using inference rules.	类型判断可由推理规则推导得出
 axiom	形式系统	公理	注意形式系统/推理规则意义上的“公理”不同于一般逻辑意义上的“公理”	If a rule has no premises, it is an axiom, a self-evident truth that requires no prior proof to hold.	如果一条规则没有前提，那么它就是一条公理，一个无需论证、不言自明的真命题。
 syntax	形式系统	语法	-	That is, a type system is a set of rules that operate on the (abstract) syntax of a programming language.	也就是说，类型系统是定义在程序设计语言（抽象）语法之上的一组规则
