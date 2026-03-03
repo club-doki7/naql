@@ -10,7 +10,7 @@
   set text(lang: "en", font: en-fonts)
   set text(lang: "zh", font: zh-fonts)
 
-  set par(spacing: 0.9em)
+  set par(spacing: 1.2em)
   set par(leading: 0.58em)
 
   show link: set text(fill: rgb(0, 127, 255))
@@ -43,7 +43,7 @@
   ))
 
   set par(justify: true)
-  // show: columns.with(1)
+  show: columns.with(1)
 
   body
 }

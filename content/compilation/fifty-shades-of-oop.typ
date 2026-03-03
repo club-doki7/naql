@@ -14,12 +14,7 @@
   )
 )
 
-#show link: set text(fill: rgb(0, 127, 255))
-#show math.equation.where(block: true): set block(breakable: false)
-#show raw.where(block: true): set block(breakable: false)
-#show raw.where(block: true): it => pad(left: 2em, it)
-#set par(spacing: 1.2em)
-
+// 作者留的小字
 #let small(content) = box(stroke: gray, inset: 0.75em, outset: -0.15em, radius: 5pt)[#text(size: 10pt)[#content]]
 
 == 译者前言
