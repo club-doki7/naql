@@ -9,7 +9,7 @@ inference rule	形式系统	推理规则	泛指一切魔法横线，以及没有
 axiom	形式系统	公理	注意形式系统/推理规则意义上的“公理”不同于一般逻辑意义上的“公理”	If a rule has no premises, it is an axiom, a self-evident truth that requires no prior proof to hold.	如果一条规则没有前提，那么它就是一条公理，一个无需论证、不言自明的真命题。
 syntax	形式系统	语法	-	That is, a type system is a set of rules that operate on the (abstract) syntax of a programming language.	也就是说，类型系统是定义在程序设计语言（抽象）语法之上的一组规则
 grammar	形式系统	文法	-	More complex languages will naturally have more complex grammars	更复杂的语言自然会有更复杂的文法
-Backus-Naur Form, BNF, [旧] Backus Normal Form	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，不应译作“巴科斯范式”/“巴科斯-瑙尔范式”，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
+Backus-Naur Form, BNF, [弃] Backus Normal Form	形式系统	巴科斯-瑙尔表示法	BNF 不是一种正规形式，不应译作“巴科斯范式”/“巴科斯-瑙尔范式”，切勿以讹传讹	For this reason, comprehensive treatments of type systems begin by providing the grammar of all the syntactic constructs considered by the type system using BNF notation	因此，对类型系统的全面论述首先会使用巴科斯-瑙尔表示法给出类型系统所考虑的所有语法构造的文法
 -	-	-	-	-	-
 lambda calculus	演算系统	λ 演算	-	Any discussion of type systems starts with the lambda calculus, a formal system developed by Alonzo Church in the 1930s to express computation	任何类型系统的讨论都以 λ 演算开始，这是阿隆佐·邱奇于 1930 年代开发的一种用于表达计算的形式系统
 abstraction	演算系统	抽象	-	-	-

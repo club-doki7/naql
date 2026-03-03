@@ -1,5 +1,5 @@
-#import "template.typ": *
-#import "../contract/symlib.typ": *
+#import "../template.typ": *
+#import "../symlib.typ": *
 
 #let fake-bib = (
   (key: "voltaire2077",
@@ -116,7 +116,7 @@
 
 = 前言
 
-伏尔泰在不经意间这样说过，坚持意志伟大的事业需要始终不渝的精神#cite("voltaire2077")。这句话语虽然很短，但令我浮想联翩。我们都知道，只要有*意义*，那么就必须慎重考虑。在这种困难的抉择下，本人思来想去，寝食难安。带着这些问题，我们来审视一下#tm[依值类型 (Dependent Type)]#cite("chuigda-survey", "martin-lof1984")。这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。#footnote[克劳斯·莫瑟爵士曾经提到过，教育需要花费钱，而无知也是一样。]这句话看似简单，但其中的阴郁不禁让人深思。
+伏尔泰在不经意间这样说过，坚持意志伟大的事业需要始终不渝的精神#cite("voltaire2077")。这句话语虽然很短，但令我浮想联翩。我们都知道，只要有*意义*，那么就必须慎重考虑。在这种困难的抉择下，本人思来想去，寝食难安。带着这些问题，我们来审视一下#tm_fst("依值类型", "Dependent Type")#cite("chuigda-survey", "martin-lof1984")。这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。这种事实对本人来说意义重大，相信对这个世界也是有一定意义的。#footnote[克劳斯·莫瑟爵士曾经提到过，教育需要花费钱，而无知也是一样。]这句话看似简单，但其中的阴郁不禁让人深思。
 
 #figure(caption: [在不使用 SFINAE 技巧的情况下，这只是一种索引类型])[```cpp
 template <template <typename> class HKT, typename T, std::integral auto x>
@@ -147,7 +147,7 @@ Nhu co bac ho trong ngay vui dai thang, loi bac nay da thanh chien thang huy hoa
 }
 ```]
 
-而这些并不是完全重要，更加重要的问题是，带着这些问题，我们来审视一下依值类型#cite("pierce-revenge")。歌德说过一句富有哲理的话，读一本好书，就如同和一个高尚的人在交谈。这句话语虽然很短，但令我浮想联翩。在这种困难的抉择下，本人思来想去，寝食难安。总结的来说，依值类型 `ForallType` 的发生，到底需要如何做到，#tm[不依值类型 (Non-dependent type)] `ArrowType` 的发生，又会如何产生#cite("LohMcBrideSwierstra2010", "barendregt1992")。
+而这些并不是完全重要，更加重要的问题是，带着这些问题，我们来审视一下依值类型#cite("pierce-revenge")。歌德说过一句富有哲理的话，读一本好书，就如同和一个高尚的人在交谈。这句话语虽然很短，但令我浮想联翩。在这种困难的抉择下，本人思来想去，寝食难安。总结的来说，#tm[依值类型] `ForallType` 的发生，到底需要如何做到，#tm_fst("不依值类型", "Non-dependent type") `ArrowType` 的发生，又会如何产生#cite("LohMcBrideSwierstra2010", "barendregt1992")。
 
 #set heading(numbering: "1.")
 
@@ -263,7 +263,7 @@ Etiam libero neque, ultrices vitae mole 烫屯锟斤拷 stie vitae, venenatis au
 
 == 没用的公式
 
-一般而言，判断只是逻辑规则#cite("euler-dt", "wadler2015", "voltaire2077")，而某些以这种方式指定的类型系统并不直接对应于#tm[可判定的 (decidable)] 类型检查算法#cite("alexis2023")。因此，我们必须慎重考虑这些规则的适用范围和实际意义。
+一般而言，判断只是逻辑规则#cite("euler-dt", "wadler2015", "voltaire2077")，而某些以这种方式指定的类型系统并不直接对应于#tm_fst("可判定的", "decidable") 类型检查算法#cite("alexis2023")。因此，我们必须慎重考虑这些规则的适用范围和实际意义。
 
 #figure(caption: [一个图灵不完备的类型系统#cite("tapl")及其双向类型检查算法#cite("LohMcBrideSwierstra2010")])[$
   (Gamma tack tau : * #h(1em) Gamma tack e checkas tau)

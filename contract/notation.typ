@@ -1,4 +1,4 @@
-#import "symlib.typ": *
+#import "../content/symlib.typ": *
 
 #set page(columns: 2)
 
@@ -33,14 +33,19 @@ $
 值化函数
 
 $
-  val("棍母") = bot
+  denote("棍母") = bot
 $
 
 小步求值
 
-
 $
   e stepto e'
+$
+
+小步求值 - 闭包
+
+$
+  e stepclj e'
 $
 
 大步求值
