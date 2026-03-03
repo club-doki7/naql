@@ -15,7 +15,7 @@
 
   show link: set text(fill: rgb(0, 127, 255))
 
-  show raw: set text(font: monospace-fonts, size: 10pt, weight: 400, ligatures: false, features: (liga: 0,  dlig: 0, clig: 0, calt: 0, locl: 0))
+  show raw: set text(font: monospace-fonts, size: 10pt, weight: 350, ligatures: false, features: (liga: 0,  dlig: 0, clig: 0, calt: 0, locl: 0))
   show raw.where(block: true): set block(breakable: false)
   show raw.where(block: true): pad.with(left: 2em, right: 2em)
 
