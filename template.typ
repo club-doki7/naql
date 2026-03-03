@@ -48,7 +48,14 @@
   body
 }
 
-#let tm = text.with(font: tm-fonts, style: "italic")
+#let tm(zh, en: none) = if (en != none) {
+  text(font: tm-fonts, style: "italic")[#zh (#en)]
+} else {
+  text(font: tm-fonts, style: "italic")[#zh]
+}
+
+#let tm_linked(zh, en, url) = link(url)[#tm(zh, en)]
+
 #let dt = $. thin$
 #let tdt = $thin . thin$
 
