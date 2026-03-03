@@ -48,7 +48,7 @@ metavariable, meta variable	类型系统	元变量	-	-	-
 [弃] type variable	类型系统	类型变量	通常在 HM 类型系统的推导算法中指代元变量，但其实际上有三个能指：forall 引入的类型变量，用于合一的类型变量，以及 Skolem 刚性变量。原创和编译内容中应替换为 metavariable 元变量，翻译内容中保持原文	-	-
 type scheme	类型系统	类型概型	类型概型与几何学中的概型有相似之处；类型模式 - 和 pattern 撞车；类型系列 - 和 type family 撞车；类型范式 - 和 normal form/canonical form/paradigm 撞车；类型方案 - 比“类型沙琪玛”好不到哪去	[Jeremy2018] A scheme (also known as a type scheme) is a type with an extra piece of information attached. That extra piece of information is a list of type variables.	类型概型就是附加了一些信息——一个类型变量组成的列表——的类型。
 higher-ranked polymorphism	类型系统	高秩多态	允许将泛型函数作为函数参数传递，其保留泛型性	-	-
-dependent type	类型系统	依值类型	允许类型依赖于值	-	-
+dependent type	类型系统	依值类型	允许类型依赖于值。欧林猫发来通知，“依赖类型”淘汰了：https://www.leanprover.cn/fp-lean-zh/ProgrammingWithDependentTypes/#programming-with-dependent-types	-	-
 Curry-Howard isomorphism	类型系统	柯里-霍华德同构	类型即命题，程序即证明	[Sdiehl2025] The central insight here is the **Curry-Howard isomorphism**, which establishes a formal duality between type systems and logical proof systems.	这里的核心洞见是柯里-霍华德同构，它建立了类型系统与逻辑证明系统之间的形式对偶性。
 formation rule	类型系统	形成规则	-	-	-
 introduction rule	类型系统	构造规则	取自 ice1000 的立方类型论讲义	-	-
