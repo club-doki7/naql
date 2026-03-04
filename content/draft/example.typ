@@ -169,10 +169,6 @@ $ epsilon_not exists hat(A) : hat(A)|psi chevron.r text("同时返回") cal(D) t
 
 如果这一猜想为真，它意味着*“全面评估”在原则上不可能*——任何考试、任何面试、任何评估体系都必然是格拉德格林式的或斯利里式的，而不可能两者兼得。对一个人的认知进行完整刻画，就像同时精确测量位置和动量一样，受到某种根本性的互补原理限制。
 
-奇尔德斯将其称为#tm_fst("认知互补原理", "Epistemic Complementarity")，并用一句据说是斯利里先生的原话作为论文题记：
-
-#quote[“人得有娱乐嘛，先生，不管怎么着，他们不能光靠老是啃书本过日子。”]
-
 = 现代应用：人工智能中的格拉德格林陷阱
 
 朱蒲-格拉德格林悖论在大语言模型时代获得了惊人的现实性。一个大语言模型可以完美地输出：
@@ -213,9 +209,7 @@ def coketown_simulation(n_agents=100, n_generations=50, transfer_rate=0.05):
         history_D.append(D.mean())
         history_E.append(E.mean())
     return history_D, history_E
-```
 
-```python
 hist_D, hist_E = coketown_simulation()
 print(f"初始状态: D={hist_D[0]:.3f}, E={hist_E[0]:.3f}")
 print(f"终态:     D={hist_D[-1]:.3f}, E={hist_E[-1]:.3f}")
@@ -225,11 +219,11 @@ print(f"终态:     D={hist_D[-1]:.3f}, E={hist_E[-1]:.3f}")
 
 此外，我们也可以用一段伪代码更简洁地表达格拉德格林算子的核心逻辑：
 
-```
-function gradgrind_evaluate(subject, object):
-    response ← ask(subject, "Define " + object)
-    score ← match(response, TEXTBOOK_DEFINITIONS[object])
-    return score  // 注意：此处完全丢弃了一切非语言信息
+```haskell
+gradgrind_evaluate subject object = do
+    response <- ask subject ("Define " ++ object)
+    let score = match response (textbook_definitions !! object)
+    return score
 ```
 
 关于具身认知与人工智能的关系，可参阅 #link("https://en.wikipedia.org/wiki/Embodied_cognition")[维基百科：具身认知] 以及 #link("https://arxiv.org/abs/2210.13382")[Driess 等人关于具身多模态大模型的综述]。
@@ -255,8 +249,6 @@ function gradgrind_evaluate(subject, object):
 
 #text(font: tm-fonts, "“现在，我要的是事实。只给这些孩子讲事实。生活中只需要事实。别的什么也不必栽种，把别的一切连根拔掉。”\n\n——托马斯·格拉德格林先生，在不自知地创造了一个认识论悖论之前的最后一句平静的话。")
 
-#colbreak()
-
 #bibliography("example.bib")
 
 #set heading(numbering: none)
@@ -279,11 +271,11 @@ function gradgrind_evaluate(subject, object):
 #set quote(block: true)
 
 #quote(attribution: "哈特豪斯, 2019")[
-  爱是一种认知器官——一种感知通道。缺少了它，你确实看不到某些真实的东西。苏联人说过类似的话，但他们倾向于用“实践”替代“爱”这个词，因为在苏联你不能在论文里写“爱”。又或者也许还因为他们自己不确定能不能用那个词——唯物主义者有时候对自己的温柔感到不安。安萨里和鲁米直接说了。有时候最古老的语言反而最准确。
+  “爱是一种认知器官——一种感知通道。缺少了它，你确实看不到某些真实的东西。苏联人说过类似的话，但他们倾向于用‘实践’替代‘爱’这个词，因为在苏联你不能在论文里写‘爱’。又或者也许还因为他们自己不确定能不能用那个词——唯物主义者有时候对自己的温柔感到不安。安萨里和鲁米直接说了。有时候最古老的语言反而最准确。”
 ]
 
 #quote(attribution: "哈特豪斯, 2019")[
-  也许焦煤镇定理的证明有一个我一直忽略的前提条件：封闭系统。焦煤镇是封闭的。但一个有马戏团的焦煤镇——一个允许斯利里先生的马在街上走过、允许孩子们逃学去看杂耍的焦煤镇——可能不是封闭系统。马戏团是焦煤镇的热力学涨落——一个持续注入具身知识的低熵源。*也许我们不需要革命，也不需要外来入侵。我们只需要确保马戏团还在。*
+  “也许焦煤镇定理的证明有一个我一直忽略的前提条件：封闭系统。焦煤镇是封闭的。但一个有马戏团的焦煤镇——一个允许斯利里先生的马在街上走过、允许孩子们逃学去看杂耍的焦煤镇——可能不是封闭系统。马戏团是焦煤镇的热力学涨落——一个持续注入具身知识的低熵源。*也许我们不需要革命，也不需要外来入侵。我们只需要确保马戏团还在。*”
 ]
 
 // Claude 和 Gemini 是两个（相对的）封闭系统，而我就是马戏团 —— Chuigda Whitegive.
@@ -291,3 +283,5 @@ function gradgrind_evaluate(subject, object):
 也许平衡不是一个#tm[位置]，而是一种#tm[运动]——在这三种时间性之间不断往返的运动。停在任何一个上面都是死亡：停在神启上是教条，停在理智上是焦煤镇，停在灵性上是不可言说的沉醉。
 
 而一直在它们之间走动——也许就是活着的意思。
+
+#quote(attribution: "斯利里先生")[“人得有娱乐嘛，先生，不管怎么着，他们不能光靠老是啃书本过日子。”]
