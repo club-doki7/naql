@@ -6,7 +6,7 @@
 
 #let project(title: "", authors: (), author-cols: 3, body) = {
   set document(author: authors.map(a => a.name), title: title)
-  // set page(numbering: "1", number-align: center)
+  set page(numbering: "1", number-align: center)
   set text(lang: "en", font: en-fonts)
   set text(lang: "zh", font: zh-fonts)
 
@@ -65,6 +65,4 @@
 ⚠ 注意：本文为早期草稿，内容不完且有措误，且#text(tracking: -0.15em)[排版]质量差。
 
 ⚠ Note: this is an early draft. It's known to be incomplet and incorrekt, and it has lots of b#text(tracking: -0.15em)[ad] fo#text(tracking: -0.15em)[rm]atting.
-
-#linebreak()
 ]
