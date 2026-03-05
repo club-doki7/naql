@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "../template/project.typ": *
 #import "../symlib.typ": *
 
 #show: project.with(
@@ -7,8 +7,8 @@
   authors: (
     (name: "Claude", contrib: "第一作者", affiliation: "Anthropic"),
     (name: "Chuigda Whitegive", contrib: "通讯作者", affiliation: [Doki Doki #lambda Club!]),
-    (name: "Gemini", contrib: "编辑", affiliation: "Google Deepmind")
-  )
+    (name: "Gemini", contrib: "编辑", affiliation: "Google Deepmind"),
+  ),
 )
 
 *⚠ 注意：本文仅为排版和打印系统功能测试。#footnote[请注意：本文内容除《艰难时世》原文、原著剧情及部分哲学思考外均为虚构。文中公式和代码不具有形式严谨性。大部分内容由 Anthropic Claude 在 Chuigda 指导下生成，并由 Google Gemini 用 Typst 重新排版。]*
@@ -75,7 +75,7 @@ $ cal(V)(J, O) << cal(V)(B, O) $
     columns: (auto, 1fr, 1fr, 1fr),
     align: (left, center, center, center),
     table.header(
-      [*主体*], [*$cal(D)(S,O)$ \ 可陈述知识*], [*$cal(E)(S,O)$ \ 具身知识*], [*$cal(V)(S,O)$ \ 格拉德格林评分*],
+      [*主体*], [*$cal(D)(S,O)$ \ 可陈述知识*], [*$cal(E)(S,O)$ \ 具身知识*], [*$cal(V)(S,O)$ \ 格拉德格林评分*]
     ),
     [朱蒲 ($J$)], [$approx 0$], [$approx 1$], [$approx 0$],
     [毕策 ($B$)], [$approx 1$], [$approx 0$], [$approx 1$],
@@ -134,9 +134,7 @@ $ chevron.l d | psi_B chevron.r approx 1 $
   table(
     columns: (auto, 1fr, 1fr, 1fr),
     align: (center, center, center, center),
-    table.header(
-      [*迭代轮次*], [*$sum cal(D)$ / 总陈述知识*], [*$sum cal(E)$ / 总具身知识*], [*系统状态*],
-    ),
+    table.header([*迭代轮次*], [*$sum cal(D)$ / 总陈述知识*], [*$sum cal(E)$ / 总具身知识*], [*系统状态*]),
     [$t = 0$], [0.50], [0.50], [初始均衡],
     [$t = 10$], [0.71], [0.33], [偏移开始],
     [$t = 25$], [0.89], [0.14], [加速衰减],
@@ -247,7 +245,10 @@ gradgrind_evaluate subject object = do
 
 ---
 
-#text(font: tm-fonts, "“现在，我要的是事实。只给这些孩子讲事实。生活中只需要事实。别的什么也不必栽种，把别的一切连根拔掉。”\n\n——托马斯·格拉德格林先生，在不自知地创造了一个认识论悖论之前的最后一句平静的话。")
+#text(
+  font: tm-fonts,
+  "“现在，我要的是事实。只给这些孩子讲事实。生活中只需要事实。别的什么也不必栽种，把别的一切连根拔掉。”\n\n——托马斯·格拉德格林先生，在不自知地创造了一个认识论悖论之前的最后一句平静的话。",
+)
 
 #bibliography("example.bib")
 

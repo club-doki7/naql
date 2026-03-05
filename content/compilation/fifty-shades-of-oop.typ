@@ -1,4 +1,4 @@
-#import "../template.typ": *
+#import "../template/project.typ": *
 #import "../../content/symlib.typ": *
 
 #show: project.with(
@@ -10,12 +10,20 @@
     (name: "Chuigda Whitegive", contrib: "编译", affiliation: [Doki Doki #lambda Club!]),
     (name: "Cousin Ze", contrib: "编译", affiliation: [Doki Doki #lambda Club!]),
     (name: "Gemini", contrib: "校对", affiliation: "Google Deepmind"),
-    (name: "Claude", contrib: "校对", affiliation: "Anthropic")
-  )
+    (name: "Claude", contrib: "校对", affiliation: "Anthropic"),
+  ),
 )
 
 // 作者留的小字
-#let small(content) = box(stroke: gray, inset: 0.75em, outset: -0.15em, radius: 5pt)[#text(size: 10pt)[#content]]
+#let small(content) = context {
+  if target() == "html" {
+    html.div(style: "border: 1px solid #000; border-radius: 5pt; padding: 0.75em;")[
+      #text(size: 10pt)[#content]
+    ]
+  } else {
+    box(stroke: gray, inset: 0.75em, outset: -0.15em, radius: 5pt)[#text(size: 10pt)[#content]]
+  }
+}
 
 == 译者前言
 
@@ -103,7 +111,9 @@
 
 == 封装
 
-#quote(attribution: [Bob Nystrom, #link("https://gameprogrammingpatterns.com/singleton.html")[Game Programming Patterns]])[
+#quote(
+  attribution: [Bob Nystrom, #link("https://gameprogrammingpatterns.com/singleton.html")[Game Programming Patterns]],
+)[
   If you can, just move all of that behavior into the class it helps. After all, OOP is about letting objects take care of themselves.
 
   如果可以的话，把所有相关的行为都移到其服务的类中。毕竟面向对象程序设计就是要让对象自我管理。
@@ -115,7 +125,9 @@
 
 == 接口
 
-#quote(attribution: [Daniel Ingalls, "#link("https://wiki.squeak.org/squeak/uploads/400/Smalltalk-76.pdf")[The Smalltalk-76 Programming System Design and Implementation]"])[
+#quote(
+  attribution: [Daniel Ingalls, "#link("https://wiki.squeak.org/squeak/uploads/400/Smalltalk-76.pdf")[The Smalltalk-76 Programming System Design and Implementation]"],
+)[
   No part of a complex system should depend on the internal details of any other part.
 
   复杂系统中的任何部分都不应依赖其他部分的内部细节。
@@ -166,7 +178,9 @@ print(bar()) # 101
 
 == 动态分派
 
-#quote(attribution: link("https://youtu.be/32tDTD9UJCE?si=OqBHJ3PecCEvidoL")[Back to Basics: Object-Oriented Programming - Jon Kalb - CppCon 2019])[
+#quote(attribution: link(
+  "https://youtu.be/32tDTD9UJCE?si=OqBHJ3PecCEvidoL",
+)[Back to Basics: Object-Oriented Programming - Jon Kalb - CppCon 2019])[
   A programming paradigm in C++ using Polymorphism based on runtime function dispatch using virtual functions.
 
   这是一种 C++ 编程范式，它利用多态机制，通过虚函数来实现运行时的函数分派。
@@ -227,7 +241,9 @@ struct BaseClass {
 
 == 子类型
 
-#quote(attribution: [Barbara Liskov, "#link("https://www.cs.tufts.edu/~nr/cs257/archive/barbara-liskov/data-abstraction-and-hierarchy.pdf")[Data Abstraction and Hierarchy]"])[
+#quote(
+  attribution: [Barbara Liskov, "#link("https://www.cs.tufts.edu/~nr/cs257/archive/barbara-liskov/data-abstraction-and-hierarchy.pdf")[Data Abstraction and Hierarchy]"],
+)[
   If for each object $o_1$ of type $S$ there is another object $o_2$ of type $T$ such that for all programs $P$ defined in terms of $T$, the behavior of $P$ is unchanged when $o_1$ is substituted for $o_2$, then $S$ is a subtype of $T$.
 
   若对于任意 $S$ 类型的对象 $o_1$，都存在 $T$ 类型的对象 $o_2$，使得对于所有以 $T$ 定义的程序 $P$，当用 $o_1$ 替换 $o_2$ 时，$P$ 的行为不变，则称 $S$ 是 $T$ 的子类型。
@@ -361,39 +377,54 @@ int main() {
   [*实践*], [*优点*], [*缺点*],
 
   [优先选择（子类型）多态，而非#tm_fst("带标签联合体", "tagged union") / `if` / `switch` / 模式匹配],
-  [- 对扩展开放
-   - 更易添加新的子类型 / 分支],
-  [- 性能开销
-   - 彼此相关的行为分散于多处
-   - 很难在一个地方看到完整的控制流
-   - #link("https://en.wikipedia.org/wiki/Expression_problem")[#tm[表达式问题]]意味着更难添加新的方法 / 行为
+  [
+    - 对扩展开放
+    - 更易添加新的子类型 / 分支
+  ],
+  [
+    - 性能开销
+    - 彼此相关的行为分散于多处
+    - 很难在一个地方看到完整的控制流
+    - #link("https://en.wikipedia.org/wiki/Expression_problem")[#tm[表达式问题]]意味着更难添加新的方法 / 行为
   ],
 
   [将所有数据成员设为私有],
   [保护类不变式],
-  [- 更多样板代码
-   - 如果没有不变式，通常无须隐藏数据
-   - 在没有属性语法的语言中，getter/setter 不如直接访问实例变量方便],
+  [
+    - 更多样板代码
+    - 如果没有不变式，通常无须隐藏数据
+    - 在没有属性语法的语言中，getter/setter 不如直接访问实例变量方便
+  ],
 
   [偏好小型的“自管理”对象，而不是集中式的“管理者”],
-  [- 更难违反不变式
-   - 代码组织更清晰],
-  [- 潜在的数据局部性损害
-   - 阻碍并行化
-   - 重复引用共享数据（“#tm_fst("反向指针", "back pointer", skip_paren: true)”）],
+  [
+    - 更难违反不变式
+    - 代码组织更清晰
+  ],
+  [
+    - 潜在的数据局部性损害
+    - 阻碍并行化
+    - 重复引用共享数据（“#tm_fst("反向指针", "back pointer", skip_paren: true)”）
+  ],
 
   [#link("https://en.wikipedia.org/wiki/Open%E2%80%93closed_principle")[扩展而非修改 / 开-闭原则]],
-  [- 防止新特性破坏旧特性
-   - 防止破坏 API],
-  [- 没有必要“封闭”受控使用的非公共模块
-   - 不必要的复杂性和继承链
-   - 设计不良的接口不能改变
-   - 可能导致抽象倒置],
+  [
+    - 防止新特性破坏旧特性
+    - 防止破坏 API
+  ],
+  [
+    - 没有必要“封闭”受控使用的非公共模块
+    - 不必要的复杂性和继承链
+    - 设计不良的接口不能改变
+    - 可能导致抽象倒置
+  ],
 
   [针对抽象接口工作，而非针对具体实现工作],
   [系统更易于替换、更易测试],
-  [- 过度使用会降低代码可读性和可调试性
-   - 额外的间接调用会增加性能开销]
+  [
+    - 过度使用会降低代码可读性和可调试性
+    - 额外的间接调用会增加性能开销
+  ],
 )
 
 这篇文章已经很长，故此处不再展开更多细节。你可以对以上列出的“优缺点”提出不同意见。我想传达的核心观点是：几乎所有这些实践都有权衡和折衷#footnote[译注：“一切有为法，如梦幻泡影，如露亦如电，应作如是观。”]。
