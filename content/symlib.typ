@@ -7,3 +7,5 @@
 #let checkas = $#math.op(sym.colon, limits: false)_arrow.b$
 #let csharp = [C#sym.sharp]
 #let lambda = sym.lambda
+
+#let dd7c = [Doki Doki #lambda Club!]
