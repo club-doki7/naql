@@ -1,0 +1,278 @@
+@online{ucg-issue-134,
+  author       = {{Unsafe Code Guidelines}},
+  title        = {Issue \#134: {Stacked Borrows}: raw pointer usable only for {T} too strict?},
+  year         = {2019},
+  url          = {https://github.com/rust-lang/unsafe-code-guidelines/issues/134},
+}
+
+@online{ucg-issue-248,
+  author       = {{Unsafe Code Guidelines}},
+  title        = {Issue \#248: {Stacked Borrows}: track raw pointers more precisely},
+  year         = {2020},
+  url          = {https://github.com/rust-lang/unsafe-code-guidelines/issues/248},
+}
+
+@online{ucg-issue-256,
+  author       = {{Unsafe Code Guidelines}},
+  title        = {Issue \#256: Storing an object as {\&Header}, but reading the data past the end of the header},
+  year         = {2020},
+  url          = {https://github.com/rust-lang/unsafe-code-guidelines/issues/256},
+}
+
+@online{ucg-issue-273,
+  author       = {{Unsafe Code Guidelines}},
+  title        = {Issue \#273: {Stacked Borrows}: using the topmost ``untagged'' item is not ``monotonic''},
+  year         = {2021},
+  url          = {https://github.com/rust-lang/unsafe-code-guidelines/issues/273},
+}
+
+@online{miri-issue-3082,
+  author       = {{Miri}},
+  title        = {Issue \#3082: Is a stacked borrows error in iced-x86 a problem?},
+  year         = {2023},
+  url          = {https://github.com/rust-lang/miri/issues/3082},
+}
+
+@online{miri-issue-3657,
+  author       = {{Miri}},
+  title        = {Issue \#3657: Possible false positive of stacked borrow rules},
+  year         = {2024},
+  url          = {https://github.com/rust-lang/miri/issues/3657},
+}
+
+@article{beck2024twophase,
+  author       = {Calvin Beck and Irene Yoon and Hanxi Chen and Yannick Zakowski and Steve Zdancewic},
+  title        = {A Two-Phase Infinite/Finite Low-Level Memory Model: Reconciling Integer--Pointer Casts, Finite Space, and undef at the {LLVM IR} Level of Abstraction},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {8},
+  number       = {ICFP},
+  articleno    = {263},
+  pages        = {1--29},
+  year         = {2024},
+  doi          = {10.1145/3674652},
+}
+
+@online{fetisov2024aliasing,
+  author       = {Anton Fetisov},
+  title        = {Aliasing of raw pointers},
+  year         = {2024},
+  url          = {https://internals.rust-lang.org/t/aliasing-of-raw-pointers/21746},
+}
+
+@article{gaher2022simuliris,
+  author       = {Lennard G\"{a}her and Michael Sammler and Simon Spies and Ralf Jung and Hoang-Hai Dang and Robbert Krebbers and Jeehoon Kang and Derek Dreyer},
+  title        = {Simuliris: A Separation Logic Framework for Verifying Concurrent Program Optimizations},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {6},
+  number       = {POPL},
+  pages        = {1--31},
+  year         = {2022},
+  doi          = {10.1145/3498689},
+}
+
+@inproceedings{hathhorn2015defining,
+  author       = {Chris Hathhorn and Chucky Ellison and Grigore Rosu},
+  title        = {Defining the Undefinedness of {C}},
+  booktitle    = {Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation ({PLDI})},
+  address      = {Portland, OR, USA},
+  pages        = {336--345},
+  year         = {2015},
+  doi          = {10.1145/2737924.2737979},
+}
+
+@standard{iso-c17,
+  author       = {{ISO}},
+  title        = {{C17} Standard},
+  number       = {ISO/IEC 9899:2018},
+  year         = {2017},
+}
+
+@article{jung2020stacked,
+  author       = {Ralf Jung and Hoang-Hai Dang and Jeehoon Kang and Derek Dreyer},
+  title        = {Stacked Borrows: An Aliasing Model for {Rust}},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {4},
+  number       = {POPL},
+  pages        = {41:1--41:32},
+  year         = {2020},
+  doi          = {10.1145/3371109},
+}
+
+@article{jung2018iris,
+  author       = {Ralf Jung and Robbert Krebbers and Jacques-Henri Jourdan and Ales Bizjak and Lars Birkedal and Derek Dreyer},
+  title        = {Iris from the Ground Up: A Modular Foundation for Higher-Order Concurrent Separation Logic},
+  journal      = {J. Funct. Program.},
+  volume       = {28},
+  pages        = {e20},
+  year         = {2018},
+  doi          = {10.1017/S0956796818000151},
+}
+
+@inproceedings{kang2015formal,
+  author       = {Jeehoon Kang and Chung-Kil Hur and William Mansky and Dmitri Garbuzov and Steve Zdancewic and Viktor Vafeiadis},
+  title        = {A Formal {C} Memory Model Supporting Integer-Pointer Casts},
+  booktitle    = {Proceedings of the 36th ACM SIGPLAN Conference on Programming Language Design and Implementation ({PLDI})},
+  pages        = {326--335},
+  year         = {2015},
+  doi          = {10.1145/2737924.2738005},
+}
+
+@inproceedings{krebbers2013aliasing,
+  author       = {Robbert Krebbers},
+  title        = {Aliasing Restrictions of {C11} Formalized in {Coq}},
+  booktitle    = {Certified Programs and Proofs -- Third International Conference ({CPP} 2013)},
+  address      = {Melbourne, VIC, Australia},
+  pages        = {50--65},
+  year         = {2013},
+  doi          = {10.1007/978-3-319-03545-1_4},
+}
+
+@phdthesis{krebbers2015cstandard,
+  author       = {Robbert Krebbers},
+  title        = {The {C} Standard Formalized in {Coq}},
+  school       = {Radboud University Nijmegen},
+  year         = {2015},
+  url          = {https://robbertkrebbers.nl/thesis.html},
+}
+
+@article{krebbers2018mosel,
+  author       = {Robbert Krebbers and Jacques-Henri Jourdan and Ralf Jung and Joseph Tassarotti and Jan-Oliver Kaiser and Amin Timany and Arthur Chargu\'{e}raud and Derek Dreyer},
+  title        = {{MoSeL}: A General, Extensible Modal Framework for Interactive Proofs in Separation Logic},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {2},
+  number       = {ICFP},
+  pages        = {77:1--77:30},
+  year         = {2018},
+  doi          = {10.1145/3236772},
+}
+
+@article{lee2018reconciling,
+  author       = {Juneyoung Lee and Chung-Kil Hur and Ralf Jung and Zhengyang Liu and John Regehr and Nuno P. Lopes},
+  title        = {Reconciling High-Level Optimizations and Low-Level Code in {LLVM}},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {2},
+  number       = {OOPSLA},
+  pages        = {125:1--125:28},
+  year         = {2018},
+  doi          = {10.1145/3276495},
+}
+
+@techreport{leroy2012compcert,
+  author       = {Xavier Leroy and Andrew Appel and Sandrine Blazy and Gordon Stewart},
+  title        = {The {CompCert} Memory Model, Version 2},
+  number       = {RR-7987},
+  institution  = {Inria},
+  year         = {2012},
+  url          = {https://hal.inria.fr/hal-00703441},
+}
+
+@article{leroy2008formal,
+  author       = {Xavier Leroy and Sandrine Blazy},
+  title        = {Formal Verification of a {C}-like Memory Model and Its Uses for Verifying Program Transformations},
+  journal      = {J. Autom. Reason.},
+  volume       = {41},
+  number       = {1},
+  pages        = {1--31},
+  year         = {2008},
+  doi          = {10.1007/s10817-008-9099-0},
+}
+
+@inproceedings{lopes2021alive2,
+  author       = {Nuno P. Lopes and Juneyoung Lee and Chung-Kil Hur and Zhengyang Liu and John Regehr},
+  title        = {{Alive2}: Bounded Translation Validation for {LLVM}},
+  booktitle    = {Proceedings of the 42nd ACM SIGPLAN International Conference on Programming Language Design and Implementation ({PLDI})},
+  pages        = {65--79},
+  year         = {2021},
+}
+
+@mastersthesis{louwrink2021separation,
+  author       = {Dani\"{e}l Louwrink},
+  title        = {A Separation Logic for {Stacked Borrows}},
+  school       = {University of Amsterdam},
+  year         = {2021},
+  url          = {https://eprints.illc.uva.nl/id/eprint/1790/},
+}
+
+@article{mccormack2024study,
+  author       = {Ian McCormack and Joshua Sunshine and Jonathan Aldrich},
+  title        = {A Study of Undefined Behavior Across Foreign Function Boundaries in {Rust} Libraries},
+  journal      = {CoRR},
+  volume       = {abs/2404.11671},
+  year         = {2024},
+  url          = {https://arxiv.org/abs/2404.11671},
+}
+
+@article{memarian2019exploring,
+  author       = {Kayvan Memarian and Victor B. F. Gomes and Brooks Davis and Stephen Kell and Alexander Richardson and Robert N. M. Watson and Peter Sewell},
+  title        = {Exploring {C} Semantics and Pointer Provenance},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {3},
+  number       = {POPL},
+  pages        = {67:1--67:32},
+  year         = {2019},
+  doi          = {10.1145/3290380},
+}
+
+@inproceedings{memarian2016depths,
+  author       = {Kayvan Memarian and Justus Matthiesen and James Lingard and Kyndylan Nienhuis and David Chisnall and Robert N. M. Watson and Peter Sewell},
+  title        = {Into the Depths of {C}: Elaborating the De Facto Standards},
+  booktitle    = {Proceedings of the 37th ACM SIGPLAN Conference on Programming Language Design and Implementation ({PLDI})},
+  pages        = {1--15},
+  year         = {2016},
+  doi          = {10.1145/2908080.2908081},
+}
+
+@misc{memarian2016n2014,
+  author       = {Kayvan Memarian and Peter Sewell},
+  title        = {{N2014}: What is {C} in Practice? ({Cerberus} Survey v2): Analysis of Responses},
+  year         = {2016},
+  howpublished = {ISO SC22 WG14 N2014},
+  url          = {http://www.cl.cam.ac.uk/~pes20/cerberus/notes50-survey-discussion.html},
+}
+
+@phdthesis{norrish1998c,
+  author       = {Michael Norrish},
+  title        = {{C} Formalised in {HOL}},
+  school       = {University of Cambridge},
+  year         = {1998},
+}
+
+@online{llvm-langref,
+  author       = {{LLVM Project}},
+  title        = {{LLVM} Language Reference},
+  year         = {2024},
+  url          = {https://llvm.org/docs/LangRef.html},
+}
+
+@online{coq2023,
+  author       = {{The Coq Team}},
+  title        = {The {Coq} Proof Assistant},
+  year         = {2023},
+  url          = {https://coq.inria.fr/},
+}
+
+@online{rust-twophase,
+  author       = {{The Rust Team}},
+  title        = {{Rust} Compiler Development Guide: Two-Phase Borrows},
+  year         = {2020},
+  url          = {https://rustc-dev-guide.rust-lang.org/borrow_check/two_phase_borrows.html},
+}
+
+@misc{villani2025artifact,
+  author       = {Neven Villani and Johannes Hostert and Derek Dreyer and Ralf Jung},
+  title        = {Tree Borrows -- Artifact},
+  year         = {2025},
+  doi          = {10.5281/zenodo.15002703},
+  url          = {https://plf.inf.ethz.ch/research/pldi25-tree-borrows.html},
+}
+
+@article{zakowski2021modular,
+  author       = {Yannick Zakowski and Calvin Beck and Irene Yoon and Ilia Zaichuk and Vadim Zaliva and Steve Zdancewic},
+  title        = {Modular, Compositional, and Executable Formal Semantics for {LLVM IR}},
+  journal      = {Proc. ACM Program. Lang.},
+  volume       = {5},
+  number       = {ICFP},
+  pages        = {1--30},
+  year         = {2021},
+  doi          = {10.1145/3473572},
+}
