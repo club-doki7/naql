@@ -103,7 +103,7 @@
 
 #small[遗憾的是，我见过很多大学课程教授流于形式的 `private` 和 getter/setter 方法，却不讲论其中缘由。]
 
-尽管如此，激进地隐藏信息会增加不必要的样板代码，并且可能引发#link("https://en.wikipedia.org/wiki/Abstraction_inversion")[#tm_fst("抽象倒置", "abstraction inversion")]。另一种批评则来自函数式程序员，他们认为若数据#tm_fst("不可变", "immutable")，则无须维护不变式，进而也就不需要隐藏太多信息#footnote[译注：此观点有待商榷。即使数据不可变，在构造和操作时依然需要校验并维护逻辑上的不变式。]。而从某种意义上说，面向对象恰恰是在鼓励人们编写必须维护其不变式的可变对象。
+尽管如此，激进地隐藏信息会增加不必要的样板代码，并且可能引发#link("https://en.wikipedia.org/wiki/Abstraction_inversion")[#tm_fst("抽象倒置", "abstraction inversion")]。另一种批评则来自函数式开发者，他们认为若数据#tm_fst("不可变", "immutable")，则无须维护不变式，进而也就不需要隐藏太多信息#footnote[译注：此观点有待商榷。即使数据不可变，在构造和操作时依然需要校验并维护逻辑上的不变式。]。而从某种意义上说，面向对象恰恰是在鼓励人们编写必须维护其不变式的可变对象。
 
 #small[不过，若语言对不可变数据支持不佳，“隐藏数据、仅暴露 getter 方法”确实是让对象不可变的一种方式。]
 
@@ -235,7 +235,7 @@ struct BaseClass {
 
 继承还有一些其他问题。首先，使用继承几乎肯定意味着要承担动态分派和堆分配带来的性能开销。在某些语言——例如 C++——中，继承可以在没有动态分派和堆分配的情况下使用，并且也存在一些合理的用例（例如用 #link("https://en.wikipedia.org/wiki/Curiously_recurring_template_pattern")[#tm[CRTP]] 实现代码复用）。但继承的主流用途确是运行时多态（因此也依赖动态分派）。
 
-其次，继承以一种不够严谨#footnote[译注：此处原作“unsound”，直译为“不健全”。严格来说，继承实现的子类型在类型系统层面是#tm_fst("健全", "sound") 的，只是语言无法在类型层面保证里氏替换原则这一语义性质。故依译者个人判断意译。]的方式实现了子类型，#link("https://en.wikipedia.org/wiki/Liskov_substitution_principle")[里氏替换原则 (Liskov substitution principle)] 的执行全靠程序员自觉#footnote[译注：当然，Rust 的萃型、Go/TypeScript 的接口乃至 Haskell 的类型类在这方面也是一样的，契约的执行事实上也全靠程序员自觉。结构子类型还存在微妙的名义性问题，使用不当则容易引出许多的危险。]。
+其次，继承以一种不够严谨#footnote[译注：此处原作“unsound”，直译为“不健全”。严格来说，继承实现的子类型在类型系统层面是#tm_fst("健全", "sound") 的，只是语言无法在类型层面保证里氏替换原则这一语义性质。故依译者个人判断意译。]的方式实现了子类型，#link("https://en.wikipedia.org/wiki/Liskov_substitution_principle")[里氏替换原则 (Liskov substitution principle)] 的执行全靠程序设计者自觉#footnote[译注：当然，Rust 的萃型、Go/TypeScript 的接口乃至 Haskell 的类型类在这方面也是一样的，契约的执行事实上也全靠程序设计者自觉。结构子类型还存在微妙的名义性问题，使用不当则容易引出许多的危险。]。
 
 最后，继承结构是刚性的，会受到#tm_fst("对角线问题", "diagonal problem")#footnote[译注：译者未能找到这个词汇的确切定义和出处，推测它 #byzantine(1) 可能是拼错了菱形 (diamond) 继承问题；#byzantine(2) 可能是指#tm_fst("表达式问题", "expression problem")；#byzantine(3) 可能是指多维正交分类问题。] 等问题的困扰。这些不灵活之处正是“组合优于继承”这一设计理念流行的重要原因之一。#link("https://gameprogrammingpatterns.com/component.html")[《游戏编程模式》中的“组件模式”一章]给出了一个很好的例子。
 
@@ -253,7 +253,7 @@ struct BaseClass {
 
 面向对象语言通常通过继承来支持子类型。但请注意，继承并不总是对子类型关系的建模，也不是子类型关系的唯一形式。许多非面向对象语言中的接口/萃型等结构都支持子类型。而且除了显式声明子类型关系的#tm_fst("名义子类型", "nominal subtyping") 之外，还有#tm_fst("结构子类型", "structural subtyping")：若一个类型 S 包含了另一个类型 T 的全部特性，则 S 就隐式地成为了 T 的子类型。OCaml 中的#link("https://dev.realworldocaml.org/objects.html")[对象]和多态变体、TypeScript 中的 `interface` 都是结构子类型的优秀案例。子类型还体现在各种细微之处，例如 Rust 的#tm_fst("生存期", "lifetime")#footnote[译注：允许将长生存期类型当作短生存期类型使用。]、TypeScript 的可空性#footnote[译注：允许将不可空类型当作可空类型使用。]以及依值类型语言中的类型宇宙层级#footnote[译注：允许将低层宇宙的类型当作高层宇宙的类型使用；这个例子是译者自己加的。]。
 
-#link("https://en.wikipedia.org/wiki/Type_variance")[#tm_fst("型变", "variance，包括协变 covariance 和逆变 contravariance")]#footnote[和#tm[不变式]无关。] 是与子类型相关的重要概念之一，它连接了参数化多态和子类型。解释这一概念需要一整篇文章，故此处不再赘述#footnote[译注：不过译者碰巧找到了一篇#link("https://zhuanlan.zhihu.com/p/2008169926100284358")[极好的文章]。]。型变极大地提高了子类型的易用性（例如，如果 C++ 指针不是协变的，它们就无法多态地使用了），但大多数语言都只实现了有限的、硬编码的型变规则，因其难以理解且容易出错。特别地，#tm_fst("可变数据类型", "mutable data type") 通常应该是#tm_fst("无型变", "invariance / invariant")#footnote[译注：也和#tm[不变式]/#tm[不可变数据]无关。] 的，而 Java/C#sym.sharp 的协变数组类型就是典型的反面教材。只有少数语言允许程序员显式控制型变，如#link("https://docs.scala-lang.org/tour/variances.html")[Scala] 和 #link("https://kotlinlang.org/docs/generics.html")[Kotlin]。
+#link("https://en.wikipedia.org/wiki/Type_variance")[#tm_fst("型变", "variance，包括协变 covariance 和逆变 contravariance")]#footnote[和#tm[不变式]无关。] 是与子类型相关的重要概念之一，它连接了参数化多态和子类型。解释这一概念需要一整篇文章，故此处不再赘述#footnote[译注：不过译者碰巧找到了一篇#link("https://zhuanlan.zhihu.com/p/2008169926100284358")[极好的文章]。]。型变极大地提高了子类型的易用性（例如，如果 C++ 指针不是协变的，它们就无法多态地使用了），但大多数语言都只实现了有限的、硬编码的型变规则，因其难以理解且容易出错。特别地，#tm_fst("可变数据类型", "mutable data type") 通常应该是#tm_fst("无型变", "invariance / invariant")#footnote[译注：也和#tm[不变式]/#tm[不可变数据]无关。] 的，而 Java/C#sym.sharp 的协变数组类型就是典型的反面教材。只有少数语言允许程序设计者显式控制型变，如#link("https://docs.scala-lang.org/tour/variances.html")[Scala] 和 #link("https://kotlinlang.org/docs/generics.html")[Kotlin]。
 
 经由子类型关系的类型转换通常是隐式的。虽说隐式转换声名狼藉，但从子类型隐式转换到超类型确实符合人体工程学，并且可能是最合乎情理的隐式转换。子类型也可看作隐式转换的对偶：隐式转换可被用于“仿造”子类型关系。例如，C++ 模板是#tm[不变]的，但 `std::unique_ptr` 却允许从 `std::unique_ptr<Derived>` 隐式转换到 `std::unique_ptr<Base>`，从而实现了协变的效果。#link("https://journal.stuffwithstuff.com/2023/10/19/does-go-have-subtyping/")[《Go 有子类型吗？》]这篇文章很好地进一步探讨了这一思想。
 
