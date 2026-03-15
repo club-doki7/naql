@@ -44,6 +44,8 @@
     if target() == "html" { it.body } else { it }
   }
 
+  show footnote.entry: set text(font: zh-fonts)
+
   context {
     let header-and-body = {
       if target() == "html" {
@@ -98,6 +100,14 @@
 #let tm_lnk(zh, xpln, url, skip_paren: false) = link(url, tm_fst(zh, xpln, skip_paren: skip_paren))
 
 #let tm(zh) = context {
+  if target() == "html" {
+    emph[#zh]
+  } else {
+    text(font: tm-fonts, style: "italic")[#zh]
+  }
+}
+
+#let stress(text) = context {
   if target() == "html" {
     emph[#zh]
   } else {
