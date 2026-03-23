@@ -107,11 +107,19 @@
   }
 }
 
-#let stress(text) = context {
+#let stress(t) = context {
   if target() == "html" {
-    emph[#zh]
+    emph[#t]
   } else {
-    text(font: tm-fonts, style: "italic")[#zh]
+    text(font: tm-fonts, style: "italic")[#t]
+  }
+}
+
+#let fangsong(t) = context {
+  if target() == "html" {
+    emph[#t]
+  } else {
+    text(font: tm-fonts, style: "italic")[#t]
   }
 }
 
