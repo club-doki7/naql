@@ -1,5 +1,6 @@
 #let al-ghazali = "al-Ghazali"
-#let ihya = emph[Ihya Ulum-ud-Dir]
+#let ihya = emph[Ihya]
+#let ihya-full = emph[Ihya Ulum-ud-Din]
 #let rors = emph[The Revival of the Religious Sciences]
 
 #let pbuh = "ﷺ"
