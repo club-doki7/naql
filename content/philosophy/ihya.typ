@@ -1,14 +1,18 @@
 #import "./termlib.typ": *
 
+#set page(numbering: "1", paper: "a5")
+
 = About the book
 
 The book is the English version of Imam #al-ghazali's #ihya-full. It deals with worship and divine service.
 
-Imam Abu-Hamid al-Ghazali is unquestionably the greatest theologian of Islam and one of its noblest and most original thinkers. He was born in 1058 AD at Tus, where he died in 1111. He reproduced in his religious experience all the spiritual phase developed by Islam.
+Imam Abu-Hamid al-Ghazali is unquestionably the greatest theologian#footnote[theologian: 神学家] of Islam and one of its noblest and most original thinkers. He was born in 1058 AD at Tus, where he died in 1111. He reproduced in his religious experience all the spiritual phase developed by Islam.
 
-Starting his religious life as orthodox, #al-ghazali soon turned Sufi, and when still under twenty he had broken with all the past. In 1091 he was appointed lecturer at Nizamiyah in Baghdad, where he became a sceptic. Four years later he returned to Sufism after a terrific spiritual struggle that left him in a physical wreck. Intellectualism had failed him. As a dervish he roamed from place to place enjoying the peace of soul and acquiescence of mind. After about twenty years of retirement in various places, including two years of retreat in Syria and a holy pilgrimage, he returned to Baghdad to preach and teach. There he composed his masterpiece #ihya-full (#rors).
+Starting his religious life as orthodox, #al-ghazali soon turned Sufi, and when still under twenty he had broken with all the past. In 1091 he was appointed lecturer at Nizamiyah in Baghdad, where he became a sceptic#footnote[sceptic: 怀疑论者]. Four years later he returned to Sufism after a terrific spiritual struggle that left him in a physical wreck. Intellectualism had failed him. As a dervish#footnote[dervish: 托钵僧] he roamed from place to place enjoying the peace of soul and acquiescence#footnote[acquiescence: 默认 / 默许] of mind. After about twenty years of retirement in various places, including two years of retreat in Syria and a holy pilgrimage#footnote[pilgrimage: 朝圣], he returned to Baghdad to preach#footnote[preach: 传道] and teach. There he composed his masterpiece #ihya-full (#rors).
 
-The mysticism of this work vitalized the law its orthodoxy leavened the doctrine of Islam. In it and such other work of his as #emph[Fatihat-al-Ulum], #emph[Tahafut-al-Falasifah], #emph[Iqtisad fi-al-Itiqad], orthodox speculation reached its culminating point.
+The mysticism of this work vitalized the law its orthodoxy leavened the doctrine#footnote[doctrine: 教义] of Islam. In it and such other work of his as #emph[Fatihat-al-Ulum], #emph[Tahafut-al-Falasifah], #emph[Iqtisad fi-al-Itiqad], orthodox speculation reached its culminating point.
+
+#colbreak()
 
 = The book of worship
 
@@ -21,3 +25,11 @@ As the great Imam belonged originally to the Shafeyi Sunni sect, some of the rel
 True it is that there are many weak traditions in this book, but at the same time it should be remembered that the authors of six authentic traditional books specially Bukhari and Muslim selected some few thousand traditions as most of them were not proved to have been found trustworthy narrators from the #prophet down to the narrator or did not meet with all the rules laid down for an authentic tradition. For want of proof, many guilty persons are acquitted. For that, it cannot be said that all acquitted persons are innocent. So in this perspective, the traditions in the #ihya should be regarded. Had Imam #al-ghazali not found them trustworthy, he would not have incorporated them in his book.
 
 The present translation is an attempt to bring out a complete translation of #ihya in English in four Books. The first book deals with worship and divine service, the second book with worldly usages, the third book with destructive evils and the fourth book with constructive virtues. #ihya in original is a book in Arabic comprising four parts and its abridged addition in Persian was termed by the author himself as "Kimiyae Sa'adat" or the Touchstone of fortune. Unnecessary arguments of different sects prevalent nearly one thousand years ago, some matters not need at the present time and some sayings of some sages of less reputation have been omitted in the present English version. The book has been, however, translated in Bengali in full by the author himself without omission.
+
+== Short life of Imam #al-ghazali
+
+Imam #al-ghazali was born in 450AH (1058AD) in the village Taberan in the distinct of Taus in Persia and his name is Abu Hamid Muhammad. His title is Jujjatul Islam or Proof of Islam and his dynastic title is #al-ghazali. His father was not a famous person but his grand father was one of the leading men of that age. His father died while he was young leaving him under the care of his mother and grand father. #al-ghazali is said to be the name of the village in the distinct of Taus in the province of Khorasan in Persia. According to Maulana Shibli Nomani, his ancestors had the business of weaving (Ghazal) and therefore he retained his family title #al-ghazali (weaver).
+
+*His education:* At the time of the death of #al-ghazali's father, he entrusted the education of his two sons Muhammad and Ahmad to one of his trusted friends. The latter imparted to them primary education and then sent them to a private Maktab. The boys within a short time comitted the whole Quran to memory and after that began to learn Arabic.
+
+They were then admitted in a free Madrasha.
