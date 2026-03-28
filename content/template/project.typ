@@ -3,6 +3,7 @@
 
 #let en-fonts = ("Libertinus Serif",)
 #let zh-fonts = ("Libertinus Serif", "Noto Serif", "Noto Serif SC", "Noto Serif CJK SC")
+#let sans-fonts = ("Libertinus Sans", "Noto Sans", "Noto Sans SC", "Noto Sans CJK SC")
 #let math-fonts = ("Libertinus Math", "Zhuque Fangsong (technical preview)")
 #let monospace-fonts = ("LXGW Bright Code",)
 #let tm-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
@@ -120,6 +121,14 @@
     emph[#t]
   } else {
     text(font: tm-fonts, style: "italic")[#t]
+  }
+}
+
+#let sans(t) = context {
+  if target() == "html" {
+    t
+  } else {
+    text(font: sans-fonts)[#t]
   }
 }
 
