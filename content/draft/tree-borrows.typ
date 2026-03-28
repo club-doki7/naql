@@ -1,3 +1,5 @@
+#import "@preview/cetz:0.4.2"
+
 #import "../template/project.typ": *
 #import "../symlib.typ": *
 
@@ -139,3 +141,192 @@ Rust 编译器的开发者确是希望支持别名优化的，这就需要某种
 
 == 记录别名
 
+树形借用模型的核心思想正如其名：引用被组织成一个树形结构。例如，考虑这个例子：
+
+#figure(grid(
+  columns: 2,
+  gutter: 2em,
+  align: horizon,
+  [
+```rust
+let mut root = 42;
+let ref1 = &mut root;
+let ref2 = &mut *ref1;
+let ref3 = &mut root;
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    let node(pos, name, label) = {
+      content(
+        pos,
+        box(
+          inset: (x: 8pt, y: 4pt),
+          stroke: 1pt + black,
+          radius: 4pt,
+          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+        ),
+        name: name,
+      )
+    }
+
+    node((3, 3), "root", "root")
+    node((1.5, 2), "ref1", "ref1")
+    node((4.5, 2), "ref3", "ref3")
+    node((1.5, 0.75), "ref2", "ref2")
+
+    line("root.south", "ref1.north")
+    line("root.south", "ref3.north")
+    line("ref1.south", "ref2.north")
+  })
+), caption: "例 5")
+
+例子中有一个局部变量 `root` 和几个或直接或间接地派生自该变量的引用。右边的树状图展示了树形借用模型如何表示这些引用与局部变量之间的关系。每个新创建的引用都与树上的一个新节点关联，并作为一个子节点插入，其父级是用于创建该引用的节点。因此，引用不仅仅是内存中的一个位置；相反，它是由一个位置和一个标识符所构成的二元组来定义的，该标识符确定了其在树中对应的节点。我们将这一标识符称为引用的“标签”。
+
+*访问的效应* #h(1em) 每当内存访问发生时，树形借用模型会将这次访问“通知”给所有引用。每个引用——也就是树上的每个节点——记录一个状态机，该状态机定义了引用应对该访问作出何种“反应”：访问要么被批准（可能会改变状态机的状态），要么被拒绝——也就是程序包含未定义行为。
+
+#let t-acc = $t_italic("acc")$
+#let t-sm = $t_italic("sm")$
+
+#let local-read = text(fill: rgb("#0000ff"), "↓R")
+#let local-write = text(fill: rgb("#0000ff"), "↓W")
+#let foreign-read = text(fill: rgb("#cd0000"), "↑R")
+#let foreign-write = text(fill: rgb("#cd0000"), "↑W")
+
+状态机的状态转移由两个因素决定：一是访问操作是读操作还是写操作；二是作出“反应”的引用与用于此次访问的引用之间是何关系。特别地，我们区分#tm_fst("局部访问", "local accesses") 和#tm_fst("外部访问", "foreign accesses")。在访问标签 #t-acc 之后、计算标签为 #t-sm 的节点的状态机转换时，若 #t-acc “派生自” #t-sm——即 #t-acc 是 #t-sm 自身或其子节点，则称该访问时对 #t-sm 的局部访问；若 #t-acc 是 #t-sm 的父节点或兄弟节点，则称该访问为外部访问。例如，在上面的例 5 中，设 #t-sm = `ref1`，则对 `ref1` 和 `ref2` 的访问就是局部访问，而对 `ref3` 或 `root` 的访问就是外部访问。总的来说，状态机的字母表被定义为 { 局部读 (#local-read)，局部写 (#local-write)，外部读 (#foreign-read)，外部写 (#foreign-write) }。
+
+#let p-unique = sans[Unique]
+#let p-disabled = sans[Disabled]
+#let p-reserved = sans[Reserved]
+#let p-frozen = sans[Frozen]
+#let p-reserved-im = sans[Reserved IM]
+#let p-disabled = sans[Disabled]
+
+#figure(cetz.canvas({
+    import cetz.draw: *
+
+    // ------------------------------------
+    // 1. 定义所有节点 (Nodes)
+    // ------------------------------------
+    content((-3, 1.2), `&mut T`, name: "mutT")
+    content((0, 0), p-reserved, name: "res")
+    content((3, 0), p-unique, name: "uniq")
+    content((6, 0), p-frozen, name: "froz")
+    content((9.1, 0), text(size: 1.5em)[↯], name: "ub")
+
+    content((1.5, 1.2), `root`, name: "root")
+    content((4.5, 1.2), `&T`, name: "refT")
+
+    content((-3, -1.5), `&mut Cell<T>`, name: "mutCell")
+    content((0, -1.5), p-reserved-im, name: "resIM")
+    content((8.0, -0.8), p-disabled, name: "dis")
+
+    // ------------------------------------
+    // 2. 定义自环 (Self loops)
+    // ------------------------------------
+    // Reserved 顶部自环
+    bezier((-0.15, 0.25), (0.15, 0.25), (-0.5, 0.8), (0.5, 0.8), mark: (end: ")>"), stroke: 0.5pt)
+    content((0, 0.95), [#local-read, #foreign-read])
+
+    // Unique 顶部自环
+    bezier((2.85, 0.25), (3.15, 0.25), (2.5, 0.8), (3.5, 0.8), mark: (end: ")>"), stroke: 0.5pt)
+    content((3, 0.95),[#local-read, #local-write])
+
+    // Frozen 顶部自环
+    bezier((5.85, 0.25), (6.15, 0.25), (5.5, 0.8), (6.5, 0.8), mark: (end: ")>"), stroke: 0.5pt)
+    content((6, 0.95), [#local-read, #foreign-read])
+
+    // Reserved IM 底部自环
+    bezier((-0.15, -1.75), (0.15, -1.75), (-0.5, -2.3), (0.5, -2.3), mark: (end: ")>"), stroke: 0.5pt)
+    content((0, -2.5), [#local-read, #foreign-read, #foreign-write])
+
+    // Disabled 底部自环
+    bezier((7.35, -1.05), (7.65, -1.05), (7.0, -1.6), (8.0, -1.6), mark: (end: ")>"), stroke: 0.5pt)
+    content((7.5, -1.8),[#foreign-read, #foreign-write])
+
+    // ------------------------------------
+    // 3. 虚线边 (Dashed Edges)
+    // ------------------------------------
+    line("mutT.east", "res.north-west", mark: (end: ")>"), stroke: (thickness: 0.5pt, dash: "dashed"))
+    line("root.south", "uniq.north-west", mark: (end: ")>"), stroke: (thickness: 0.5pt, dash: "dashed"))
+    line("refT.south", "froz.north-west", mark: (end: ")>"), stroke: (thickness: 0.5pt, dash: "dashed"))
+    line("mutCell.east", "resIM.west", mark: (end: ")>"), stroke: (thickness: 0.5pt, dash: "dashed"))
+
+    // ------------------------------------
+    // 4. 水平主线边 (Main horizontal edges)
+    // ------------------------------------
+    line("res.east", "uniq.west", mark: (end: ")>"), stroke: 0.5pt)
+    content((1.5, 0.25), local-write)
+
+    line("uniq.east", "froz.west", mark: (end: ")>"), stroke: 0.5pt)
+    content((4.5, 0.25), foreign-read)
+
+    line("froz.east", "ub.west", mark: (end: ")>"), stroke: 0.5pt)
+    content((7.25, 0.25), local-write)
+
+    // ------------------------------------
+    // 5. 底部总线边 (Bus edges connecting to Disabled)
+    // 使用 "|-" 进行正交交点计算以实现完美的垂直向下转折
+    // ------------------------------------
+    line("res.south", ("res.south", "|-", (0, -0.8)), "dis.west", mark: (end: ")>"), radius: 3pt, stroke: 0.5pt)
+    content((0.35, -0.4), foreign-write)
+
+    line("uniq.south-east", ("uniq.south-east", "|-", (0, -0.8)), "dis.west", radius: 3pt, stroke: 0.5pt)
+    content((4, -0.4), foreign-write)
+
+    line("froz.south-east", ("froz.south-east", "|-", (0, -0.8)), "dis.west", radius: 3pt, stroke: 0.5pt)
+    content((7, -0.4), foreign-write)
+
+    // ------------------------------------
+    // 6. 曲线边 (Curved Edges)
+    // ------------------------------------
+    // Reserved IM 到 Unique 底部 (避开前面的垂直线)
+    bezier("resIM.east", "uniq.south-west", (1.5, -1.5), (2.5, -0.5), mark: (end: ")>"), stroke: 0.5pt)
+    content((1.5, -1.8), local-write)
+
+    // Disabled 到 UB (闪电图标) 的弧线
+    bezier("dis.east", "ub.south", (9.2, -0.8), (9.2, -0.4), mark: (end: ")>"), stroke: 0.5pt)
+    content((9.85, -0.5), [#local-read, #local-write])
+  }), caption: "图 1")
+
+== 可变引用的生存期
+
+现在我们开始逐步定义这个状态机，状态机的完整版本已由图 1 给出。状态机的大部分内容都可通过探讨可变引用来理解。因此，我们从一个简化的可变引用模型开始，随后对其进行扩展，直至该模型能够接受所有安全代码，并允许我们所需的优化。
+
+*可变引用的朴素模型* #h(1em) 为了从如何处理可变引用中汲取灵感，我们首先将目光投向 Rust 编译器中负责确保引用正确使用的组件——借用检查器（borrow checker）。让我们从一个非常简单的示例开始：
+
+#figure(grid(
+  columns: 2,
+  gutter: 2em,
+  align: horizon,
+  [
+```rust
+let mut root = 42;
+let x = &mut root;
+*x += 1;
+root = 0;
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    let node(pos, name, label) = {
+      content(
+        pos,
+        box(
+          inset: (x: 8pt, y: 4pt),
+          stroke: 1pt + black,
+          radius: 4pt,
+          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+        ),
+        name: name,
+      )
+    }
+
+    node((3, 3), "root", "root")
+    node((3, 2), "x", "x")
+
+    line("root.south", "x.north")
+  })
+), caption: "例 6")
+
+这里，可变引用 `x` 由表达式 `&mut root` 创建，故 `x` 是 `root` 的子级。借用检查器将决定 `x` 的生存期始于 `&mut root`，且无法在 `root = 0` 之后延续——那时，父级引用将重新取得所有权，这必然会导致 `x` 被终止。这一期望的行为可以很容易地用我们的权限和局部/外部访问框架表达：我们使用两个权限 #p-unique 和 #p-disabled 表示可变引用的生死。可变引用在一开始被赋予权限 #p-unique，且只要其权限是 #p-unique，它就能容许任意的局部访问。而当外部访问发生，也就意味着父级引用收回了指涉物的所有权，故权限应转移至 #p-disabled，从此刻开始，任何对 `x` 的局部访问都会触发未定义行为。
