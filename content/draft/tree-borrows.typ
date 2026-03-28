@@ -287,7 +287,7 @@ let ref3 = &mut root;
     // Disabled 到 UB (闪电图标) 的弧线
     bezier("dis.east", "ub.south", (9.2, -0.8), (9.2, -0.4), mark: (end: ")>"), stroke: 0.5pt)
     content((9.85, -0.5), [#local-read, #local-write])
-  }), caption: "图 1")
+  }), caption: align(left)[图 1 #h(0.5em) 权限的默认状态机，可变引用入口点由 `&mut T` 标记。抵达状态 ↯ 表明程序包含未定义行为。转移箭头上的标签代表导致该转移的事件：读 (#sans[R]) 或写 (#sans[W])，#text(fill: rgb("#cd0000"), "↑外部")或#text(fill: rgb("#0000ff"), "↓局部")。])
 
 == 可变引用的生存期
 
