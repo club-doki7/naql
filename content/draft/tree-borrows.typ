@@ -140,7 +140,7 @@ Rust 编译器的开发者确是希望支持别名优化的，这就需要某种
   content(
     pos,
     box(
-      inset: (x: 8pt, y: 4pt),
+      inset: (x: 6pt, y: 4pt),
       stroke: 1pt + black,
       radius: 4pt,
       text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
