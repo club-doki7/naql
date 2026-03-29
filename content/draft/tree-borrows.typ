@@ -192,7 +192,7 @@ let ref3 = &mut root;
 #let foreign-read = text(fill: rgb("#cd0000"), "↑R")
 #let foreign-write = text(fill: rgb("#cd0000"), "↑W")
 
-状态机的状态转移由两个因素决定：一是访问操作是读操作还是写操作；二是作出“反应”的引用与用于此次访问的引用之间是何关系。特别地，我们区分#tm_fst("局部访问", "local accesses") 和#tm_fst("外部访问", "foreign accesses")。在访问标签 #t-acc 之后、计算标签 #t-sm 的状态机转换时，若 #t-acc “派生自” #t-sm——即 #t-acc 是 #t-sm 自身或其子节点，则称该访问时对 #t-sm 的局部访问；若 #t-acc 是 #t-sm 的父节点或兄弟节点，则称该访问为外部访问。例如，在上面的例 5 中，设 #t-sm = `ref1`，则对 `ref1` 和 `ref2` 的访问就是局部访问，而对 `ref3` 或 `root` 的访问就是外部访问。总的来说，状态机的字母表被定义为 #linebreak() { 局部读 (#local-read)，局部写 (#local-write)，外部读 (#foreign-read)，外部写 (#foreign-write) }。
+状态机的状态转移由两个因素决定：一是访问操作是读操作还是写操作；二是作出“反应”的引用与用于此次访问的引用之间是何关系。特别地，我们区分#tm_fst("局部访问", "local accesses") 和#tm_fst("外部访问", "foreign accesses")。在访问标签 #t-acc 之后、计算标签 #t-sm 的状态机转换时，若 #t-acc “派生自” #t-sm——即 #t-acc 是 #t-sm 自身或其子节点，则称该访问时对 #t-sm 的局部访问；若 #t-acc 是 #t-sm 的父节点或#tm_fst("旁系", "cousin") 节点，则称该访问为外部访问。例如，在上面的例 5 中，设 #t-sm = `ref1`，则对 `ref1` 和 `ref2` 的访问就是局部访问，而对 `ref3` 或 `root` 的访问就是外部访问。总的来说，状态机的字母表被定义为 #linebreak() { 局部读 (#local-read)，局部写 (#local-write)，外部读 (#foreign-read)，外部写 (#foreign-write) }。
 
 #let p-unique = sans[Unique]
 #let p-disabled = sans[Disabled]
@@ -286,7 +286,7 @@ let ref3 = &mut root;
     // Disabled 到 UB (闪电图标) 的弧线
     bezier("dis.east", "ub.south", (9.2, -0.8), (9.2, -0.4), mark: (end: ")>"), stroke: 0.5pt)
     content((9.85, -0.5), [#local-read, #local-write])
-  }), caption: align(left)[图 1 #h(0.5em) 权限的默认状态机，可变引用入口点由 `&mut T` 标记。抵达状态 ↯ 表明程序包含未定义行为。转移箭头上的标签代表导致该转移的事件：读 (#sans[R]) 或写 (#sans[W])，#text(fill: rgb("#cd0000"), "↑外部")或#text(fill: rgb("#0000ff"), "↓局部")。])
+  }), caption: align(left)[图 1 #h(0.5em) 权限的默认状态机，可变引用入口点由 `&mut T` 标记。抵达状态 ↯ 表明程序包含未定义行为。转移箭头上的标记代表导致该转移的事件：读 (#sans[R]) 或写 (#sans[W])，#text(fill: rgb("#cd0000"), "↑外部")或#text(fill: rgb("#0000ff"), "↓局部")。])
 
 == 可变引用的生存期
 
@@ -372,7 +372,7 @@ let val = *x;
   })
 ), caption: "例 7")
 
-我们记录 `x` 与 `y` 的状态：它们皆由 `&mut *ptr` 创建，也就是说它们是从 `root` 间接派生的可变引用。引用 `y` 是 `x` 的兄弟，因此经由 `y` 的访问以 `x` 观之就是一次外部访问，反之亦然。执行 `*x = 13` 会引发一次对 `x` 的局部写入（使其变为 #p-unique）和一次 `y` 的外部写入（使其变为 #p-disabled）。接着，`*y = 20` 是一次对 #p-disabled 节点的局部写入，而这是未定义行为，正如预期。
+我们记录 `x` 与 `y` 的状态：它们皆由 `&mut *ptr` 创建，也就是说它们是从 `root` 间接派生的可变引用。引用 `y` 是 `x` 的旁系，因此经由 `y` 的访问以 `x` 观之就是一次外部访问，反之亦然。执行 `*x = 13` 会引发一次对 `x` 的局部写入（使其变为 #p-unique）和一次 `y` 的外部写入（使其变为 #p-disabled）。接着，`*y = 20` 是一次对 #p-disabled 节点的局部写入，而这是未定义行为，正如预期。
 
 综上所述，我们的模型在此处（以及例 1 中）成功地排除了 `x` 与 `y` 之间的别名。尽管对于一个如此简单的模型而言，这一结果颇具前景，但事实将证明仅凭 #p-unique 和 #p-disabled 两种属性仍有力不能及之处。接下来，我们将展示前述模型应予完善的两种方式。
 
@@ -426,10 +426,185 @@ Vec::push(v_for_push, len);
 
 这表明，在发生外部读取时，#p-unique 引用不应立即丧失读取能力，仅应失去写入能力。为此，我们引入一个新的权限，称之为 #p-frozen。这一新权限被作为 #p-unique 和 #p-disabled 的中间环节加入，当 #p-unique 引用遇到外部读取时，即进入此状态；当 #p-frozen 遇到外部写入时，即离开此状态。#p-frozen 状态允许任意的局部和外部读取。现在，两种顺序——先读取 `root` 再读取 `x` 和先读取 `x` 后读取 `root`——会产生相同的状态，因为 `x` 的状态是 #p-frozen，且仍容许读取操作。通过引入 #p-frozen 状态，我们使得读-读重排序重新成为可能。这构成了一个罕见的特例：减少未定义行为反而能带来更多的优化！
 
-*处理内存范围* #h(1em) 目前为止，我们一直假定每个引用只有一个状态。若仅考虑内存中的单一位置，这一假设便是正确的。为支持多个位置，我们使用类似于 CompCert 的内存模型 @leroy2012compcert @leroy2008formal：内存被组织为一系列连续的分配块，每个分配块均由一定数量的字节组成。一个内存位置是一个元组 $(a, o)$，其中 $a$ 用于标识具体的分配块，$o$ 是块中的偏移量。因此，一个引用由三个部分 $((a, o), t)$ 组成，其中额外包含了标签 $t$。树形借用机制会为每一个分配块维护一颗标签树。此外，针对每一个内存位置，都存在一个独立的状态机实例；换言之，同一个标签在同一分配块内的不同偏移量处，可能处于不同的状态。当一次内存访问操作涉及多个位置时（例如，一次 4 字节的加载操作会读取 4 个不同的位置），我们会针对该分配块标签树中的所有标签，为每一个受影响的位置独立地更新其对应的状态机。如果任一状态机转入未定义行为状态，则整个内存操作即被判定为未定义行为。
+*处理内存范围* #h(1em) 目前为止，我们一直假定每个引用只有一个状态。若仅考虑内存中的单一位置，这一假设便是正确的。为支持多个位置，我们使用类似于 CompCert 的内存模型 @leroy2012compcert @leroy2008formal：内存被组织为一系列连续的#tm_fst("分配块", "allocation")，每个分配块均由一定数量的字节组成。一个内存位置是一个元组 $(a, o)$，其中 $a$ 用于标识具体的分配块，$o$ 是块中的偏移量。因此，一个引用由三个部分 $((a, o), t)$ 组成，其中额外包含了标签 $t$。树形借用机制会为每一个分配块维护一颗标签树。此外，针对每一个内存位置，都存在一个独立的状态机实例；换言之，同一个标签在同一分配块内的不同偏移量处，可能处于不同的状态。当一次内存访问操作涉及多个位置时（例如，一次 4 字节的加载操作会读取 4 个不同的位置），我们会针对该分配块标签树中的所有标签，为每一个受影响的位置独立地更新其对应的状态机。如果任一状态机转入未定义行为状态，则整个内存操作即被判定为未定义行为。
 
 == 可变引用之外
 
 目前为止我们只考虑了可变引用。但 Rust 还有更多类指针类型：#tm[共享引用]是可变引用的对偶，它们允许别名，但不允许修改。#tm[原始指针]是 Rust 中的非安全指针构造，不能在安全 Rust 中使用，但允许任意别名。在本节中我们将展示当前的模型能轻松地兼顾这两方面，毋须引入任何新权限。
+
+*共享引用* #h(1em) 共享引用可与其他共享引用（以及处于保留阶段的可变引用）任意别名，并允许读取访问，但只要它们还处于活跃状态，就不允许写入访问。因此在我们的状态机中，表示共享引用的权限必须允许局部和外部读取，并在尝试局部写入时触发未定义行为。而发生外部写入时，权限应变为 #p-disabled。看啊：这确是 #p-frozen 状态所作的！因此，#p-frozen 除了是可变引用在其生存期即将结束时的临时权限之外，也是共享引用的初始权限。这也给了可变引用从 #p-unique 到 #p-frozen 的转移一个新的解释：当一个可变引用不再能维持其唯一性，它就降格成了共享引用。
+
+*原始指针* #h(1em) 原始指针是 Rust 中最宽松的指针类型，仅在执行引用无法支持的低级操作时使用。指向同一位置的多个原始指针可以同时存在并互为别名，且均可有写入权限。只要原始指针尊重其父级引用的生存期和可变性限制，就很少有它们做不了的事。
+
+在树形借用模型中，原始指针的创建是#tm[无操作]的：原始指针不会被分配一个新的标签，因此它们必须继承创建它们所用的引用的标签。也就是说，如果从同一个引用创建多个原始指针，经由它们进行的访问可以任意交错——别名模型认为它们都来自“同一来源”，即它们所派生的引用。当引用的生存期结束（即权限变为 #p-disabled 时），所有原始指针也会失效。
+
+#figure(grid(
+  columns: 2,
+  gutter: 2em,
+  align: horizon,
+  [
+```rust
+let mut root = 42;
+let ref1 = &mut root;
+let ptr1 = ref1 as *mut i32;
+unsafe {
+    *ref1 = 43;
+    *ptr1 = 44;
+    *ref1 = 45;
+}
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    let node(pos, name, label) = {
+      content(
+        pos,
+        box(
+          inset: (x: 8pt, y: 4pt),
+          stroke: 1pt + black,
+          radius: 4pt,
+          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+        ),
+        name: name,
+      )
+    }
+
+    node((3, 3), "root", "root")
+    node((3, 2), "refptr", "ref1, ptr1")
+
+    line("root.south", "refptr.north")
+  })
+), caption: "例 9")
+
+在这段代码中，以树形借用模型观之，则 `let ptr = ref1 as *mut i32;` 这行代码是无操作的，此后 `ptr1` 也被视同 `ref1`。尽管最后三个赋值操作是在给三个语法上不同的变量赋值，树形借用模型在运行时只认标签，而三次访问的标签全都相同。因此树形借用模型接受此代码，正如预期：因为原始指针允许别名。
+
+树形借用模型甚至允许原始指针访问其父级引用的类型决定的内存范围之外的内存，如下面的例子所示：
+
+#figure(grid(
+  columns: 2,
+  gutter: 0em,
+  align: horizon,
+  [
+```rust
+let mut v = [0u8, 0];
+let x = &mut v[0];
+let y = (x as *mut i32).add(1);
+unsafe { *y = 1; }
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    let node(pos, name, label) = {
+      content(
+        pos,
+        box(
+          inset: (x: 8pt, y: 4pt),
+          stroke: 1pt + black,
+          radius: 4pt,
+          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+        ),
+        name: name,
+      )
+    }
+
+    node((2.5, 3), "v", "v")
+    node((2.5, 2), "xy", "x, y")
+
+    line("v.south", "xy.north")
+
+    // 权限表头
+    content((4, 3.5), text(size: 0.85em, weight: "bold", "offset 0"))
+    content((5.5, 3.5), text(size: 0.85em, weight: "bold", "offset 1"))
+
+    // v 的权限
+    content((4, 3), text(size: 0.85em, p-unique))
+    content((5.5, 3), text(size: 0.85em, p-unique))
+
+    // x, y 的权限
+    content((4, 2), text(size: 0.85em, p-reserved))
+    content((5.5, 2), text(size: 0.85em, fill: rgb("#7f7f7f"), p-reserved))
+
+    let c = rgb("#7f7f7f") // 灰色线条
+    let bx = 1.6  // 大括号右边缘 X 坐标 (靠近节点)
+    let cx = 1.45 // 大括号垂直直线部分 X 坐标
+    let tx = 1.3  // 大括号左侧尖端 X 坐标
+
+    let top-y = 3.3 // 大括号顶部 Y 坐标 (对齐 v 节点的顶部)
+    let bot-y = 1.7 // 大括号底部 Y 坐标 (对齐 x, y 节点的底部)
+    let tip-y = 2.3 // 大括号尖端 Y 坐标 (微调此值以精确对齐第3行代码)
+    let r = 0.15    // 大括号圆角半径
+
+    // 绘制大括号上半部分
+    bezier((bx, top-y), (cx, top-y - r), (cx, top-y), (cx, top-y - r/2), stroke: 0.5pt + c)
+    line((cx, top-y - r), (cx, tip-y + r), stroke: 0.5pt + c)
+    bezier((cx, tip-y + r), (tx, tip-y), (cx, tip-y + r/2), (cx, tip-y), stroke: 0.5pt + c)
+
+    // 绘制大括号下半部分
+    bezier((tx, tip-y), (cx, tip-y - r), (cx, tip-y), (cx, tip-y - r/2), stroke: 0.5pt + c)
+    line((cx, tip-y - r), (cx, bot-y + r), stroke: 0.5pt + c)
+    bezier((cx, bot-y + r), (bx, bot-y), (cx, bot-y + r/2), (cx, bot-y), stroke: 0.5pt + c)
+
+    // 绘制指向左侧代码的箭头
+    // 终点 X 设为 -0.5，利用 grid 的 gutter 刚好与代码块保持合适间距
+    line((tx, tip-y), (-0.5, tip-y), stroke: 0.5pt + c, mark: (end: ")>", fill: none))
+  })
+), caption: "例 10")
+
+在这个例子中，`x` 是指向 `v` 第一个元素的可变引用。使用原始指针转换和指针算术，我们创建出了 `y`，它与 `x` 有着相同的标签，但指向 `v` 的第二个元素。特别地，`y` 指向一个它所派生的引用 `x` 的边界之外的位置！这一模式在低层代码中并不少见。特别地，这在实现一种#tm_fst("特设动态多态", "ad-hoc dynamic polymorphism") 时非常有用，在这种模式中，某个块前缀处的数据提供了有关其后面的数据的形状的信息。这些信息超出了静态类型可以表达的范围，因此必须使用原始指针来访问后面的数据。
+
+树形借用模型支持这样的用法——例 10 能被这一模型接受。其工作原理是，`&mut v[0]` 为当前分配块中——而不仅仅是在 `v[0]` 类型指示的内存范围中——的每个位置的新引用创建一个权限和与之相关联的状态机。也就是说偏移 1 处的权限——因其超出了类型指示的范围故用#text(fill: rgb("#7f7f7f"))[灰色]显示——也是 #p-reserved。这就使得用不安全代码动态地将引用扩展到更大的范围成为可能。与此同时，这一模型（使用前面已经介绍过的机制）仍能确保派生自不同可变引用的原始指针只能被用于改变内存中不相交的部分。
+
+== 内部可变性
+
+Rust 的引用会阻止对存在别名的状态进行修改，但有时共享可变状态确是必要的。Rust 通过#tm_fst("内部可变性", "interior mutability") 机制来支持这一点，该机制允许使用内部由非安全代码实现的库类型，来暴露经过严格控制的共享可变状态。具有内部可变性的类型不遵循 Rust 通常的别名原则，因此必须使用特殊的 `UnsafeCell<T>` 类型作为标记，表明类型为 `T` 的内部数据可经由共享引用修改。
+
+在别名方面，指向内部可变类型的共享引用本质上等同于原始指针；因此，树形借用模型对它们的建模方式也如出一辙：共享引用会继承其父级引用的标签。这便使得对这些引用的处理变得微不足道：和原始指针一样，它们可与派生自同一父级的其他原始指针自由地发生别名。
+
+指向内部可变类型的可变引用在变为 #p-unique 之后就和常规的可变引用没有区别了。然而，在可变引用的保留阶段，可能存在指向同一位置的共享引用。而因为经由共享引用也能修改内部可变类型的数据，故处于保留阶段的可变引用不止要能容许外部读取，还要容许外部写入。例 11 给出了这样一个例子——和例 8 类似，但 `c` 的类型是 `Cell<i32>`，它具有内部可变性。因此，`Cell::replace` 可向单元中写入，而这一写入决不能令 `c_mut` 变为 #p-disabled。
+
+#figure(grid(
+  columns: 2,
+  gutter: 2em,
+  align: horizon,
+  [
+```rust
+fn foo(c : &mut Cell<i32>, n : i32) {
+    *c.get_mut() = n;
+}
+
+let mut c = Cell::new(1);
+let c_mut = &twophase c;
+let c_shr = &c;
+let val = Cell::replace(c_shr, 42); // 写入
+foo(c_mut, val);
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    let node(pos, name, label) = {
+      content(
+        pos,
+        box(
+          inset: (x: 8pt, y: 4pt),
+          stroke: 1pt + black,
+          radius: 4pt,
+          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+        ),
+        name: name,
+      )
+    }
+
+    node((3, 3), "c", "c")
+    node((1.5, 2), "c_mut", "c_mut")
+    node((4.5, 2), "c_shr", "c_shr")
+
+    line("c.south-west", "c_mut.north")
+    line("c.south-east", "c_shr.north")
+  })
+), caption: "例 8")
+
+为建模这一行为，我们引入一个新的权限 #p-reserved-im，它在其他方面和 #p-reserved 均相同，但它允许外部写入。#p-reserved-im 是指向内部可变类型的可变引用的新状态机入口点。
+
+= 树形借用模型进阶：确保引用存活
 
 #bibliography("tree-borrows.bib", title: "参考文献", full: true)
