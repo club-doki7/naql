@@ -607,4 +607,7 @@ foo(c_mut, val);
 
 = 树形借用模型进阶：确保引用存活
 
-#bibliography("tree-borrows.bib", title: "参考文献", full: true)
+#[
+  #set text(lang: "en")
+  #bibliography("tree-borrows.bib", title: "参考文献", full: true, style: "plos")
+]
