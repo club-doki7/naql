@@ -134,6 +134,41 @@ Rust 编译器的开发者确是希望支持别名优化的，这就需要某种
 
 本文中的其余部分结构如下：我们首先以示例驱动的方式介绍树形借用模型的核心（第 2 节）。接下来，我们用#tm_fst("保护器", "protector") 扩展树形借用，这将显著增强可以执行的优化（第 3 节）。之后，我们将新模型与其前身——栈式借用模型——进行详细比较，包括上面提到的实证评估（第 4 节）。最后，我们将展示一些已证明正确的树形借用模型下的优化案例（第 5 节），并以对相关和未来工作的讨论收尾（第 6、7 节）。
 
+// 绘制树形图中的圆角矩形节点
+#let tree-node(pos, name, label) = {
+  import cetz.draw: *
+  content(
+    pos,
+    box(
+      inset: (x: 8pt, y: 4pt),
+      stroke: 1pt + black,
+      radius: 4pt,
+      text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
+    ),
+    name: name,
+  )
+}
+
+// 通用大括号绘制函数 (支持向左和向右)
+// base-x: 大括号平坦基座一侧的 X 坐标 (靠近节点)
+// tip-x: 大括号尖端一侧的 X 坐标 (远离节点)
+// top-y, bot-y: 大括号顶部和底部 Y 坐标
+// tip-y: 大括号尖端 Y 坐标
+// c: 线条颜色
+#let draw-brace(base-x, tip-x, top-y, bot-y, tip-y, c) = {
+  import cetz.draw: *
+  let cx = (base-x + tip-x) / 2 // 大括号垂直直线部分 X 坐标
+  let r = 0.15                  // 大括号圆角半径
+  // 绘制大括号上半部分
+  bezier((base-x, top-y), (cx, top-y - r), (cx, top-y), (cx, top-y - r/2), stroke: 0.5pt + c)
+  line((cx, top-y - r), (cx, tip-y + r), stroke: 0.5pt + c)
+  bezier((cx, tip-y + r), (tip-x, tip-y), (cx, tip-y + r/2), (cx, tip-y), stroke: 0.5pt + c)
+  // 绘制大括号下半部分
+  bezier((tip-x, tip-y), (cx, tip-y - r), (cx, tip-y), (cx, tip-y - r/2), stroke: 0.5pt + c)
+  line((cx, tip-y - r), (cx, bot-y + r), stroke: 0.5pt + c)
+  bezier((cx, bot-y + r), (base-x, bot-y), (cx, bot-y + r/2), (cx, bot-y), stroke: 0.5pt + c)
+}
+
 = 树形借用模型基础
 
 在本节中，我们将解释树形借用模型追踪引用和检测未定义行为背后的基本机制。我们不假设读者事先了解 Rust 或栈式借用模型。
@@ -156,23 +191,11 @@ let ref3 = &mut root;
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "root", "root")
-    node((1.5, 2), "ref1", "ref1")
-    node((4.5, 2), "ref3", "ref3")
-    node((1.5, 0.75), "ref2", "ref2")
+    tree-node((3, 3), "root", "root")
+    tree-node((1.5, 2), "ref1", "ref1")
+    tree-node((4.5, 2), "ref3", "ref3")
+    tree-node((1.5, 0.75), "ref2", "ref2")
 
     line("root.south", "ref1.north")
     line("root.south", "ref3.north")
@@ -308,21 +331,9 @@ root = 0;
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "root", "root")
-    node((3, 2), "x", "x")
+    tree-node((3, 3), "root", "root")
+    tree-node((3, 2), "x", "x")
 
     line("root.south", "x.north")
   })
@@ -348,23 +359,11 @@ let val = *x;
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "root", "root")
-    node((3, 2), "ptr", "ptr")
-    node((1.5, 1), "x", "x")
-    node((4.5, 1), "y", "y")
+    tree-node((3, 3), "root", "root")
+    tree-node((3, 2), "ptr", "ptr")
+    tree-node((1.5, 1), "x", "x")
+    tree-node((4.5, 1), "y", "y")
 
     line("root.south", "ptr.north")
     line("ptr.south-west", "x.north-east")
@@ -394,22 +393,10 @@ Vec::push(v_for_push, len);
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "v", "v")
-    node((1.5, 2), "v_for_push", "v_for_push")
-    node((4.5, 2), "v_for_len", "v_for_len")
+    tree-node((3, 3), "v", "v")
+    tree-node((1.5, 2), "v_for_push", "v_for_push")
+    tree-node((4.5, 2), "v_for_len", "v_for_len")
 
     line("v.south-west", "v_for_push.north")
     line("v.south-east", "v_for_len.north")
@@ -456,21 +443,9 @@ unsafe {
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "root", "root")
-    node((3, 2), "refptr", "ref1, ptr1")
+    tree-node((3, 3), "root", "root")
+    tree-node((3, 2), "refptr", "ref1, ptr1")
 
     line("root.south", "refptr.north")
   })
@@ -494,21 +469,9 @@ unsafe { *y = 1; }
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((2.5, 3), "v", "v")
-    node((2.5, 2), "xy", "x, y")
+    tree-node((2.5, 3), "v", "v")
+    tree-node((2.5, 2), "xy", "x, y")
 
     line("v.south", "xy.north")
 
@@ -526,23 +489,10 @@ unsafe { *y = 1; }
 
     let c = rgb("#7f7f7f") // 灰色线条
     let bx = 1.6  // 大括号右边缘 X 坐标 (靠近节点)
-    let cx = 1.45 // 大括号垂直直线部分 X 坐标
     let tx = 1.3  // 大括号左侧尖端 X 坐标
-
-    let top-y = 3.3 // 大括号顶部 Y 坐标 (对齐 v 节点的顶部)
-    let bot-y = 1.7 // 大括号底部 Y 坐标 (对齐 x, y 节点的底部)
     let tip-y = 2.3 // 大括号尖端 Y 坐标 (微调此值以精确对齐第3行代码)
-    let r = 0.15    // 大括号圆角半径
 
-    // 绘制大括号上半部分
-    bezier((bx, top-y), (cx, top-y - r), (cx, top-y), (cx, top-y - r/2), stroke: 0.5pt + c)
-    line((cx, top-y - r), (cx, tip-y + r), stroke: 0.5pt + c)
-    bezier((cx, tip-y + r), (tx, tip-y), (cx, tip-y + r/2), (cx, tip-y), stroke: 0.5pt + c)
-
-    // 绘制大括号下半部分
-    bezier((tx, tip-y), (cx, tip-y - r), (cx, tip-y), (cx, tip-y - r/2), stroke: 0.5pt + c)
-    line((cx, tip-y - r), (cx, bot-y + r), stroke: 0.5pt + c)
-    bezier((cx, bot-y + r), (bx, bot-y), (cx, bot-y + r/2), (cx, bot-y), stroke: 0.5pt + c)
+    draw-brace(bx, tx, 3.3, 1.7, tip-y, c)
 
     // 绘制指向左侧代码的箭头
     // 终点 X 设为 -0.5，利用 grid 的 gutter 刚好与代码块保持合适间距
@@ -581,22 +531,10 @@ foo(c_mut, val);
   ],
   cetz.canvas({
     import cetz.draw: *
-    let node(pos, name, label) = {
-      content(
-        pos,
-        box(
-          inset: (x: 8pt, y: 4pt),
-          stroke: 1pt + black,
-          radius: 4pt,
-          text(fill: rgb("#009c00"), font: monospace-fonts, weight: "bold", label),
-        ),
-        name: name,
-      )
-    }
 
-    node((3, 3), "c", "c")
-    node((1.5, 2), "c_mut", "c_mut")
-    node((4.5, 2), "c_shr", "c_shr")
+    tree-node((3, 3), "c", "c")
+    tree-node((1.5, 2), "c_mut", "c_mut")
+    tree-node((4.5, 2), "c_shr", "c_shr")
 
     line("c.south-west", "c_mut.north")
     line("c.south-east", "c_shr.north")
@@ -606,6 +544,55 @@ foo(c_mut, val);
 为建模这一行为，我们引入一个新的权限 #p-reserved-im，它在其他方面和 #p-reserved 均相同，但它允许外部写入。#p-reserved-im 是指向内部可变类型的可变引用的新状态机入口点。
 
 = 树形借用模型进阶：确保引用存活
+
+在上一节中，我们构建了一个别名模型，该模型能接受所有安全的 Rust 代码，同时又能排除部分我们认定存在问题的非安全代码。不幸的是，就其所能实现的优化而言，这一别名模型相当薄弱：Rust 编译器目前已在执行的一些优化并不能通过前述模型加以佐证。特别地，编译器假设作为函数实参传入的引用在整个函数调用期间都是唯一 / 不可变的，并用这一假设来优化以下示例：
+
+#figure(grid(
+  columns: 2,
+  gutter: 0em,
+  align: horizon,
+  [
+```rust
+fn write_and_call(x: &mut i32,
+                  opaque: impl Fn()) {
+    *x = 13; // 变换：消除这次写入
+    opaque();
+    *x = 20;
+}
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    // 定义虚线圆形节点 (用于 "?")
+    let dashed-node(pos, name, label) = {
+      circle(pos, radius: 0.35, stroke: (dash: "dashed", thickness: 0.8pt, paint: black), name: name)
+      content(pos, text(size: 0.9em, "?"))
+    }
+    // 1. 绘制节点
+    dashed-node((0, 2), "n1", "?")
+    dashed-node((2, 1.4), "n2", "?")
+    tree-node((0, 0), "n3", "x")
+    // 2. 绘制连线
+    line("n1", "n3", stroke: 0.5pt + black)
+    line("n1", "n2", stroke: (paint: black, dash: "dashed", thickness: 0.5pt))
+    // 3. 绘制大括号和文本
+    let brace-color = black
+    // 左上: caller 大括号 (向左)
+    // base-x > tip-x
+    draw-brace(-0.6, -0.8, 2.6, 1.4, 2.0, brace-color)
+    content((-0.9, 2.0), text(size: 1.1em, "caller"), anchor: "east")
+    // 左下: write_and_call 大括号 (向左)
+    // base-x > tip-x
+    draw-brace(-0.6, -0.8, 0.6, -0.6, 0.0, brace-color)
+    content((-0.9, 0.0), `write_and_call`, anchor: "east")
+    // 右侧: opaque 大括号 (向右)
+    // base-x < tip-x (自动反转方向)
+    draw-brace(2.6, 2.8, 2.0, 0.8, 1.4, brace-color)
+    content((2.9, 1.4), `opaque`, anchor: "west")
+  })
+), caption: "例 9")
+
+这里，`opaque` 是一个不接受任何实参、也不返回任何东西的闭包。我们的目标是消除第一次写入。注意到，这是一项相当强力的优化：`x` 指向以未知方式分配的内存，而 `opaque` 也是任意的未知代码——在这种情境下通常根本无法执行任何别名优化！
 
 #[
   #set text(lang: "en")
