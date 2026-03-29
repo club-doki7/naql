@@ -594,6 +594,48 @@ fn write_and_call(x: &mut i32,
 
 这里，`opaque` 是一个不接受任何实参、也不返回任何东西的闭包。我们的目标是消除第一次写入。注意到，这是一项相当强力的优化：`x` 指向以未知方式分配的内存，而 `opaque` 也是任意的未知代码——在这种情境下通常根本无法执行任何别名优化！
 
+直觉上，树形借用模型应该能让这一优化成为可能，因为 `opaque` 根本不可能访问 `x` 所指向的内存。无论如何，若要访问 `x` 所指向的内存，`opaque` 就必须使用某些相对于 `x` 外部的别名（如代码右侧图示所示）。这确是未定义行为，因为它违反了 `x` 的唯一性：这一访问会使得 `x` 从 #p-unique 变为 #p-disabled，故 `*x = 20` 是未定义行为。然而问题在于，函数 `opaque` 可能永不返回，在这种情况下 `*x = 20` 永远不会被执行，且不会导致未定义行为。这一点由以下语境所佐证：
+
+#figure(grid(
+  columns: 2,
+  gutter: 0em,
+  align: horizon,
+  [
+```rust
+let mut root = 42;
+let ptr1 = &mut root as *mut i32;
+let opaque = move || {
+    let ptr2 = ptr1;
+    println!("{}", unsafe { *ptr2 });
+    std::process::exit(0); // 退出程序
+};
+write_and_call(unsafe { &mut *ptr1 },
+               opaque);
+```
+  ],
+  cetz.canvas({
+    import cetz.draw: *
+    // 1. 绘制节点
+    tree-node((0, 2), "root", "root")
+    tree-node((0, 0.8), "ptr", "ptr1, ptr2")
+    tree-node((0, -0.6), "x", "x")
+    // 2. 绘制连线
+    line("root", "ptr", stroke: 0.5pt + black)
+    line("ptr", "x", stroke: 0.5pt + black)
+    // 3. 绘制大括号和文本
+    let brace-color = black
+    // 左侧: caller 大括号 (向左，覆盖 root 和 ptr)
+    draw-brace(-1.5, -1.8, 2.5, 0.3, 1.4, brace-color)
+    content((-2, 1.4), text(size: 1.1em, "caller"), anchor: "east")
+    // 左侧: write_and_call 大括号 (向左，覆盖 x)
+    draw-brace(-1.5, -1.8, -0.1, -1.1, -0.6, brace-color)
+    content((-2, -0.6), `write_and_call`, anchor: "east")
+    // 右侧: opaque 大括号 (向右，覆盖 ptr)
+    draw-brace(1.5, 1.8, 1.3, 0.3, 0.8, brace-color)
+    content((2, 0.8), `opaque`, anchor: "west")
+  })
+))
+
 #[
   #set text(lang: "en")
   #bibliography("tree-borrows.bib", title: "参考文献", full: true, style: "plos")
