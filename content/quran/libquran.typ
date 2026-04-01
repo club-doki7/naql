@@ -25,8 +25,8 @@
         align(center,
           stack(
             dir: ttb,
-            spacing: 1.5em,
-            text(font: "Scheherazade New", weight: "medium", size: 20pt, lang: "ar", word.at(i)),
+            spacing: 1.2em,
+            text(font: "Scheherazade New", weight: 600, size: 18pt, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
