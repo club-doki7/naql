@@ -1,6 +1,6 @@
 #import "@preview/cuti:0.4.0": cn-fakebold as cuti
 
-#let zh-fonts = ("Libertinus Serif", "Noto Serif CJK SC", "Noto Naskh Arabic")
+#let zh-fonts = ("Libertinus Serif", "Noto Serif CJK SC", "Scheherazade New")
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
@@ -9,7 +9,7 @@
   show heading: set align(center)
 
   [
-    = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
+    = #title (#text(lang: "ar", font: "Scheherazade New", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
     #v(1em)
 
     #body
@@ -21,12 +21,12 @@
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: 0.4em),
+        inset: (x: 0.5em, top: 0.6em, bottom: 0.4em),
         align(center,
           stack(
             dir: ttb,
-            spacing: 1em,
-            text(font: "Noto Naskh Arabic", weight: "medium", size: 20pt, lang: "ar", word.at(i)),
+            spacing: 1.5em,
+            text(font: "Scheherazade New", weight: "medium", size: 20pt, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
