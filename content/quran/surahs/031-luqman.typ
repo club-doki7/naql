@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Luqman (لقمان)
+#show: quran-page.with(title: "Luqman", title-ar: "لقمان", title-tl: "Luqman", locator: "031-luqman")
 
 #quran-verse(
   ("الٓمٓ", "١"),

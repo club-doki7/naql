@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Tin (التين)
+#show: quran-page.with(title: "At-Tin", title-ar: "التين", title-tl: "At-Tin", locator: "095-at-tin")
 
 #quran-verse(
   ("وَٱلتِّينِ", "وَٱلزَّيْتُونِ", "١"),

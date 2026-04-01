@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= 'Abasa (عبس)
+#show: quran-page.with(title: "'Abasa", title-ar: "عبس", title-tl: "'Abasa", locator: "080--abasa")
 
 #quran-verse(
   ("عَبَسَ", "وَتَوَلَّىٰٓ", "١"),

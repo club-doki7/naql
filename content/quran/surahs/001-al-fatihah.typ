@@ -1,8 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-#set page(paper: "iso-b5")
-
-= Al-Fatihah (الفاتحة)
+#show: quran-page.with(title: "Al-Fatihah", title-ar: "الفاتحة", title-tl: "Al-Fatihah", locator: "001-al-fatihah")
 
 #quran-verse(
   ("بِسْمِ", "ٱللَّهِ", "ٱلرَّحْمَـٰنِ", "ٱلرَّحِيمِ", "١"),
@@ -18,7 +16,7 @@
   ("一切赞颂", "真主|归", "养主", "众世界的", ""),
 )
 
-一切赞颂全归真主，众世界的主，
+一切赞颂全归真主，众世界 的主，
 
 #quran-verse(
   ("ٱلرَّحْمَـٰنِ", "ٱلرَّحِيمِ", "٣"),

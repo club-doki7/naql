@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Quraysh (قريش)
+#show: quran-page.with(title: "Quraysh", title-ar: "قريش", title-tl: "Quraysh", locator: "106-quraysh")
 
 #quran-verse(
   ("لِإِيلَـٰفِ", "قُرَيْشٍ", "١"),

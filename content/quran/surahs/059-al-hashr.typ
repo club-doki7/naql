@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Hashr (الحشر)
+#show: quran-page.with(title: "Al-Hashr", title-ar: "الحشر", title-tl: "Al-Hashr", locator: "059-al-hashr")
 
 #quran-verse(
   ("سَبَّحَ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ ۖ", "وَهُوَ", "ٱلْعَزِيزُ", "ٱلْحَكِيمُ", "١"),

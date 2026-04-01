@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= As-Sajdah (السجدة)
+#show: quran-page.with(title: "As-Sajdah", title-ar: "السجدة", title-tl: "As-Sajdah", locator: "032-as-sajdah")
 
 #quran-verse(
   ("الٓمٓ", "١"),

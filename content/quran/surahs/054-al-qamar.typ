@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qamar (القمر)
+#show: quran-page.with(title: "Al-Qamar", title-ar: "القمر", title-tl: "Al-Qamar", locator: "054-al-qamar")
 
 #quran-verse(
   ("ٱقْتَرَبَتِ", "ٱلسَّاعَةُ", "وَٱنشَقَّ", "ٱلْقَمَرُ", "١"),

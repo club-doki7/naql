@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Naml (النمل)
+#show: quran-page.with(title: "An-Naml", title-ar: "النمل", title-tl: "An-Naml", locator: "027-an-naml")
 
 #quran-verse(
   ("طسٓ ۚ", "تِلْكَ", "ءَايَـٰتُ", "ٱلْقُرْءَانِ", "وَكِتَابٍۢ", "مُّبِينٍ", "١"),

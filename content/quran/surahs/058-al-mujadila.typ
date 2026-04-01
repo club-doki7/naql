@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Mujadila (المجادلة)
+#show: quran-page.with(title: "Al-Mujadila", title-ar: "المجادلة", title-tl: "Al-Mujadila", locator: "058-al-mujadila")
 
 #quran-verse(
   ("قَدْ", "سَمِعَ", "ٱللَّهُ", "قَوْلَ", "ٱلَّتِى", "تُجَـٰدِلُكَ", "فِى", "زَوْجِهَا", "وَتَشْتَكِىٓ", "إِلَى", "ٱللَّهِ", "وَٱللَّهُ", "يَسْمَعُ", "تَحَاوُرَكُمَآ ۚ", "إِنَّ", "ٱللَّهَ", "سَمِيعٌۢ", "بَصِيرٌ", "١"),

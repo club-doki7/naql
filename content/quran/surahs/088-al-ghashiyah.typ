@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ghashiyah (الغاشية)
+#show: quran-page.with(title: "Al-Ghashiyah", title-ar: "الغاشية", title-tl: "Al-Ghashiyah", locator: "088-al-ghashiyah")
 
 #quran-verse(
   ("هَلْ", "أَتَىٰكَ", "حَدِيثُ", "ٱلْغَـٰشِيَةِ", "١"),

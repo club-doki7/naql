@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Maryam (مريم)
+#show: quran-page.with(title: "Maryam", title-ar: "مريم", title-tl: "Maryam", locator: "019-maryam")
 
 #quran-verse(
   ("كٓهيعٓصٓ", "١"),

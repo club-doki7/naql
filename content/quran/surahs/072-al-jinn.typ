@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Jinn (الجن)
+#show: quran-page.with(title: "Al-Jinn", title-ar: "الجن", title-tl: "Al-Jinn", locator: "072-al-jinn")
 
 #quran-verse(
   ("قُلْ", "أُوحِىَ", "إِلَىَّ", "أَنَّهُ", "ٱسْتَمَعَ", "نَفَرٌۭ", "مِّنَ", "ٱلْجِنِّ", "فَقَالُوٓا۟", "إِنَّا", "سَمِعْنَا", "قُرْءَانًا", "عَجَبًۭا", "١"),

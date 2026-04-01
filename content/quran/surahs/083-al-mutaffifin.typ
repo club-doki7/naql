@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Mutaffifin (المطففين)
+#show: quran-page.with(title: "Al-Mutaffifin", title-ar: "المطففين", title-tl: "Al-Mutaffifin", locator: "083-al-mutaffifin")
 
 #quran-verse(
   ("وَيْلٌۭ", "لِّلْمُطَفِّفِينَ", "١"),

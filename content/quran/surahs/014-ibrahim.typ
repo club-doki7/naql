@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ibrahim (ابراهيم)
+#show: quran-page.with(title: "Ibrahim", title-ar: "ابراهيم", title-tl: "Ibrahim", locator: "014-ibrahim")
 
 #quran-verse(
   ("الٓر ۚ", "كِتَـٰبٌ", "أَنزَلْنَـٰهُ", "إِلَيْكَ", "لِتُخْرِجَ", "ٱلنَّاسَ", "مِنَ", "ٱلظُّلُمَـٰتِ", "إِلَى", "ٱلنُّورِ", "بِإِذْنِ", "رَبِّهِمْ", "إِلَىٰ", "صِرَٰطِ", "ٱلْعَزِيزِ", "ٱلْحَمِيدِ", "١"),

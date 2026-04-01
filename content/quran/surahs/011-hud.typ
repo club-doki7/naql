@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Hud (هود)
+#show: quran-page.with(title: "Hud", title-ar: "هود", title-tl: "Hud", locator: "011-hud")
 
 #quran-verse(
   ("الٓر ۚ", "كِتَـٰبٌ", "أُحْكِمَتْ", "ءَايَـٰتُهُۥ", "ثُمَّ", "فُصِّلَتْ", "مِن", "لَّدُنْ", "حَكِيمٍ", "خَبِيرٍ", "١"),

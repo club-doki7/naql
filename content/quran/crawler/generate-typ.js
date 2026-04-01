@@ -48,12 +48,12 @@ function generateVerse(verse) {
   return lines.join('\n')
 }
 
-function generateChapter(chapter) {
+function generateChapter(chapter, locator) {
   const lines = []
 
-  lines.push(`#import "../libquran.typ": quran-verse`)
+  lines.push(`#import "../libquran.typ": *`)
   lines.push(``)
-  lines.push(`= ${chapter.nameSimple} (${chapter.nameArabic})`)
+  lines.push(`#show: quran-page.with(title: "${chapter.nameSimple}", title-ar: "${chapter.nameArabic}", title-tl: "${chapter.nameSimple}", locator: "${locator}")`)
   lines.push(``)
 
   for (const verse of chapter.verses) {
@@ -71,7 +71,8 @@ async function main() {
 
   for (const file of files) {
     const data = JSON.parse(await readFile(join(OUTPUT_DIR, file), 'utf-8'))
-    const typContent = generateChapter(data)
+    const locator = file.replace('.json', '')
+    const typContent = generateChapter(data, locator)
     const typName = file.replace('.json', '.typ')
     await writeFile(join(TYP_DIR, typName), typContent, 'utf-8')
     console.log(`Generated ${typName}`)

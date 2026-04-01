@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Nahl (النحل)
+#show: quran-page.with(title: "An-Nahl", title-ar: "النحل", title-tl: "An-Nahl", locator: "016-an-nahl")
 
 #quran-verse(
   ("أَتَىٰٓ", "أَمْرُ", "ٱللَّهِ", "فَلَا", "تَسْتَعْجِلُوهُ ۚ", "سُبْحَـٰنَهُۥ", "وَتَعَـٰلَىٰ", "عَمَّا", "يُشْرِكُونَ", "١"),

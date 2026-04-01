@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Insan (الانسان)
+#show: quran-page.with(title: "Al-Insan", title-ar: "الانسان", title-tl: "Al-Insan", locator: "076-al-insan")
 
 #quran-verse(
   ("هَلْ", "أَتَىٰ", "عَلَى", "ٱلْإِنسَـٰنِ", "حِينٌۭ", "مِّنَ", "ٱلدَّهْرِ", "لَمْ", "يَكُن", "شَيْـًۭٔا", "مَّذْكُورًا", "١"),

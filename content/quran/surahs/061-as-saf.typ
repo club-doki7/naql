@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= As-Saf (الصف)
+#show: quran-page.with(title: "As-Saf", title-ar: "الصف", title-tl: "As-Saf", locator: "061-as-saf")
 
 #quran-verse(
   ("سَبَّحَ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ ۖ", "وَهُوَ", "ٱلْعَزِيزُ", "ٱلْحَكِيمُ", "١"),

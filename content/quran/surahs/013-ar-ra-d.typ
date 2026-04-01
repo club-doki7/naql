@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ar-Ra'd (الرعد)
+#show: quran-page.with(title: "Ar-Ra'd", title-ar: "الرعد", title-tl: "Ar-Ra'd", locator: "013-ar-ra-d")
 
 #quran-verse(
   ("الٓمٓر ۚ", "تِلْكَ", "ءَايَـٰتُ", "ٱلْكِتَـٰبِ ۗ", "وَٱلَّذِىٓ", "أُنزِلَ", "إِلَيْكَ", "مِن", "رَّبِّكَ", "ٱلْحَقُّ", "وَلَـٰكِنَّ", "أَكْثَرَ", "ٱلنَّاسِ", "لَا", "يُؤْمِنُونَ", "١"),

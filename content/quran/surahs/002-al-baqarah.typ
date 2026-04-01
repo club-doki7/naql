@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Baqarah (البقرة)
+#show: quran-page.with(title: "Al-Baqarah", title-ar: "البقرة", title-tl: "Al-Baqarah", locator: "002-al-baqarah")
 
 #quran-verse(
   ("الٓمٓ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Saba (سبإ)
+#show: quran-page.with(title: "Saba", title-ar: "سبإ", title-tl: "Saba", locator: "034-saba")
 
 #quran-verse(
   ("ٱلْحَمْدُ", "لِلَّهِ", "ٱلَّذِى", "لَهُۥ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ", "وَلَهُ", "ٱلْحَمْدُ", "فِى", "ٱلْـَٔاخِرَةِ ۚ", "وَهُوَ", "ٱلْحَكِيمُ", "ٱلْخَبِيرُ", "١"),

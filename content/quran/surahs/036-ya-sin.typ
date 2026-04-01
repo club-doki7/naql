@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ya-Sin (يس)
+#show: quran-page.with(title: "Ya-Sin", title-ar: "يس", title-tl: "Ya-Sin", locator: "036-ya-sin")
 
 #quran-verse(
   ("يسٓ", "١"),

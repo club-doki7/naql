@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Taha (طه)
+#show: quran-page.with(title: "Taha", title-ar: "طه", title-tl: "Taha", locator: "020-taha")
 
 #quran-verse(
   ("طه", "١"),

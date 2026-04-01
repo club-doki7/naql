@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Hadid (الحديد)
+#show: quran-page.with(title: "Al-Hadid", title-ar: "الحديد", title-tl: "Al-Hadid", locator: "057-al-hadid")
 
 #quran-verse(
   ("سَبَّحَ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۖ", "وَهُوَ", "ٱلْعَزِيزُ", "ٱلْحَكِيمُ", "١"),

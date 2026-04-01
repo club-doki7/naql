@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Nas (الناس)
+#show: quran-page.with(title: "An-Nas", title-ar: "الناس", title-tl: "An-Nas", locator: "114-an-nas")
 
 #quran-verse(
   ("قُلْ", "أَعُوذُ", "بِرَبِّ", "ٱلنَّاسِ", "١"),

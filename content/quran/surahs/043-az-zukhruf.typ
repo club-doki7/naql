@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Az-Zukhruf (الزخرف)
+#show: quran-page.with(title: "Az-Zukhruf", title-ar: "الزخرف", title-tl: "Az-Zukhruf", locator: "043-az-zukhruf")
 
 #quran-verse(
   ("حمٓ", "١"),

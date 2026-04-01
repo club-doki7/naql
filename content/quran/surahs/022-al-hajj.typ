@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Hajj (الحج)
+#show: quran-page.with(title: "Al-Hajj", title-ar: "الحج", title-tl: "Al-Hajj", locator: "022-al-hajj")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلنَّاسُ", "ٱتَّقُوا۟", "رَبَّكُمْ ۚ", "إِنَّ", "زَلْزَلَةَ", "ٱلسَّاعَةِ", "شَىْءٌ", "عَظِيمٌۭ", "١"),

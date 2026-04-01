@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ash-Shu'ara (الشعراء)
+#show: quran-page.with(title: "Ash-Shu'ara", title-ar: "الشعراء", title-tl: "Ash-Shu'ara", locator: "026-ash-shu-ara")
 
 #quran-verse(
   ("طسٓمٓ", "١"),

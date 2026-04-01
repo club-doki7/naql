@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Kafirun (الكافرون)
+#show: quran-page.with(title: "Al-Kafirun", title-ar: "الكافرون", title-tl: "Al-Kafirun", locator: "109-al-kafirun")
 
 #quran-verse(
   ("قُلْ", "يَـٰٓأَيُّهَا", "ٱلْكَـٰفِرُونَ", "١"),

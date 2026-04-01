@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Nasr (النصر)
+#show: quran-page.with(title: "An-Nasr", title-ar: "النصر", title-tl: "An-Nasr", locator: "110-an-nasr")
 
 #quran-verse(
   ("إِذَا", "جَآءَ", "نَصْرُ", "ٱللَّهِ", "وَٱلْفَتْحُ", "١"),

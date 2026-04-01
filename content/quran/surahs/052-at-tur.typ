@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Tur (الطور)
+#show: quran-page.with(title: "At-Tur", title-ar: "الطور", title-tl: "At-Tur", locator: "052-at-tur")
 
 #quran-verse(
   ("وَٱلطُّورِ", "١"),

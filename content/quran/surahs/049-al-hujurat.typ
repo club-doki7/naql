@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Hujurat (الحجرات)
+#show: quran-page.with(title: "Al-Hujurat", title-ar: "الحجرات", title-tl: "Al-Hujurat", locator: "049-al-hujurat")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلَّذِينَ", "ءَامَنُوا۟", "لَا", "تُقَدِّمُوا۟", "بَيْنَ", "يَدَىِ", "ٱللَّهِ", "وَرَسُولِهِۦ ۖ", "وَٱتَّقُوا۟", "ٱللَّهَ ۚ", "إِنَّ", "ٱللَّهَ", "سَمِيعٌ", "عَلِيمٌۭ", "١"),

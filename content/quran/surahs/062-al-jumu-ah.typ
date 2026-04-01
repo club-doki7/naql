@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Jumu'ah (الجمعة)
+#show: quran-page.with(title: "Al-Jumu'ah", title-ar: "الجمعة", title-tl: "Al-Jumu'ah", locator: "062-al-jumu-ah")
 
 #quran-verse(
   ("يُسَبِّحُ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ", "ٱلْمَلِكِ", "ٱلْقُدُّوسِ", "ٱلْعَزِيزِ", "ٱلْحَكِيمِ", "١"),

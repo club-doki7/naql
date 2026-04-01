@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Jathiyah (الجاثية)
+#show: quran-page.with(title: "Al-Jathiyah", title-ar: "الجاثية", title-tl: "Al-Jathiyah", locator: "045-al-jathiyah")
 
 #quran-verse(
   ("حمٓ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Anbya (الأنبياء)
+#show: quran-page.with(title: "Al-Anbya", title-ar: "الأنبياء", title-tl: "Al-Anbya", locator: "021-al-anbya")
 
 #quran-verse(
   ("ٱقْتَرَبَ", "لِلنَّاسِ", "حِسَابُهُمْ", "وَهُمْ", "فِى", "غَفْلَةٍۢ", "مُّعْرِضُونَ", "١"),

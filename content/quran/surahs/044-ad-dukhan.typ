@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ad-Dukhan (الدخان)
+#show: quran-page.with(title: "Ad-Dukhan", title-ar: "الدخان", title-tl: "Ad-Dukhan", locator: "044-ad-dukhan")
 
 #quran-verse(
   ("حمٓ", "١"),

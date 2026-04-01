@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Bayyinah (البينة)
+#show: quran-page.with(title: "Al-Bayyinah", title-ar: "البينة", title-tl: "Al-Bayyinah", locator: "098-al-bayyinah")
 
 #quran-verse(
   ("لَمْ", "يَكُنِ", "ٱلَّذِينَ", "كَفَرُوا۟", "مِنْ", "أَهْلِ", "ٱلْكِتَـٰبِ", "وَٱلْمُشْرِكِينَ", "مُنفَكِّينَ", "حَتَّىٰ", "تَأْتِيَهُمُ", "ٱلْبَيِّنَةُ", "١"),

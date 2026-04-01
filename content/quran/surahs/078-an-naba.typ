@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Naba (النبإ)
+#show: quran-page.with(title: "An-Naba", title-ar: "النبإ", title-tl: "An-Naba", locator: "078-an-naba")
 
 #quran-verse(
   ("عَمَّ", "يَتَسَآءَلُونَ", "١"),

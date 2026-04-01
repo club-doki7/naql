@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Mulk (الملك)
+#show: quran-page.with(title: "Al-Mulk", title-ar: "الملك", title-tl: "Al-Mulk", locator: "067-al-mulk")
 
 #quran-verse(
   ("تَبَـٰرَكَ", "ٱلَّذِى", "بِيَدِهِ", "ٱلْمُلْكُ", "وَهُوَ", "عَلَىٰ", "كُلِّ", "شَىْءٍۢ", "قَدِيرٌ", "١"),

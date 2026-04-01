@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Kahf (الكهف)
+#show: quran-page.with(title: "Al-Kahf", title-ar: "الكهف", title-tl: "Al-Kahf", locator: "018-al-kahf")
 
 #quran-verse(
   ("ٱلْحَمْدُ", "لِلَّهِ", "ٱلَّذِىٓ", "أَنزَلَ", "عَلَىٰ", "عَبْدِهِ", "ٱلْكِتَـٰبَ", "وَلَمْ", "يَجْعَل", "لَّهُۥ", "عِوَجَاۜ", "١"),

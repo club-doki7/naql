@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Najm (النجم)
+#show: quran-page.with(title: "An-Najm", title-ar: "النجم", title-tl: "An-Najm", locator: "053-an-najm")
 
 #quran-verse(
   ("وَٱلنَّجْمِ", "إِذَا", "هَوَىٰ", "١"),

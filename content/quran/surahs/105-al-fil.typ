@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Fil (الفيل)
+#show: quran-page.with(title: "Al-Fil", title-ar: "الفيل", title-tl: "Al-Fil", locator: "105-al-fil")
 
 #quran-verse(
   ("أَلَمْ", "تَرَ", "كَيْفَ", "فَعَلَ", "رَبُّكَ", "بِأَصْحَـٰبِ", "ٱلْفِيلِ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ad-Duhaa (الضحى)
+#show: quran-page.with(title: "Ad-Duhaa", title-ar: "الضحى", title-tl: "Ad-Duhaa", locator: "093-ad-duhaa")
 
 #quran-verse(
   ("وَٱلضُّحَىٰ", "١"),

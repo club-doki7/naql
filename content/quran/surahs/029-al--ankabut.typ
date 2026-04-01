@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-'Ankabut (العنكبوت)
+#show: quran-page.with(title: "Al-'Ankabut", title-ar: "العنكبوت", title-tl: "Al-'Ankabut", locator: "029-al--ankabut")
 
 #quran-verse(
   ("الٓمٓ", "١"),

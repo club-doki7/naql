@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Fajr (الفجر)
+#show: quran-page.with(title: "Al-Fajr", title-ar: "الفجر", title-tl: "Al-Fajr", locator: "089-al-fajr")
 
 #quran-verse(
   ("وَٱلْفَجْرِ", "١"),

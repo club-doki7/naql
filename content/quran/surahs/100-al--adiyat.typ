@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-'Adiyat (العاديات)
+#show: quran-page.with(title: "Al-'Adiyat", title-ar: "العاديات", title-tl: "Al-'Adiyat", locator: "100-al--adiyat")
 
 #quran-verse(
   ("وَٱلْعَـٰدِيَـٰتِ", "ضَبْحًۭا", "١"),

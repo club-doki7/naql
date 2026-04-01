@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Tahrim (التحريم)
+#show: quran-page.with(title: "At-Tahrim", title-ar: "التحريم", title-tl: "At-Tahrim", locator: "066-at-tahrim")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلنَّبِىُّ", "لِمَ", "تُحَرِّمُ", "مَآ", "أَحَلَّ", "ٱللَّهُ", "لَكَ ۖ", "تَبْتَغِى", "مَرْضَاتَ", "أَزْوَٰجِكَ ۚ", "وَٱللَّهُ", "غَفُورٌۭ", "رَّحِيمٌۭ", "١"),

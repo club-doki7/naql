@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Muhammad (محمد)
+#show: quran-page.with(title: "Muhammad", title-ar: "محمد", title-tl: "Muhammad", locator: "047-muhammad")
 
 #quran-verse(
   ("ٱلَّذِينَ", "كَفَرُوا۟", "وَصَدُّوا۟", "عَن", "سَبِيلِ", "ٱللَّهِ", "أَضَلَّ", "أَعْمَـٰلَهُمْ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Adh-Dhariyat (الذاريات)
+#show: quran-page.with(title: "Adh-Dhariyat", title-ar: "الذاريات", title-tl: "Adh-Dhariyat", locator: "051-adh-dhariyat")
 
 #quran-verse(
   ("وَٱلذَّٰرِيَـٰتِ", "ذَرْوًۭا", "١"),

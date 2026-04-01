@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-A'la (الأعلى)
+#show: quran-page.with(title: "Al-A'la", title-ar: "الأعلى", title-tl: "Al-A'la", locator: "087-al-a-la")
 
 #quran-verse(
   ("سَبِّحِ", "ٱسْمَ", "رَبِّكَ", "ٱلْأَعْلَى", "١"),

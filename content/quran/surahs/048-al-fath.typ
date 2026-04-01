@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Fath (الفتح)
+#show: quran-page.with(title: "Al-Fath", title-ar: "الفتح", title-tl: "Al-Fath", locator: "048-al-fath")
 
 #quran-verse(
   ("إِنَّا", "فَتَحْنَا", "لَكَ", "فَتْحًۭا", "مُّبِينًۭا", "١"),

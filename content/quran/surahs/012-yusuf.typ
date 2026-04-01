@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Yusuf (يوسف)
+#show: quran-page.with(title: "Yusuf", title-ar: "يوسف", title-tl: "Yusuf", locator: "012-yusuf")
 
 #quran-verse(
   ("الٓر ۚ", "تِلْكَ", "ءَايَـٰتُ", "ٱلْكِتَـٰبِ", "ٱلْمُبِينِ", "١"),

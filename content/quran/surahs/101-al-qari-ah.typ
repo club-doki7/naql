@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qari'ah (القارعة)
+#show: quran-page.with(title: "Al-Qari'ah", title-ar: "القارعة", title-tl: "Al-Qari'ah", locator: "101-al-qari-ah")
 
 #quran-verse(
   ("ٱلْقَارِعَةُ", "١"),

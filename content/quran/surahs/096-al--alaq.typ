@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-'Alaq (العلق)
+#show: quran-page.with(title: "Al-'Alaq", title-ar: "العلق", title-tl: "Al-'Alaq", locator: "096-al--alaq")
 
 #quran-verse(
   ("ٱقْرَأْ", "بِٱسْمِ", "رَبِّكَ", "ٱلَّذِى", "خَلَقَ", "١"),

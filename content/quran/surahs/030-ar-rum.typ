@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ar-Rum (الروم)
+#show: quran-page.with(title: "Ar-Rum", title-ar: "الروم", title-tl: "Ar-Rum", locator: "030-ar-rum")
 
 #quran-verse(
   ("الٓمٓ", "١"),

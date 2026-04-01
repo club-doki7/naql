@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Infitar (الإنفطار)
+#show: quran-page.with(title: "Al-Infitar", title-ar: "الإنفطار", title-tl: "Al-Infitar", locator: "082-al-infitar")
 
 #quran-verse(
   ("إِذَا", "ٱلسَّمَآءُ", "ٱنفَطَرَتْ", "١"),

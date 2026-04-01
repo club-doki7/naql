@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= As-Saffat (الصافات)
+#show: quran-page.with(title: "As-Saffat", title-ar: "الصافات", title-tl: "As-Saffat", locator: "037-as-saffat")
 
 #quran-verse(
   ("وَٱلصَّـٰٓفَّـٰتِ", "صَفًّۭا", "١"),

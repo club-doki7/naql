@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ghafir (غافر)
+#show: quran-page.with(title: "Ghafir", title-ar: "غافر", title-tl: "Ghafir", locator: "040-ghafir")
 
 #quran-verse(
   ("حمٓ", "١"),

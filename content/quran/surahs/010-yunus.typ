@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Yunus (يونس)
+#show: quran-page.with(title: "Yunus", title-ar: "يونس", title-tl: "Yunus", locator: "010-yunus")
 
 #quran-verse(
   ("الٓر ۚ", "تِلْكَ", "ءَايَـٰتُ", "ٱلْكِتَـٰبِ", "ٱلْحَكِيمِ", "١"),

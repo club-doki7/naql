@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Muzzammil (المزمل)
+#show: quran-page.with(title: "Al-Muzzammil", title-ar: "المزمل", title-tl: "Al-Muzzammil", locator: "073-al-muzzammil")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلْمُزَّمِّلُ", "١"),

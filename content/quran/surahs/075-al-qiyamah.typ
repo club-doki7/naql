@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qiyamah (القيامة)
+#show: quran-page.with(title: "Al-Qiyamah", title-ar: "القيامة", title-tl: "Al-Qiyamah", locator: "075-al-qiyamah")
 
 #quran-verse(
   ("لَآ", "أُقْسِمُ", "بِيَوْمِ", "ٱلْقِيَـٰمَةِ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Mu'minun (المؤمنون)
+#show: quran-page.with(title: "Al-Mu'minun", title-ar: "المؤمنون", title-tl: "Al-Mu'minun", locator: "023-al-mu-minun")
 
 #quran-verse(
   ("قَدْ", "أَفْلَحَ", "ٱلْمُؤْمِنُونَ", "١"),

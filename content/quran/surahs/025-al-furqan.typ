@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Furqan (الفرقان)
+#show: quran-page.with(title: "Al-Furqan", title-ar: "الفرقان", title-tl: "Al-Furqan", locator: "025-al-furqan")
 
 #quran-verse(
   ("تَبَارَكَ", "ٱلَّذِى", "نَزَّلَ", "ٱلْفُرْقَانَ", "عَلَىٰ", "عَبْدِهِۦ", "لِيَكُونَ", "لِلْعَـٰلَمِينَ", "نَذِيرًا", "١"),

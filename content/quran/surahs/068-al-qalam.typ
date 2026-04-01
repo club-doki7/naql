@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qalam (القلم)
+#show: quran-page.with(title: "Al-Qalam", title-ar: "القلم", title-tl: "Al-Qalam", locator: "068-al-qalam")
 
 #quran-verse(
   ("نٓ ۚ", "وَٱلْقَلَمِ", "وَمَا", "يَسْطُرُونَ", "١"),

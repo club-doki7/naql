@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Tawbah (التوبة)
+#show: quran-page.with(title: "At-Tawbah", title-ar: "التوبة", title-tl: "At-Tawbah", locator: "009-at-tawbah")
 
 #quran-verse(
   ("بَرَآءَةٌۭ", "مِّنَ", "ٱللَّهِ", "وَرَسُولِهِۦٓ", "إِلَى", "ٱلَّذِينَ", "عَـٰهَدتُّم", "مِّنَ", "ٱلْمُشْرِكِينَ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Humazah (الهمزة)
+#show: quran-page.with(title: "Al-Humazah", title-ar: "الهمزة", title-tl: "Al-Humazah", locator: "104-al-humazah")
 
 #quran-verse(
   ("وَيْلٌۭ", "لِّكُلِّ", "هُمَزَةٍۢ", "لُّمَزَةٍ", "١"),

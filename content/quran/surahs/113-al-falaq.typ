@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Falaq (الفلق)
+#show: quran-page.with(title: "Al-Falaq", title-ar: "الفلق", title-tl: "Al-Falaq", locator: "113-al-falaq")
 
 #quran-verse(
   ("قُلْ", "أَعُوذُ", "بِرَبِّ", "ٱلْفَلَقِ", "١"),

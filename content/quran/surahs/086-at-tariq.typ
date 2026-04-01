@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Tariq (الطارق)
+#show: quran-page.with(title: "At-Tariq", title-ar: "الطارق", title-tl: "At-Tariq", locator: "086-at-tariq")
 
 #quran-verse(
   ("وَٱلسَّمَآءِ", "وَٱلطَّارِقِ", "١"),

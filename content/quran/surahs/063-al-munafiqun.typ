@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Munafiqun (المنافقون)
+#show: quran-page.with(title: "Al-Munafiqun", title-ar: "المنافقون", title-tl: "Al-Munafiqun", locator: "063-al-munafiqun")
 
 #quran-verse(
   ("إِذَا", "جَآءَكَ", "ٱلْمُنَـٰفِقُونَ", "قَالُوا۟", "نَشْهَدُ", "إِنَّكَ", "لَرَسُولُ", "ٱللَّهِ ۗ", "وَٱللَّهُ", "يَعْلَمُ", "إِنَّكَ", "لَرَسُولُهُۥ", "وَٱللَّهُ", "يَشْهَدُ", "إِنَّ", "ٱلْمُنَـٰفِقِينَ", "لَكَـٰذِبُونَ", "١"),

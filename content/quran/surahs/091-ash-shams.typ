@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ash-Shams (الشمس)
+#show: quran-page.with(title: "Ash-Shams", title-ar: "الشمس", title-tl: "Ash-Shams", locator: "091-ash-shams")
 
 #quran-verse(
   ("وَٱلشَّمْسِ", "وَضُحَىٰهَا", "١"),

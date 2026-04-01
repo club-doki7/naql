@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Mursalat (المرسلات)
+#show: quran-page.with(title: "Al-Mursalat", title-ar: "المرسلات", title-tl: "Al-Mursalat", locator: "077-al-mursalat")
 
 #quran-verse(
   ("وَٱلْمُرْسَلَـٰتِ", "عُرْفًۭا", "١"),

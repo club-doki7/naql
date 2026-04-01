@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Balad (البلد)
+#show: quran-page.with(title: "Al-Balad", title-ar: "البلد", title-tl: "Al-Balad", locator: "090-al-balad")
 
 #quran-verse(
   ("لَآ", "أُقْسِمُ", "بِهَـٰذَا", "ٱلْبَلَدِ", "١"),

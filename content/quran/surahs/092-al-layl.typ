@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Layl (الليل)
+#show: quran-page.with(title: "Al-Layl", title-ar: "الليل", title-tl: "Al-Layl", locator: "092-al-layl")
 
 #quran-verse(
   ("وَٱلَّيْلِ", "إِذَا", "يَغْشَىٰ", "١"),

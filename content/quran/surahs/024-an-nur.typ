@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Nur (النور)
+#show: quran-page.with(title: "An-Nur", title-ar: "النور", title-tl: "An-Nur", locator: "024-an-nur")
 
 #quran-verse(
   ("سُورَةٌ", "أَنزَلْنَـٰهَا", "وَفَرَضْنَـٰهَا", "وَأَنزَلْنَا", "فِيهَآ", "ءَايَـٰتٍۭ", "بَيِّنَـٰتٍۢ", "لَّعَلَّكُمْ", "تَذَكَّرُونَ", "١"),

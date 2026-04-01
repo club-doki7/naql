@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-A'raf (الأعراف)
+#show: quran-page.with(title: "Al-A'raf", title-ar: "الأعراف", title-tl: "Al-A'raf", locator: "007-al-a-raf")
 
 #quran-verse(
   ("الٓمٓصٓ", "١"),

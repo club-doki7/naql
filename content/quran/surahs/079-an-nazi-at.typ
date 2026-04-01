@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= An-Nazi'at (النازعات)
+#show: quran-page.with(title: "An-Nazi'at", title-ar: "النازعات", title-tl: "An-Nazi'at", locator: "079-an-nazi-at")
 
 #quran-verse(
   ("وَٱلنَّـٰزِعَـٰتِ", "غَرْقًۭا", "١"),

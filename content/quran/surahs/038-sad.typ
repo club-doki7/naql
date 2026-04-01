@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Sad (ص)
+#show: quran-page.with(title: "Sad", title-ar: "ص", title-tl: "Sad", locator: "038-sad")
 
 #quran-verse(
   ("صٓ ۚ", "وَٱلْقُرْءَانِ", "ذِى", "ٱلذِّكْرِ", "١"),

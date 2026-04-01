@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ash-Sharh (الشرح)
+#show: quran-page.with(title: "Ash-Sharh", title-ar: "الشرح", title-tl: "Ash-Sharh", locator: "094-ash-sharh")
 
 #quran-verse(
   ("أَلَمْ", "نَشْرَحْ", "لَكَ", "صَدْرَكَ", "١"),

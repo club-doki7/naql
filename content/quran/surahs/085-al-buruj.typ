@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Buruj (البروج)
+#show: quran-page.with(title: "Al-Buruj", title-ar: "البروج", title-tl: "Al-Buruj", locator: "085-al-buruj")
 
 #quran-verse(
   ("وَٱلسَّمَآءِ", "ذَاتِ", "ٱلْبُرُوجِ", "١"),

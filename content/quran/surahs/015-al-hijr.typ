@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Hijr (الحجر)
+#show: quran-page.with(title: "Al-Hijr", title-ar: "الحجر", title-tl: "Al-Hijr", locator: "015-al-hijr")
 
 #quran-verse(
   ("الٓر ۚ", "تِلْكَ", "ءَايَـٰتُ", "ٱلْكِتَـٰبِ", "وَقُرْءَانٍۢ", "مُّبِينٍۢ", "١"),

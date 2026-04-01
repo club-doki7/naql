@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ali 'Imran (آل عمران)
+#show: quran-page.with(title: "Ali 'Imran", title-ar: "آل عمران", title-tl: "Ali 'Imran", locator: "003-ali--imran")
 
 #quran-verse(
   ("الٓمٓ", "١"),

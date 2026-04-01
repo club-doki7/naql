@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Az-Zalzalah (الزلزلة)
+#show: quran-page.with(title: "Az-Zalzalah", title-ar: "الزلزلة", title-tl: "Az-Zalzalah", locator: "099-az-zalzalah")
 
 #quran-verse(
   ("إِذَا", "زُلْزِلَتِ", "ٱلْأَرْضُ", "زِلْزَالَهَا", "١"),

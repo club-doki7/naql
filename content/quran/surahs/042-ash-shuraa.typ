@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ash-Shuraa (الشورى)
+#show: quran-page.with(title: "Ash-Shuraa", title-ar: "الشورى", title-tl: "Ash-Shuraa", locator: "042-ash-shuraa")
 
 #quran-verse(
   ("حمٓ", "١"),

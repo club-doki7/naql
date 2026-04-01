@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Taghabun (التغابن)
+#show: quran-page.with(title: "At-Taghabun", title-ar: "التغابن", title-tl: "At-Taghabun", locator: "064-at-taghabun")
 
 #quran-verse(
   ("يُسَبِّحُ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ ۖ", "لَهُ", "ٱلْمُلْكُ", "وَلَهُ", "ٱلْحَمْدُ ۖ", "وَهُوَ", "عَلَىٰ", "كُلِّ", "شَىْءٍۢ", "قَدِيرٌ", "١"),

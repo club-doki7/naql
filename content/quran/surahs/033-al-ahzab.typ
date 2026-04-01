@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ahzab (الأحزاب)
+#show: quran-page.with(title: "Al-Ahzab", title-ar: "الأحزاب", title-tl: "Al-Ahzab", locator: "033-al-ahzab")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلنَّبِىُّ", "ٱتَّقِ", "ٱللَّهَ", "وَلَا", "تُطِعِ", "ٱلْكَـٰفِرِينَ", "وَٱلْمُنَـٰفِقِينَ ۗ", "إِنَّ", "ٱللَّهَ", "كَانَ", "عَلِيمًا", "حَكِيمًۭا", "١"),

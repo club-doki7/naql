@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ma'un (الماعون)
+#show: quran-page.with(title: "Al-Ma'un", title-ar: "الماعون", title-tl: "Al-Ma'un", locator: "107-al-ma-un")
 
 #quran-verse(
   ("أَرَءَيْتَ", "ٱلَّذِى", "يُكَذِّبُ", "بِٱلدِّينِ", "١"),

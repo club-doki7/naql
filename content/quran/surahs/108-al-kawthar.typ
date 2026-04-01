@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Kawthar (الكوثر)
+#show: quran-page.with(title: "Al-Kawthar", title-ar: "الكوثر", title-tl: "Al-Kawthar", locator: "108-al-kawthar")
 
 #quran-verse(
   ("إِنَّآ", "أَعْطَيْنَـٰكَ", "ٱلْكَوْثَرَ", "١"),

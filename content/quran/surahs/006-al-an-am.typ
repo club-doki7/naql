@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-An'am (الأنعام)
+#show: quran-page.with(title: "Al-An'am", title-ar: "الأنعام", title-tl: "Al-An'am", locator: "006-al-an-am")
 
 #quran-verse(
   ("ٱلْحَمْدُ", "لِلَّهِ", "ٱلَّذِى", "خَلَقَ", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضَ", "وَجَعَلَ", "ٱلظُّلُمَـٰتِ", "وَٱلنُّورَ ۖ", "ثُمَّ", "ٱلَّذِينَ", "كَفَرُوا۟", "بِرَبِّهِمْ", "يَعْدِلُونَ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Nuh (نوح)
+#show: quran-page.with(title: "Nuh", title-ar: "نوح", title-tl: "Nuh", locator: "071-nuh")
 
 #quran-verse(
   ("إِنَّآ", "أَرْسَلْنَا", "نُوحًا", "إِلَىٰ", "قَوْمِهِۦٓ", "أَنْ", "أَنذِرْ", "قَوْمَكَ", "مِن", "قَبْلِ", "أَن", "يَأْتِيَهُمْ", "عَذَابٌ", "أَلِيمٌۭ", "١"),

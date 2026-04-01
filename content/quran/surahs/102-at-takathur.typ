@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Takathur (التكاثر)
+#show: quran-page.with(title: "At-Takathur", title-ar: "التكاثر", title-tl: "At-Takathur", locator: "102-at-takathur")
 
 #quran-verse(
   ("أَلْهَىٰكُمُ", "ٱلتَّكَاثُرُ", "١"),

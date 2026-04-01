@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ikhlas (الإخلاص)
+#show: quran-page.with(title: "Al-Ikhlas", title-ar: "الإخلاص", title-tl: "Al-Ikhlas", locator: "112-al-ikhlas")
 
 #quran-verse(
   ("قُلْ", "هُوَ", "ٱللَّهُ", "أَحَدٌ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ma'arij (المعارج)
+#show: quran-page.with(title: "Al-Ma'arij", title-ar: "المعارج", title-tl: "Al-Ma'arij", locator: "070-al-ma-arij")
 
 #quran-verse(
   ("سَأَلَ", "سَآئِلٌۢ", "بِعَذَابٍۢ", "وَاقِعٍۢ", "١"),

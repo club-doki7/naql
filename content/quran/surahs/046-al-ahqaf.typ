@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Ahqaf (الأحقاف)
+#show: quran-page.with(title: "Al-Ahqaf", title-ar: "الأحقاف", title-tl: "Al-Ahqaf", locator: "046-al-ahqaf")
 
 #quran-verse(
   ("حمٓ", "١"),

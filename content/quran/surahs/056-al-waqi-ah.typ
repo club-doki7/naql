@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Waqi'ah (الواقعة)
+#show: quran-page.with(title: "Al-Waqi'ah", title-ar: "الواقعة", title-tl: "Al-Waqi'ah", locator: "056-al-waqi-ah")
 
 #quran-verse(
   ("إِذَا", "وَقَعَتِ", "ٱلْوَاقِعَةُ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Az-Zumar (الزمر)
+#show: quran-page.with(title: "Az-Zumar", title-ar: "الزمر", title-tl: "Az-Zumar", locator: "039-az-zumar")
 
 #quran-verse(
   ("تَنزِيلُ", "ٱلْكِتَـٰبِ", "مِنَ", "ٱللَّهِ", "ٱلْعَزِيزِ", "ٱلْحَكِيمِ", "١"),

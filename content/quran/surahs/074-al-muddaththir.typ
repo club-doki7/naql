@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Muddaththir (المدثر)
+#show: quran-page.with(title: "Al-Muddaththir", title-ar: "المدثر", title-tl: "Al-Muddaththir", locator: "074-al-muddaththir")
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلْمُدَّثِّرُ", "١"),

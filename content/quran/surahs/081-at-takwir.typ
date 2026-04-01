@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= At-Takwir (التكوير)
+#show: quran-page.with(title: "At-Takwir", title-ar: "التكوير", title-tl: "At-Takwir", locator: "081-at-takwir")
 
 #quran-verse(
   ("إِذَا", "ٱلشَّمْسُ", "كُوِّرَتْ", "١"),

@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Ar-Rahman (الرحمن)
+#show: quran-page.with(title: "Ar-Rahman", title-ar: "الرحمن", title-tl: "Ar-Rahman", locator: "055-ar-rahman")
 
 #quran-verse(
   ("ٱلرَّحْمَـٰنُ", "١"),

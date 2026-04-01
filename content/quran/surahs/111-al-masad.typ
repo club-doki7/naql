@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Masad (المسد)
+#show: quran-page.with(title: "Al-Masad", title-ar: "المسد", title-tl: "Al-Masad", locator: "111-al-masad")
 
 #quran-verse(
   ("تَبَّتْ", "يَدَآ", "أَبِى", "لَهَبٍۢ", "وَتَبَّ", "١"),

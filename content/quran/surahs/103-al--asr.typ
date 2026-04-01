@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-'Asr (العصر)
+#show: quran-page.with(title: "Al-'Asr", title-ar: "العصر", title-tl: "Al-'Asr", locator: "103-al--asr")
 
 #quran-verse(
   ("وَٱلْعَصْرِ", "١"),

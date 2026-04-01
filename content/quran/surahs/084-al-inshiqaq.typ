@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Inshiqaq (الإنشقاق)
+#show: quran-page.with(title: "Al-Inshiqaq", title-ar: "الإنشقاق", title-tl: "Al-Inshiqaq", locator: "084-al-inshiqaq")
 
 #quran-verse(
   ("إِذَا", "ٱلسَّمَآءُ", "ٱنشَقَّتْ", "١"),

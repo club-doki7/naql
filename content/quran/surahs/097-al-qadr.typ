@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qadr (القدر)
+#show: quran-page.with(title: "Al-Qadr", title-ar: "القدر", title-tl: "Al-Qadr", locator: "097-al-qadr")
 
 #quran-verse(
   ("إِنَّآ", "أَنزَلْنَـٰهُ", "فِى", "لَيْلَةِ", "ٱلْقَدْرِ", "١"),

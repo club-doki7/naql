@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Fussilat (فصلت)
+#show: quran-page.with(title: "Fussilat", title-ar: "فصلت", title-tl: "Fussilat", locator: "041-fussilat")
 
 #quran-verse(
   ("حمٓ", "١"),

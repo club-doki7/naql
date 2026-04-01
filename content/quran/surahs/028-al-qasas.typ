@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Qasas (القصص)
+#show: quran-page.with(title: "Al-Qasas", title-ar: "القصص", title-tl: "Al-Qasas", locator: "028-al-qasas")
 
 #quran-verse(
   ("طسٓمٓ", "١"),

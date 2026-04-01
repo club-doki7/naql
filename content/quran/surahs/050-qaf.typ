@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Qaf (ق)
+#show: quran-page.with(title: "Qaf", title-ar: "ق", title-tl: "Qaf", locator: "050-qaf")
 
 #quran-verse(
   ("قٓ ۚ", "وَٱلْقُرْءَانِ", "ٱلْمَجِيدِ", "١"),

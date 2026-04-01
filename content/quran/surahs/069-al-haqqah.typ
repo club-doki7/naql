@@ -1,6 +1,6 @@
-#import "../libquran.typ": quran-verse
+#import "../libquran.typ": *
 
-= Al-Haqqah (الحاقة)
+#show: quran-page.with(title: "Al-Haqqah", title-ar: "الحاقة", title-tl: "Al-Haqqah", locator: "069-al-haqqah")
 
 #quran-verse(
   ("ٱلْحَآقَّةُ", "١"),
