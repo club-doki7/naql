@@ -4,7 +4,7 @@
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
-  set page(paper: "iso-b5", numbering: "1")
+  set page(paper: "iso-b5", numbering: "1", margin: 2cm)
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
 
@@ -35,6 +35,7 @@
     colbreak()
     set text(dir: ltr)
     translation
+    v(0.5em)
   }, width: 100%, breakable: false)
 }
 
@@ -56,4 +57,4 @@
   #cuti[答：]#a
 ]
 
-#let bismillah = align(center)[﷽]
+#let bismillah = align(center, text(font: "Noto Naskh Arabic")[﷽])

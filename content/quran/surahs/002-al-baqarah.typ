@@ -7,7 +7,7 @@
   locator: "002-al-baqarah"
 )
 
-#bismillah
+#align(center, text(font: "Noto Naskh Arabic")[﷽#footnote[这也是太斯米（“奉至仁至慈的真主之名”）的一种书写形式。]])
 
 #quran-verse(
   ("الٓمٓ", "١"),
