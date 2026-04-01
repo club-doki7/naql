@@ -41,7 +41,7 @@
 
 #let make-box(title) = (section: "", src: "", breakable: false, content) => {
   block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
-    *#title* #section
+    *#title* #section #h(1fr) #text(size: 10pt, src)
 
     #text(font: fangsong-fonts, size: 10pt, content)
   ])
@@ -60,4 +60,4 @@
 #let bismillah = align(center, text(font: "Noto Naskh Arabic")[﷽])
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
-#let tazkirul-quran = [Maulana Wahiduddin Khan, _Tazkirul Quran_]
+#let tazkirul-quran = [Wahiduddin Khan, _Tazkirul Quran_]
