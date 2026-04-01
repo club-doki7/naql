@@ -251,7 +251,7 @@
 
 #quran-verse(
   ("وَءَامِنُوا۟", "بِمَآ", "أَنزَلْتُ", "مُصَدِّقًۭا", "لِّمَا", "مَعَكُمْ", "وَلَا", "تَكُونُوٓا۟", "أَوَّلَ", "كَافِرٍۭ", "بِهِۦ ۖ", "وَلَا", "تَشْتَرُوا۟", "بِـَٔايَـٰتِى", "ثَمَنًۭا", "قَلِيلًۭا", "وَإِيَّـٰىَ", "فَٱتَّقُونِ", "٤١"),
-  ("waāminū", "bimā", "anzaltu", "muṣaddiqan", "limā", "maʿakum", "walā", "takūnū", "awwala", "kāfirin", "bihi", "walā", "tashtarū", "biāyātī", "thamanan", "qalīlan", "wa-iyyāya", "fa-ittaqūni", "(41)"),
+  ("waāminū", "bimā", "anzaltu", "muṣaddiqan", "limā", "maʿakum", "walā", "takūnū", "awwala", [#h(2em)kāfirin], "bihi", "walā", "tashtarū", "biāyātī", "thamanan", "qalīlan", "wa-iyyāya", "fa-ittaqūni", "(41)"),
   ([你们当信我所降示的，这能证实你们所有的经典，你们不要做首先不信的人，不要以廉价出卖我的迹象，你们应当只敬畏我。]),
 )
 
