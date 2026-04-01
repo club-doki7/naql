@@ -21,12 +21,12 @@
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: 0.5em, top: 0.6em, bottom: 0.4em),
+        inset: (x: 0.45em, top: 0.6em, bottom: 0.4em),
         align(center,
           stack(
             dir: ttb,
-            spacing: 1.2em,
-            text(font: "Scheherazade New", weight: 600, size: 18pt, lang: "ar", word.at(i)),
+            spacing: 1.1em,
+            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 12pt } else { 18pt }, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
