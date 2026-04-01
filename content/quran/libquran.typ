@@ -1,9 +1,16 @@
+#import "@preview/cuti:0.4.0": cn-fakebold as cuti
+
+#let zh-fonts = ("Libertinus Serif", "Noto Serif CJK SC", "Noto Naskh Arabic")
+#let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
+
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
   set page(paper: "iso-b5", numbering: "1")
-  set text(font: ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC", "Noto Naskh Arabic"), lang: "zh", size: 12pt)
+  set text(font: zh-fonts, lang: "zh", size: 11pt)
+  show heading: set align(center)
 
   [
     = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
+    #v(1em)
 
     #body
   ]
@@ -30,3 +37,23 @@
     translation
   }, width: 100%, breakable: false)
 }
+
+#let make-box(title) = (section: "", breakable: false, content) => {
+  block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
+    *#title* #section
+
+    #text(font: fangsong-fonts, size: 10pt, content)
+  ])
+}
+
+#let intro = make-box("导读")
+
+#let tafsir = make-box("经注")
+
+#let qa(q, a) = make-box("问答")[
+  #cuti[问：]#q
+
+  #cuti[答：]#a
+]
+
+#let bismillah = align(center)[﷽]
