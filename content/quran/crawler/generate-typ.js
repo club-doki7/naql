@@ -20,6 +20,7 @@ function generateVerse(verse) {
 
   const arWords = words.map(w => w.textUthmani)
   const translitWords = words.map(w => w.transliteration?.text || '')
+  const zhTranslation = verse.translations?.find(t => t.resourceId === 56)?.text || ''
   // const zhWords = words.map(w => w.translation?.text || '')
 
   // Append verse number marker
@@ -35,15 +36,8 @@ function generateVerse(verse) {
   lines.push(`#quran-verse(`)
   lines.push(`  (${fmt(arWords)}),`)
   lines.push(`  (${fmt(translitWords)}),`)
-  // lines.push(`  (${fmt(zhWords)}),`)
+  lines.push(`  ([${zhTranslation}]),`)
   lines.push(`)`)
-
-  // Chinese translation (resourceId 56 = Ma Jian)
-  const zhTranslation = verse.translations?.find(t => t.resourceId === 56)
-  if (zhTranslation) {
-    lines.push(``)
-    lines.push(`${stripHtml(zhTranslation.text)}`)
-  }
 
   return lines.join('\n')
 }

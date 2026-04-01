@@ -9,10 +9,9 @@
   ]
 }
 
-#let quran-verse(word, translit) = {
-  set text(dir: rtl)
-  set par(justify: false, leading: 1.2em)
+#let quran-verse(word, translit, translation) = {
   block({
+    set text(dir: rtl)
     for i in range(word.len()) {
       box(
         inset: (x: 0.4em),
@@ -20,11 +19,14 @@
           stack(
             dir: ttb,
             spacing: 1em,
-            text(font: "Noto Naskh Arabic", weight: "medium", size: 24pt, lang: "ar", word.at(i)),
+            text(font: "Noto Naskh Arabic", weight: "medium", size: 20pt, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
       )
     }
-  })
+    colbreak()
+    set text(dir: ltr)
+    translation
+  }, width: 100%, breakable: false)
 }
