@@ -20,13 +20,13 @@ function generateVerse(verse) {
 
   const arWords = words.map(w => w.textUthmani)
   const translitWords = words.map(w => w.transliteration?.text || '')
-  const zhWords = words.map(w => w.translation?.text || '')
+  // const zhWords = words.map(w => w.translation?.text || '')
 
   // Append verse number marker
   if (endMark) {
     arWords.push(endMark.textUthmani)
     translitWords.push(endMark.translation?.text || `(${verse.verseNumber})`)
-    zhWords.push('')
+    // zhWords.push('')
   }
 
   const fmt = arr => arr.map(s => `"${escapeTypst(s)}"`).join(', ')
@@ -35,7 +35,7 @@ function generateVerse(verse) {
   lines.push(`#quran-verse(`)
   lines.push(`  (${fmt(arWords)}),`)
   lines.push(`  (${fmt(translitWords)}),`)
-  lines.push(`  (${fmt(zhWords)}),`)
+  // lines.push(`  (${fmt(zhWords)}),`)
   lines.push(`)`)
 
   // Chinese translation (resourceId 56 = Ma Jian)
