@@ -51,7 +51,7 @@
 
 #let tafsir = make-box("经注")
 
-#let qa(q, a) = make-box("问答")[
+#let qa(section: "", src: "", q, a) = make-box("问答")(section: section, src: src)[
   #cuti[问：]#q
 
   #cuti[答：]#a
@@ -62,3 +62,4 @@
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
 #let tazkirul-quran = [Wahiduddin Khan, _Tazkirul Quran_]
+#let quran-com-answer(verse, answer) = text(link("https://quran.com/" + verse + "/answers/" + answer), fill: rgb("#00007F"))
