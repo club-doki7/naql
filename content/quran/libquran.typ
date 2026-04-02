@@ -58,6 +58,7 @@
 ]
 
 #let bismillah = align(center, text(font: "Noto Naskh Arabic")[﷽])
+#let pbuh = text(font: "Scheherazade New")[ﷺ]
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
 #let tazkirul-quran = [Wahiduddin Khan, _Tazkirul Quran_]
