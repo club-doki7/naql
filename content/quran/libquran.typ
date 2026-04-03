@@ -10,7 +10,7 @@
 
   [
     = #title (#text(lang: "ar", font: "Scheherazade New", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
-    #v(0.75em)
+    #v(1em)
 
     #body
   ]
@@ -26,7 +26,7 @@
           stack(
             dir: ttb,
             spacing: 1em,
-            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 12pt } else { 14pt }, lang: "ar", word.at(i)),
+            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 10pt } else { 14pt }, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
@@ -41,7 +41,7 @@
 
 #let make-box(title) = (section: "", src: "", breakable: false, content) => {
   block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
-    *#text(size: 11pt, title)* #section #h(1fr) #text(size: 10pt, src)
+    *#text(size: 12pt, title)* #section #h(1fr) #text(size: 10pt, src)
 
     #text(font: fangsong-fonts, size: 11pt, content)
   ])
