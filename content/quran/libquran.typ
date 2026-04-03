@@ -27,14 +27,12 @@
             dir: ttb,
             spacing: 1em,
             text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 10pt } else { 14pt }, lang: "ar", word.at(i)),
-            text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
+            text(dir: ltr, size: if (i == word.len() - 1) { 9pt } else { 10pt } , style: "italic", translit.at(i))
           )
         )
       )
     }
-    colbreak()
-    set text(dir: ltr)
-    translation
+    colbreak(); set text(dir: ltr); translation
     v(0.15em)
   }, width: 100%, breakable: false)
 }
