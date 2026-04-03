@@ -148,7 +148,7 @@
 
 #quran-verse(
   ("تُؤْتِىٓ", "أُكُلَهَا", "كُلَّ", "حِينٍۭ", "بِإِذْنِ", "رَبِّهَا ۗ", "وَيَضْرِبُ", "ٱللَّهُ", "ٱلْأَمْثَالَ", "لِلنَّاسِ", "لَعَلَّهُمْ", "يَتَذَكَّرُونَ", "٢٥"),
-  ("tu'tī", "ukulahā", "kulla", "ḥīnin", "bi-idh'ni", "rabbihā", "wayaḍribu", "l-lahu", "l-amthāla", "lilnnāsi", "laʿallahum", "yatadhakkarūna", "(25)"),
+  ("tu'tī", "ukulahā", "kulla", [#h(1.75em)ḥīnin], "bi-idh'ni", "rabbihā", "wayaḍribu", "l-lahu", "l-amthāla", "lilnnāsi", "laʿallahum", "yatadhakkarūna", "(25)"),
   ([凭主的许可，按时结果。真主为众人打了许多比方，以便他们记取教诲。]),
 )
 

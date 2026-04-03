@@ -46,7 +46,7 @@
 
 #quran-verse(
   ("أَفَمَن", "زُيِّنَ", "لَهُۥ", "سُوٓءُ", "عَمَلِهِۦ", "فَرَءَاهُ", "حَسَنًۭا ۖ", "فَإِنَّ", "ٱللَّهَ", "يُضِلُّ", "مَن", "يَشَآءُ", "وَيَهْدِى", "مَن", "يَشَآءُ ۖ", "فَلَا", "تَذْهَبْ", "نَفْسُكَ", "عَلَيْهِمْ", "حَسَرَٰتٍ ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِمَا", "يَصْنَعُونَ", "٨"),
-  ("afaman", "zuyyina", "lahu", "sūu", "ʿamalihi", "faraāhu", "ḥasanan", "fa-inna", "l-laha", "yuḍillu", "man", "yashāu", "wayahdī", "man", "yashāu", "falā", "tadhhab", "nafsuka", "ʿalayhim", "ḥasarātin", "inna", "l-laha", "ʿalīmun", "bimā", "yaṣnaʿūna", "(8)"),
+  ("afaman", "zuyyina", "lahu", "sūu", "ʿamalihi", "faraāhu", "ḥasanan", "fa-inna", "l-laha", "yuḍillu", "man", "yashāu", "wayahdī", "man", "yashāu", "falā", "tadhhab", "nafsuka", "ʿalayhim", "ḥasarātin", "inna", "l-laha", [#h(1.75em)ʿalīmun], "bimā", "yaṣnaʿūna", "(8)"),
   ([为自己的恶行所迷惑，因而认恶为善者，象真主所引导的人吗？真主必使他所意欲者误入迷途，必使他所意欲者遵循正道，所以你不要为哀悼他们而丧生，真主确是全知他们的行为的。]),
 )
 
@@ -226,7 +226,7 @@
 
 #quran-verse(
   ("إِنَّ", "ٱللَّهَ", "عَـٰلِمُ", "غَيْبِ", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۚ", "إِنَّهُۥ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٣٨"),
-  ("inna", "l-laha", "ʿālimu", "ghaybi", "l-samāwāti", "wal-arḍi", "innahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(38)"),
+  ("inna", "l-laha", "ʿālimu", "ghaybi", "l-samāwāti", "wal-arḍi", "innahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(38)"),
   ([真主确是全知天地的幽玄的，他确是全知心事的。]),
 )
 

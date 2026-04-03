@@ -21,11 +21,11 @@
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: if (i == word.len() - 1) { 0.25em } else { 0.45em }, top: 0.35em, bottom: 0.35em),
+        inset: (x: if (i == word.len() - 1) { 0.25em } else { 0.35em }, top: 0.35em, bottom: 0.25em),
         align(center,
           stack(
             dir: ttb,
-            spacing: 1em,
+            spacing: 0.9em,
             text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 10pt } else { 14pt }, lang: "ar", word.at(i)),
             text(dir: ltr, size: if (i == word.len() - 1) { 9pt } else { 10pt } , style: "italic", translit.at(i))
           )
@@ -33,7 +33,7 @@
       )
     }
     colbreak(); set text(dir: ltr); translation
-    v(0.15em)
+    v(0.1em)
   }, width: 100%, breakable: false)
 }
 

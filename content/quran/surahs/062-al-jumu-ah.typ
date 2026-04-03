@@ -40,7 +40,7 @@
 
 #quran-verse(
   ("وَلَا", "يَتَمَنَّوْنَهُۥٓ", "أَبَدًۢا", "بِمَا", "قَدَّمَتْ", "أَيْدِيهِمْ ۚ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِٱلظَّـٰلِمِينَ", "٧"),
-  ("walā", "yatamannawnahu", "abadan", "bimā", "qaddamat", "aydīhim", "wal-lahu", "ʿalīmun", "bil-ẓālimīna", "(7)"),
+  ("walā", "yatamannawnahu", "abadan", "bimā", "qaddamat", "aydīhim", "wal-lahu", [#h(1.75em)ʿalīmun], "bil-ẓālimīna", "(7)"),
   ([他们因为曾经犯过罪，所以永远不希望早死。真主是全知不义者的。]),
 )
 

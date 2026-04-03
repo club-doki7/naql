@@ -136,7 +136,7 @@
 
 #quran-verse(
   ("وَمَن", "كَفَرَ", "فَلَا", "يَحْزُنكَ", "كُفْرُهُۥٓ ۚ", "إِلَيْنَا", "مَرْجِعُهُمْ", "فَنُنَبِّئُهُم", "بِمَا", "عَمِلُوٓا۟ ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٢٣"),
-  ("waman", "kafara", "falā", "yaḥzunka", "kuf'ruhu", "ilaynā", "marjiʿuhum", "fanunabbi-uhum", "bimā", "ʿamilū", "inna", "l-laha", "ʿalīmun", "bidhāti", "l-ṣudūri", "(23)"),
+  ("waman", "kafara", "falā", "yaḥzunka", "kuf'ruhu", "ilaynā", "marjiʿuhum", "fanunabbi-uhum", "bimā", "ʿamilū", "inna", "l-laha", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(23)"),
   ([不信道者，你不要为他们的不信而忧愁，他们只归于我，我要把他们的行为告诉他们。真主确是全知他们的胸怀的。]),
 )
 
@@ -202,6 +202,6 @@
 
 #quran-verse(
   ("إِنَّ", "ٱللَّهَ", "عِندَهُۥ", "عِلْمُ", "ٱلسَّاعَةِ", "وَيُنَزِّلُ", "ٱلْغَيْثَ", "وَيَعْلَمُ", "مَا", "فِى", "ٱلْأَرْحَامِ ۖ", "وَمَا", "تَدْرِى", "نَفْسٌۭ", "مَّاذَا", "تَكْسِبُ", "غَدًۭا ۖ", "وَمَا", "تَدْرِى", "نَفْسٌۢ", "بِأَىِّ", "أَرْضٍۢ", "تَمُوتُ ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌ", "خَبِيرٌۢ", "٣٤"),
-  ("inna", "l-laha", "ʿindahu", "ʿil'mu", "l-sāʿati", "wayunazzilu", "l-ghaytha", "wayaʿlamu", "mā", "fī", "l-arḥāmi", "wamā", "tadrī", "nafsun", "mādhā", "taksibu", "ghadan", "wamā", "tadrī", "nafsun", "bi-ayyi", "arḍin", "tamūtu", "inna", "l-laha", "ʿalīmun", "khabīrun", "(34)"),
+  ("inna", "l-laha", "ʿindahu", "ʿil'mu", "l-sāʿati", "wayunazzilu", "l-ghaytha", "wayaʿlamu", "mā", "fī", "l-arḥāmi", "wamā", "tadrī", "nafsun", "mādhā", "taksibu", "ghadan", "wamā", "tadrī", "nafsun", "bi-ayyi", "arḍin", "tamūtu", "inna", "l-laha", [#h(1.75em)ʿalīmun], "khabīrun", "(34)"),
   ([在真主那里，的确有关于复活时的知识，他常降及时雨，他知道胎儿的（性别）；而任何人都不知道自己明日将做什么事，任何人都不知道自己将死在什么地方。真主确是全知的，确是彻知的。]),
 )

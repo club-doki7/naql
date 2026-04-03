@@ -202,7 +202,7 @@
 
 #quran-verse(
   ("ذُرِّيَّةًۢ", "بَعْضُهَا", "مِنۢ", "بَعْضٍۢ ۗ", "وَٱللَّهُ", "سَمِيعٌ", "عَلِيمٌ", "٣٤"),
-  ("dhurriyyatan", "baʿḍuhā", "min", "baʿḍin", "wal-lahu", "samīʿun", "ʿalīmun", "(34)"),
+  ("dhurriyyatan", "baʿḍuhā", "min", "baʿḍin", "wal-lahu", "samīʿun", [#h(1.75em)ʿalīmun], "(34)"),
   ([那些后裔，是一贯的血通。真主是全聪的，是全知的。]),
 )
 
@@ -376,7 +376,7 @@
 
 #quran-verse(
   ("فَإِن", "تَوَلَّوْا۟", "فَإِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِٱلْمُفْسِدِينَ", "٦٣"),
-  ("fa-in", "tawallaw", "fa-inna", "l-laha", "ʿalīmun", "bil-muf'sidīna", "(63)"),
+  ("fa-in", "tawallaw", "fa-inna", "l-laha", [#h(1.75em)ʿalīmun], "bil-muf'sidīna", "(63)"),
   ([如果他们背弃正道，那么，真主对于作恶的人，确是全知的。]),
 )
 
@@ -436,7 +436,7 @@
 
 #quran-verse(
   ("وَلَا", "تُؤْمِنُوٓا۟", "إِلَّا", "لِمَن", "تَبِعَ", "دِينَكُمْ", "قُلْ", "إِنَّ", "ٱلْهُدَىٰ", "هُدَى", "ٱللَّهِ", "أَن", "يُؤْتَىٰٓ", "أَحَدٌۭ", "مِّثْلَ", "مَآ", "أُوتِيتُمْ", "أَوْ", "يُحَآجُّوكُمْ", "عِندَ", "رَبِّكُمْ ۗ", "قُلْ", "إِنَّ", "ٱلْفَضْلَ", "بِيَدِ", "ٱللَّهِ", "يُؤْتِيهِ", "مَن", "يَشَآءُ ۗ", "وَٱللَّهُ", "وَٰسِعٌ", "عَلِيمٌۭ", "٧٣"),
-  ("walā", "tu'minū", "illā", "liman", "tabiʿa", "dīnakum", "qul", "inna", "l-hudā", "hudā", "l-lahi", "an", "yu'tā", "aḥadun", "mith'la", "mā", "ūtītum", "aw", "yuḥājjūkum", "ʿinda", "rabbikum", "qul", "inna", "l-faḍla", "biyadi", "l-lahi", "yu'tīhi", "man", "yashāu", "wal-lahu", "wāsiʿun", "ʿalīmun", "(73)"),
+  ("walā", "tu'minū", "illā", "liman", "tabiʿa", "dīnakum", "qul", "inna", "l-hudā", "hudā", "l-lahi", "an", "yu'tā", "aḥadun", "mith'la", "mā", "ūtītum", "aw", "yuḥājjūkum", "ʿinda", "rabbikum", "qul", "inna", "l-faḍla", "biyadi", "l-lahi", "yu'tīhi", "man", "yashāu", "wal-lahu", "wāsiʿun", [#h(1.75em)ʿalīmun], "(73)"),
   ([你们只可以信任你们的教友。你说：引导确是真主的引导，难道因为别人获得象你们所获得的启示，或他们将在真主那里与你们辩论，（你们就这样用计）吗? 你说：恩惠确是由真主掌握，他把它赏赐他所意欲的人。真主是宽大的, 是全知的。]),
 )
 
@@ -550,7 +550,7 @@
 
 #quran-verse(
   ("لَن", "تَنَالُوا۟", "ٱلْبِرَّ", "حَتَّىٰ", "تُنفِقُوا۟", "مِمَّا", "تُحِبُّونَ ۚ", "وَمَا", "تُنفِقُوا۟", "مِن", "شَىْءٍۢ", "فَإِنَّ", "ٱللَّهَ", "بِهِۦ", "عَلِيمٌۭ", "٩٢"),
-  ("lan", "tanālū", "l-bira", "ḥattā", "tunfiqū", "mimmā", "tuḥibbūna", "wamā", "tunfiqū", "min", "shayin", "fa-inna", "l-laha", "bihi", "ʿalīmun", "(92)"),
+  ("lan", "tanālū", "l-bira", "ḥattā", "tunfiqū", "mimmā", "tuḥibbūna", "wamā", "tunfiqū", "min", "shayin", "fa-inna", "l-laha", "bihi", [#h(1.75em)ʿalīmun], "(92)"),
   ([你们绝不能获得全善，直到你们分舍自己所爱的事物。你们所施舍的，无论是什么，确是真主所知道的。]),
 )
 
@@ -688,7 +688,7 @@
 
 #quran-verse(
   ("وَمَا", "يَفْعَلُوا۟", "مِنْ", "خَيْرٍۢ", "فَلَن", "يُكْفَرُوهُ ۗ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِٱلْمُتَّقِينَ", "١١٥"),
-  ("wamā", "yafʿalū", "min", "khayrin", "falan", "yuk'farūhu", "wal-lahu", "ʿalīmun", "bil-mutaqīna", "(115)"),
+  ("wamā", "yafʿalū", "min", "khayrin", "falan", "yuk'farūhu", "wal-lahu", [#h(1.75em)ʿalīmun], "bil-mutaqīna", "(115)"),
   ([他们无论行什么善功，绝不至于徒劳无酬。真主是全知敬畏者的。]),
 )
 
@@ -712,7 +712,7 @@
 
 #quran-verse(
   ("هَـٰٓأَنتُمْ", "أُو۟لَآءِ", "تُحِبُّونَهُمْ", "وَلَا", "يُحِبُّونَكُمْ", "وَتُؤْمِنُونَ", "بِٱلْكِتَـٰبِ", "كُلِّهِۦ", "وَإِذَا", "لَقُوكُمْ", "قَالُوٓا۟", "ءَامَنَّا", "وَإِذَا", "خَلَوْا۟", "عَضُّوا۟", "عَلَيْكُمُ", "ٱلْأَنَامِلَ", "مِنَ", "ٱلْغَيْظِ ۚ", "قُلْ", "مُوتُوا۟", "بِغَيْظِكُمْ ۗ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "١١٩"),
-  ("hāantum", "ulāi", "tuḥibbūnahum", "walā", "yuḥibbūnakum", "watu'minūna", "bil-kitābi", "kullihi", "wa-idhā", "laqūkum", "qālū", "āmannā", "wa-idhā", "khalaw", "ʿaḍḍū", "ʿalaykumu", "l-anāmila", "mina", "l-ghayẓi", "qul", "mūtū", "bighayẓikum", "inna", "l-laha", "ʿalīmun", "bidhāti", "l-ṣudūri", "(119)"),
+  ("hāantum", "ulāi", "tuḥibbūnahum", "walā", "yuḥibbūnakum", "watu'minūna", "bil-kitābi", "kullihi", "wa-idhā", "laqūkum", "qālū", "āmannā", "wa-idhā", "khalaw", "ʿaḍḍū", "ʿalaykumu", "l-anāmila", "mina", "l-ghayẓi", "qul", "mūtū", "bighayẓikum", "inna", "l-laha", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(119)"),
   ([你们喜爱他们，他们却不喜爱你们，你们确信一切天经，而他们遇见你们就说：我们已信道了。他们私相聚会的时候，为怨恨你们而咬自己的指头。你说：你们为怨恨而死亡吧！真主确是全知心事的。]),
 )
 
@@ -724,7 +724,7 @@
 
 #quran-verse(
   ("وَإِذْ", "غَدَوْتَ", "مِنْ", "أَهْلِكَ", "تُبَوِّئُ", "ٱلْمُؤْمِنِينَ", "مَقَـٰعِدَ", "لِلْقِتَالِ ۗ", "وَٱللَّهُ", "سَمِيعٌ", "عَلِيمٌ", "١٢١"),
-  ("wa-idh", "ghadawta", "min", "ahlika", "tubawwi-u", "l-mu'minīna", "maqāʿida", "lil'qitāli", "wal-lahu", "samīʿun", "ʿalīmun", "(121)"),
+  ("wa-idh", "ghadawta", "min", "ahlika", "tubawwi-u", "l-mu'minīna", "maqāʿida", "lil'qitāli", "wal-lahu", "samīʿun", [#h(1.75em)ʿalīmun], "(121)"),
   ([当时，你在早晨从家里出去，把信士们布置在阵地上。真主是全聪的，是全知的。]),
 )
 
@@ -922,7 +922,7 @@
 
 #quran-verse(
   ("ثُمَّ", "أَنزَلَ", "عَلَيْكُم", "مِّنۢ", "بَعْدِ", "ٱلْغَمِّ", "أَمَنَةًۭ", "نُّعَاسًۭا", "يَغْشَىٰ", "طَآئِفَةًۭ", "مِّنكُمْ ۖ", "وَطَآئِفَةٌۭ", "قَدْ", "أَهَمَّتْهُمْ", "أَنفُسُهُمْ", "يَظُنُّونَ", "بِٱللَّهِ", "غَيْرَ", "ٱلْحَقِّ", "ظَنَّ", "ٱلْجَـٰهِلِيَّةِ ۖ", "يَقُولُونَ", "هَل", "لَّنَا", "مِنَ", "ٱلْأَمْرِ", "مِن", "شَىْءٍۢ ۗ", "قُلْ", "إِنَّ", "ٱلْأَمْرَ", "كُلَّهُۥ", "لِلَّهِ ۗ", "يُخْفُونَ", "فِىٓ", "أَنفُسِهِم", "مَّا", "لَا", "يُبْدُونَ", "لَكَ ۖ", "يَقُولُونَ", "لَوْ", "كَانَ", "لَنَا", "مِنَ", "ٱلْأَمْرِ", "شَىْءٌۭ", "مَّا", "قُتِلْنَا", "هَـٰهُنَا ۗ", "قُل", "لَّوْ", "كُنتُمْ", "فِى", "بُيُوتِكُمْ", "لَبَرَزَ", "ٱلَّذِينَ", "كُتِبَ", "عَلَيْهِمُ", "ٱلْقَتْلُ", "إِلَىٰ", "مَضَاجِعِهِمْ ۖ", "وَلِيَبْتَلِىَ", "ٱللَّهُ", "مَا", "فِى", "صُدُورِكُمْ", "وَلِيُمَحِّصَ", "مَا", "فِى", "قُلُوبِكُمْ ۗ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "١٥٤"),
-  ("thumma", "anzala", "ʿalaykum", "min", "baʿdi", "l-ghami", "amanatan", "nuʿāsan", "yaghshā", "ṭāifatan", "minkum", "waṭāifatun", "qad", "ahammathum", "anfusuhum", "yaẓunnūna", "bil-lahi", "ghayra", "l-ḥaqi", "ẓanna", "l-jāhiliyati", "yaqūlūna", "hal", "lanā", "mina", "l-amri", "min", "shayin", "qul", "inna", "l-amra", "kullahu", "lillahi", "yukh'fūna", "fī", "anfusihim", "mā", "lā", "yub'dūna", "laka", "yaqūlūna", "law", "kāna", "lanā", "mina", "l-amri", "shayon", "mā", "qutil'nā", "hāhunā", "qul", "law", "kuntum", "fī", "buyūtikum", "labaraza", "alladhīna", "kutiba", "ʿalayhimu", "l-qatlu", "ilā", "maḍājiʿihim", "waliyabtaliya", "l-lahu", "mā", "fī", "ṣudūrikum", "waliyumaḥḥiṣa", "mā", "fī", "qulūbikum", "wal-lahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(154)"),
+  ("thumma", "anzala", "ʿalaykum", "min", "baʿdi", "l-ghami", "amanatan", "nuʿāsan", "yaghshā", "ṭāifatan", "minkum", "waṭāifatun", "qad", "ahammathum", "anfusuhum", "yaẓunnūna", "bil-lahi", "ghayra", "l-ḥaqi", "ẓanna", "l-jāhiliyati", "yaqūlūna", "hal", "lanā", "mina", "l-amri", "min", "shayin", "qul", "inna", "l-amra", "kullahu", "lillahi", "yukh'fūna", "fī", "anfusihim", "mā", "lā", "yub'dūna", "laka", "yaqūlūna", "law", "kāna", "lanā", "mina", "l-amri", "shayon", "mā", "qutil'nā", "hāhunā", "qul", "law", "kuntum", "fī", "buyūtikum", "labaraza", "alladhīna", "kutiba", "ʿalayhimu", "l-qatlu", "ilā", "maḍājiʿihim", "waliyabtaliya", "l-lahu", "mā", "fī", "ṣudūrikum", "waliyumaḥḥiṣa", "mā", "fī", "qulūbikum", "wal-lahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(154)"),
   ([在忧患之后，他又降安宁给你们，使你们中一部分人瞌睡；另一部分人则为自身而焦虑，他们象蒙昧时代的人一样，对真主妄加猜测，他们说：我们有一点胜利的希望吗? 你说：一切事情，的确都是真主所主持的。他们的心里怀着不敢对你表示的恶意；他们说：假若我们有一点胜利的希望，我们的同胞不致阵亡在这里。你说：假若你们坐在家里，那么命中注定要阵亡的人，必定外出，走到他们阵亡的地方；（真主这样做），以便他试验你们的心事，锻炼你们心中的信仰。真主是全知心事的。]),
 )
 

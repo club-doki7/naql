@@ -40,7 +40,7 @@
 
 #quran-verse(
   ("إِن", "تَكْفُرُوا۟", "فَإِنَّ", "ٱللَّهَ", "غَنِىٌّ", "عَنكُمْ ۖ", "وَلَا", "يَرْضَىٰ", "لِعِبَادِهِ", "ٱلْكُفْرَ ۖ", "وَإِن", "تَشْكُرُوا۟", "يَرْضَهُ", "لَكُمْ ۗ", "وَلَا", "تَزِرُ", "وَازِرَةٌۭ", "وِزْرَ", "أُخْرَىٰ ۗ", "ثُمَّ", "إِلَىٰ", "رَبِّكُم", "مَّرْجِعُكُمْ", "فَيُنَبِّئُكُم", "بِمَا", "كُنتُمْ", "تَعْمَلُونَ ۚ", "إِنَّهُۥ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٧"),
-  ("in", "takfurū", "fa-inna", "l-laha", "ghaniyyun", "ʿankum", "walā", "yarḍā", "liʿibādihi", "l-kuf'ra", "wa-in", "tashkurū", "yarḍahu", "lakum", "walā", "taziru", "wāziratun", "wiz'ra", "ukh'rā", "thumma", "ilā", "rabbikum", "marjiʿukum", "fayunabbi-ukum", "bimā", "kuntum", "taʿmalūna", "innahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(7)"),
+  ("in", "takfurū", "fa-inna", "l-laha", "ghaniyyun", "ʿankum", "walā", "yarḍā", "liʿibādihi", "l-kuf'ra", "wa-in", "tashkurū", "yarḍahu", "lakum", "walā", "taziru", "wāziratun", "wiz'ra", "ukh'rā", "thumma", "ilā", "rabbikum", "marjiʿukum", "fayunabbi-ukum", "bimā", "kuntum", "taʿmalūna", "innahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(7)"),
   ([如果你们忘恩，那末，真主确是无求于你们的，他不喜悦他的众仆忘恩负义。如果你们感谢，那末，他喜悦你们的感谢。一个负罪的人，不负别人的罪。然后，你们只归于你们的主，他要将你们的行为告诉你们。他确是全知心事者。]),
 )
 

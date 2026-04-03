@@ -142,7 +142,7 @@
 
 #quran-verse(
   ("قَالَ", "ٱهْبِطُوا۟", "بَعْضُكُمْ", "لِبَعْضٍ", "عَدُوٌّۭ ۖ", "وَلَكُمْ", "فِى", "ٱلْأَرْضِ", "مُسْتَقَرٌّۭ", "وَمَتَـٰعٌ", "إِلَىٰ", "حِينٍۢ", "٢٤"),
-  ("qāla", "ih'biṭū", "baʿḍukum", "libaʿḍin", "ʿaduwwun", "walakum", "fī", "l-arḍi", "mus'taqarrun", "wamatāʿun", "ilā", "ḥīnin", "(24)"),
+  ("qāla", "ih'biṭū", "baʿḍukum", "libaʿḍin", "ʿaduwwun", "walakum", "fī", "l-arḍi", "mus'taqarrun", "wamatāʿun", "ilā", [#h(1.75em)ḥīnin], "(24)"),
   ([主说：你们互相仇视地下去吧。大地上有你们暂时的住处和享受。]),
 )
 
@@ -652,7 +652,7 @@
 
 #quran-verse(
   ("قَالَ", "ٱلْمَلَأُ", "مِن", "قَوْمِ", "فِرْعَوْنَ", "إِنَّ", "هَـٰذَا", "لَسَـٰحِرٌ", "عَلِيمٌۭ", "١٠٩"),
-  ("qāla", "l-mala-u", "min", "qawmi", "fir'ʿawna", "inna", "hādhā", "lasāḥirun", "ʿalīmun", "(109)"),
+  ("qāla", "l-mala-u", "min", "qawmi", "fir'ʿawna", "inna", "hādhā", "lasāḥirun", [#h(1.75em)ʿalīmun], "(109)"),
   ([法老的百姓中的众领袖说：这确是1个高明的术士，]),
 )
 
@@ -1198,7 +1198,7 @@
 
 #quran-verse(
   ("وَإِمَّا", "يَنزَغَنَّكَ", "مِنَ", "ٱلشَّيْطَـٰنِ", "نَزْغٌۭ", "فَٱسْتَعِذْ", "بِٱللَّهِ ۚ", "إِنَّهُۥ", "سَمِيعٌ", "عَلِيمٌ", "٢٠٠"),
-  ("wa-immā", "yanzaghannaka", "mina", "l-shayṭāni", "nazghun", "fa-is'taʿidh", "bil-lahi", "innahu", "samīʿun", "ʿalīmun", "(200)"),
+  ("wa-immā", "yanzaghannaka", "mina", "l-shayṭāni", "nazghun", "fa-is'taʿidh", "bil-lahi", "innahu", "samīʿun", [#h(1.75em)ʿalīmun], "(200)"),
   ([如果恶魔怂恿你，你当求庇于真主。他确是全聪的，全知的。]),
 )
 

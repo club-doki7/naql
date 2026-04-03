@@ -106,7 +106,7 @@
 
 #quran-verse(
   ("وَيُبَيِّنُ", "ٱللَّهُ", "لَكُمُ", "ٱلْـَٔايَـٰتِ ۚ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌ", "١٨"),
-  ("wayubayyinu", "l-lahu", "lakumu", "l-āyāti", "wal-lahu", "ʿalīmun", "ḥakīmun", "(18)"),
+  ("wayubayyinu", "l-lahu", "lakumu", "l-āyāti", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(18)"),
   ([真主为你们阐明一切迹象。真主是全知，是至睿的。]),
 )
 
@@ -124,7 +124,7 @@
 
 #quran-verse(
   ("۞ يَـٰٓأَيُّهَا", "ٱلَّذِينَ", "ءَامَنُوا۟", "لَا", "تَتَّبِعُوا۟", "خُطُوَٰتِ", "ٱلشَّيْطَـٰنِ ۚ", "وَمَن", "يَتَّبِعْ", "خُطُوَٰتِ", "ٱلشَّيْطَـٰنِ", "فَإِنَّهُۥ", "يَأْمُرُ", "بِٱلْفَحْشَآءِ", "وَٱلْمُنكَرِ ۚ", "وَلَوْلَا", "فَضْلُ", "ٱللَّهِ", "عَلَيْكُمْ", "وَرَحْمَتُهُۥ", "مَا", "زَكَىٰ", "مِنكُم", "مِّنْ", "أَحَدٍ", "أَبَدًۭا", "وَلَـٰكِنَّ", "ٱللَّهَ", "يُزَكِّى", "مَن", "يَشَآءُ ۗ", "وَٱللَّهُ", "سَمِيعٌ", "عَلِيمٌۭ", "٢١"),
-  ("yāayyuhā", "alladhīna", "āmanū", "lā", "tattabiʿū", "khuṭuwāti", "l-shayṭāni", "waman", "yattabiʿ", "khuṭuwāti", "l-shayṭāni", "fa-innahu", "yamuru", "bil-faḥshāi", "wal-munkari", "walawlā", "faḍlu", "l-lahi", "ʿalaykum", "waraḥmatuhu", "mā", "zakā", "minkum", "min", "aḥadin", "abadan", "walākinna", "l-laha", "yuzakkī", "man", "yashāu", "wal-lahu", "samīʿun", "ʿalīmun", "(21)"),
+  ("yāayyuhā", "alladhīna", "āmanū", "lā", "tattabiʿū", "khuṭuwāti", "l-shayṭāni", "waman", "yattabiʿ", "khuṭuwāti", "l-shayṭāni", "fa-innahu", "yamuru", "bil-faḥshāi", "wal-munkari", "walawlā", "faḍlu", "l-lahi", "ʿalaykum", "waraḥmatuhu", "mā", "zakā", "minkum", "min", "aḥadin", "abadan", "walākinna", "l-laha", "yuzakkī", "man", "yashāu", "wal-lahu", "samīʿun", [#h(1.75em)ʿalīmun], "(21)"),
   ([信士们啊！你们不要追随恶魔的步伐。谁追随恶魔的步伐，恶魔必命令谁干丑事和犯罪行。若非真主所赐你们的恩惠和仁慈，主永远不使你们的任何人清白。但真主使他所意欲者清白。真主是全聪的，是全知的。]),
 )
 
@@ -166,7 +166,7 @@
 
 #quran-verse(
   ("فَإِن", "لَّمْ", "تَجِدُوا۟", "فِيهَآ", "أَحَدًۭا", "فَلَا", "تَدْخُلُوهَا", "حَتَّىٰ", "يُؤْذَنَ", "لَكُمْ ۖ", "وَإِن", "قِيلَ", "لَكُمُ", "ٱرْجِعُوا۟", "فَٱرْجِعُوا۟ ۖ", "هُوَ", "أَزْكَىٰ", "لَكُمْ ۚ", "وَٱللَّهُ", "بِمَا", "تَعْمَلُونَ", "عَلِيمٌۭ", "٢٨"),
-  ("fa-in", "lam", "tajidū", "fīhā", "aḥadan", "falā", "tadkhulūhā", "ḥattā", "yu'dhana", "lakum", "wa-in", "qīla", "lakumu", "ir'jiʿū", "fa-ir'jiʿū", "huwa", "azkā", "lakum", "wal-lahu", "bimā", "taʿmalūna", "ʿalīmun", "(28)"),
+  ("fa-in", "lam", "tajidū", "fīhā", "aḥadan", "falā", "tadkhulūhā", "ḥattā", "yu'dhana", "lakum", "wa-in", "qīla", "lakumu", "ir'jiʿū", "fa-ir'jiʿū", "huwa", "azkā", "lakum", "wal-lahu", "bimā", "taʿmalūna", [#h(1.75em)ʿalīmun], "(28)"),
   ([如果你们发现别人家里没有人，你们就不要进去，直到你们获得许可。如果有人对你们说：请转回去！你们就应当立即转回去，这对于你们是更纯洁的。真主是全知你们的行为的。]),
 )
 
@@ -190,7 +190,7 @@
 
 #quran-verse(
   ("وَأَنكِحُوا۟", "ٱلْأَيَـٰمَىٰ", "مِنكُمْ", "وَٱلصَّـٰلِحِينَ", "مِنْ", "عِبَادِكُمْ", "وَإِمَآئِكُمْ ۚ", "إِن", "يَكُونُوا۟", "فُقَرَآءَ", "يُغْنِهِمُ", "ٱللَّهُ", "مِن", "فَضْلِهِۦ ۗ", "وَٱللَّهُ", "وَٰسِعٌ", "عَلِيمٌۭ", "٣٢"),
-  ("wa-ankiḥū", "l-ayāmā", "minkum", "wal-ṣāliḥīna", "min", "ʿibādikum", "wa-imāikum", "in", "yakūnū", "fuqarāa", "yugh'nihimu", "l-lahu", "min", "faḍlihi", "wal-lahu", "wāsiʿun", "ʿalīmun", "(32)"),
+  ("wa-ankiḥū", "l-ayāmā", "minkum", "wal-ṣāliḥīna", "min", "ʿibādikum", "wa-imāikum", "in", "yakūnū", "fuqarāa", "yugh'nihimu", "l-lahu", "min", "faḍlihi", "wal-lahu", "wāsiʿun", [#h(1.75em)ʿalīmun], "(32)"),
   ([你们中未婚的男女和你们的善良的奴婢，你们应当使他们互相配合。如果他们是贫穷的，那末，真主要以他的恩惠，使他们富足。真主是富裕的，是全知。]),
 )
 
@@ -208,7 +208,7 @@
 
 #quran-verse(
   ("۞ ٱللَّهُ", "نُورُ", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۚ", "مَثَلُ", "نُورِهِۦ", "كَمِشْكَوٰةٍۢ", "فِيهَا", "مِصْبَاحٌ ۖ", "ٱلْمِصْبَاحُ", "فِى", "زُجَاجَةٍ ۖ", "ٱلزُّجَاجَةُ", "كَأَنَّهَا", "كَوْكَبٌۭ", "دُرِّىٌّۭ", "يُوقَدُ", "مِن", "شَجَرَةٍۢ", "مُّبَـٰرَكَةٍۢ", "زَيْتُونَةٍۢ", "لَّا", "شَرْقِيَّةٍۢ", "وَلَا", "غَرْبِيَّةٍۢ", "يَكَادُ", "زَيْتُهَا", "يُضِىٓءُ", "وَلَوْ", "لَمْ", "تَمْسَسْهُ", "نَارٌۭ ۚ", "نُّورٌ", "عَلَىٰ", "نُورٍۢ ۗ", "يَهْدِى", "ٱللَّهُ", "لِنُورِهِۦ", "مَن", "يَشَآءُ ۚ", "وَيَضْرِبُ", "ٱللَّهُ", "ٱلْأَمْثَـٰلَ", "لِلنَّاسِ ۗ", "وَٱللَّهُ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "٣٥"),
-  ("al-lahu", "nūru", "l-samāwāti", "wal-arḍi", "mathalu", "nūrihi", "kamish'katin", "fīhā", "miṣ'bāḥun", "l-miṣ'bāḥu", "fī", "zujājatin", "l-zujājatu", "ka-annahā", "kawkabun", "durriyyun", "yūqadu", "min", "shajaratin", "mubārakatin", "zaytūnatin", "lā", "sharqiyyatin", "walā", "gharbiyyatin", "yakādu", "zaytuhā", "yuḍīu", "walaw", "lam", "tamsashu", "nārun", "nūrun", "ʿalā", "nūrin", "yahdī", "l-lahu", "linūrihi", "man", "yashāu", "wayaḍribu", "l-lahu", "l-amthāla", "lilnnāsi", "wal-lahu", "bikulli", "shayin", "ʿalīmun", "(35)"),
+  ("al-lahu", "nūru", "l-samāwāti", "wal-arḍi", "mathalu", "nūrihi", "kamish'katin", "fīhā", "miṣ'bāḥun", "l-miṣ'bāḥu", "fī", "zujājatin", "l-zujājatu", "ka-annahā", "kawkabun", "durriyyun", "yūqadu", "min", "shajaratin", "mubārakatin", "zaytūnatin", "lā", "sharqiyyatin", "walā", "gharbiyyatin", "yakādu", "zaytuhā", "yuḍīu", "walaw", "lam", "tamsashu", "nārun", "nūrun", "ʿalā", "nūrin", "yahdī", "l-lahu", "linūrihi", "man", "yashāu", "wayaḍribu", "l-lahu", "l-amthāla", "lilnnāsi", "wal-lahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(35)"),
   ([真主是天地的光明，他的光明象一座灯台，那座灯台上有一盏明灯，那盏明灯在一个玻璃罩里，那个玻璃罩仿佛一颗灿烂的明星，用吉祥的橄榄油燃着那盏明灯；它不是东方的，也不是西方的，它的油，即使没有点火也几乎发光--光上加光--真主引导他所意欲者走向他的光明。真主为众人设了许多比喻，真主是全知万事的。]),
 )
 
@@ -244,7 +244,7 @@
 
 #quran-verse(
   ("أَلَمْ", "تَرَ", "أَنَّ", "ٱللَّهَ", "يُسَبِّحُ", "لَهُۥ", "مَن", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ", "وَٱلطَّيْرُ", "صَـٰٓفَّـٰتٍۢ ۖ", "كُلٌّۭ", "قَدْ", "عَلِمَ", "صَلَاتَهُۥ", "وَتَسْبِيحَهُۥ ۗ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِمَا", "يَفْعَلُونَ", "٤١"),
-  ("alam", "tara", "anna", "l-laha", "yusabbiḥu", "lahu", "man", "fī", "l-samāwāti", "wal-arḍi", "wal-ṭayru", "ṣāffātin", "kullun", "qad", "ʿalima", "ṣalātahu", "watasbīḥahu", "wal-lahu", "ʿalīmun", "bimā", "yafʿalūna", "(41)"),
+  ("alam", "tara", "anna", "l-laha", "yusabbiḥu", "lahu", "man", "fī", "l-samāwāti", "wal-arḍi", "wal-ṭayru", "ṣāffātin", "kullun", "qad", "ʿalima", "ṣalātahu", "watasbīḥahu", "wal-lahu", [#h(1.75em)ʿalīmun], "bimā", "yafʿalūna", "(41)"),
   ([难道你不知道吗？凡是在天地间的人物和展翅的群鸟，都赞颂真主超绝的。他的确知道各物的祈祷和赞颂，真主是全知他们的行为的。]),
 )
 
@@ -346,19 +346,19 @@
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلَّذِينَ", "ءَامَنُوا۟", "لِيَسْتَـْٔذِنكُمُ", "ٱلَّذِينَ", "مَلَكَتْ", "أَيْمَـٰنُكُمْ", "وَٱلَّذِينَ", "لَمْ", "يَبْلُغُوا۟", "ٱلْحُلُمَ", "مِنكُمْ", "ثَلَـٰثَ", "مَرَّٰتٍۢ ۚ", "مِّن", "قَبْلِ", "صَلَوٰةِ", "ٱلْفَجْرِ", "وَحِينَ", "تَضَعُونَ", "ثِيَابَكُم", "مِّنَ", "ٱلظَّهِيرَةِ", "وَمِنۢ", "بَعْدِ", "صَلَوٰةِ", "ٱلْعِشَآءِ ۚ", "ثَلَـٰثُ", "عَوْرَٰتٍۢ", "لَّكُمْ ۚ", "لَيْسَ", "عَلَيْكُمْ", "وَلَا", "عَلَيْهِمْ", "جُنَاحٌۢ", "بَعْدَهُنَّ ۚ", "طَوَّٰفُونَ", "عَلَيْكُم", "بَعْضُكُمْ", "عَلَىٰ", "بَعْضٍۢ ۚ", "كَذَٰلِكَ", "يُبَيِّنُ", "ٱللَّهُ", "لَكُمُ", "ٱلْـَٔايَـٰتِ ۗ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌۭ", "٥٨"),
-  ("yāayyuhā", "alladhīna", "āmanū", "liyastadhinkumu", "alladhīna", "malakat", "aymānukum", "wa-alladhīna", "lam", "yablughū", "l-ḥuluma", "minkum", "thalātha", "marrātin", "min", "qabli", "ṣalati", "l-fajri", "waḥīna", "taḍaʿūna", "thiyābakum", "mina", "l-ẓahīrati", "wamin", "baʿdi", "ṣalati", "l-ʿishāi", "thalāthu", "ʿawrātin", "lakum", "laysa", "ʿalaykum", "walā", "ʿalayhim", "junāḥun", "baʿdahunna", "ṭawwāfūna", "ʿalaykum", "baʿḍukum", "ʿalā", "baʿḍin", "kadhālika", "yubayyinu", "l-lahu", "lakumu", "l-āyāti", "wal-lahu", "ʿalīmun", "ḥakīmun", "(58)"),
+  ("yāayyuhā", "alladhīna", "āmanū", "liyastadhinkumu", "alladhīna", "malakat", "aymānukum", "wa-alladhīna", "lam", "yablughū", "l-ḥuluma", "minkum", "thalātha", "marrātin", "min", "qabli", "ṣalati", "l-fajri", "waḥīna", "taḍaʿūna", "thiyābakum", "mina", "l-ẓahīrati", "wamin", "baʿdi", "ṣalati", "l-ʿishāi", "thalāthu", "ʿawrātin", "lakum", "laysa", "ʿalaykum", "walā", "ʿalayhim", "junāḥun", "baʿdahunna", "ṭawwāfūna", "ʿalaykum", "baʿḍukum", "ʿalā", "baʿḍin", "kadhālika", "yubayyinu", "l-lahu", "lakumu", "l-āyāti", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(58)"),
   ([信士们啊！教你们的奴婢和你们中尚未成丁的儿童，三次向你们请示，晨礼之前，正午脱衣之时，宵礼之后，这是你们的三个不防备的时候。除此以外，你们和他们无妨随便往来。真主这样为你们阐明一些迹象。真主是全知的，是至睿的。]),
 )
 
 #quran-verse(
   ("وَإِذَا", "بَلَغَ", "ٱلْأَطْفَـٰلُ", "مِنكُمُ", "ٱلْحُلُمَ", "فَلْيَسْتَـْٔذِنُوا۟", "كَمَا", "ٱسْتَـْٔذَنَ", "ٱلَّذِينَ", "مِن", "قَبْلِهِمْ ۚ", "كَذَٰلِكَ", "يُبَيِّنُ", "ٱللَّهُ", "لَكُمْ", "ءَايَـٰتِهِۦ ۗ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌۭ", "٥٩"),
-  ("wa-idhā", "balagha", "l-aṭfālu", "minkumu", "l-ḥuluma", "falyastadhinū", "kamā", "is'tadhana", "alladhīna", "min", "qablihim", "kadhālika", "yubayyinu", "l-lahu", "lakum", "āyātihi", "wal-lahu", "ʿalīmun", "ḥakīmun", "(59)"),
+  ("wa-idhā", "balagha", "l-aṭfālu", "minkumu", "l-ḥuluma", "falyastadhinū", "kamā", "is'tadhana", "alladhīna", "min", "qablihim", "kadhālika", "yubayyinu", "l-lahu", "lakum", "āyātihi", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(59)"),
   ([当你们的孩子成丁的时候，教他们象在他们之前成丁者一样，随时向你们请求接见。真主这样为你们阐明他的迹象。真主是全知的，是至睿的。]),
 )
 
 #quran-verse(
   ("وَٱلْقَوَٰعِدُ", "مِنَ", "ٱلنِّسَآءِ", "ٱلَّـٰتِى", "لَا", "يَرْجُونَ", "نِكَاحًۭا", "فَلَيْسَ", "عَلَيْهِنَّ", "جُنَاحٌ", "أَن", "يَضَعْنَ", "ثِيَابَهُنَّ", "غَيْرَ", "مُتَبَرِّجَـٰتٍۭ", "بِزِينَةٍۢ ۖ", "وَأَن", "يَسْتَعْفِفْنَ", "خَيْرٌۭ", "لَّهُنَّ ۗ", "وَٱللَّهُ", "سَمِيعٌ", "عَلِيمٌۭ", "٦٠"),
-  ("wal-qawāʿidu", "mina", "l-nisāi", "allātī", "lā", "yarjūna", "nikāḥan", "falaysa", "ʿalayhinna", "junāḥun", "an", "yaḍaʿna", "thiyābahunna", "ghayra", "mutabarrijātin", "bizīnatin", "wa-an", "yastaʿfif'na", "khayrun", "lahunna", "wal-lahu", "samīʿun", "ʿalīmun", "(60)"),
+  ("wal-qawāʿidu", "mina", "l-nisāi", "allātī", "lā", "yarjūna", "nikāḥan", "falaysa", "ʿalayhinna", "junāḥun", "an", "yaḍaʿna", "thiyābahunna", "ghayra", "mutabarrijātin", "bizīnatin", "wa-an", "yastaʿfif'na", "khayrun", "lahunna", "wal-lahu", "samīʿun", [#h(1.75em)ʿalīmun], "(60)"),
   ([不希望结婚的老妇，脱去外衣，而不露出首饰，这对于她们是无罪过的。自己检点，对她们是更好的。真主是全聪的，是全知的。]),
 )
 
@@ -382,6 +382,6 @@
 
 #quran-verse(
   ("أَلَآ", "إِنَّ", "لِلَّهِ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۖ", "قَدْ", "يَعْلَمُ", "مَآ", "أَنتُمْ", "عَلَيْهِ", "وَيَوْمَ", "يُرْجَعُونَ", "إِلَيْهِ", "فَيُنَبِّئُهُم", "بِمَا", "عَمِلُوا۟ ۗ", "وَٱللَّهُ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۢ", "٦٤"),
-  ("alā", "inna", "lillahi", "mā", "fī", "l-samāwāti", "wal-arḍi", "qad", "yaʿlamu", "mā", "antum", "ʿalayhi", "wayawma", "yur'jaʿūna", "ilayhi", "fayunabbi-uhum", "bimā", "ʿamilū", "wal-lahu", "bikulli", "shayin", "ʿalīmun", "(64)"),
+  ("alā", "inna", "lillahi", "mā", "fī", "l-samāwāti", "wal-arḍi", "qad", "yaʿlamu", "mā", "antum", "ʿalayhi", "wayawma", "yur'jaʿūna", "ilayhi", "fayunabbi-uhum", "bimā", "ʿamilū", "wal-lahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(64)"),
   ([真的，天地万物，确是真主的。他确已知道你们的实情。当他们被召到主那里之日，他要把他们的行为告诉他们。真主是全知万事的。]),
 )

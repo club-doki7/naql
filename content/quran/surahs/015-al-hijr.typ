@@ -148,7 +148,7 @@
 
 #quran-verse(
   ("وَإِنَّ", "رَبَّكَ", "هُوَ", "يَحْشُرُهُمْ ۚ", "إِنَّهُۥ", "حَكِيمٌ", "عَلِيمٌۭ", "٢٥"),
-  ("wa-inna", "rabbaka", "huwa", "yaḥshuruhum", "innahu", "ḥakīmun", "ʿalīmun", "(25)"),
+  ("wa-inna", "rabbaka", "huwa", "yaḥshuruhum", "innahu", "ḥakīmun", [#h(1.75em)ʿalīmun], "(25)"),
   ([你的主必定集合他们。他确是至睿的，确是全知的。]),
 )
 

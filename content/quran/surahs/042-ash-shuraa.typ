@@ -70,7 +70,7 @@
 
 #quran-verse(
   ("لَهُۥ", "مَقَالِيدُ", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۖ", "يَبْسُطُ", "ٱلرِّزْقَ", "لِمَن", "يَشَآءُ", "وَيَقْدِرُ ۚ", "إِنَّهُۥ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "١٢"),
-  ("lahu", "maqālīdu", "l-samāwāti", "wal-arḍi", "yabsuṭu", "l-riz'qa", "liman", "yashāu", "wayaqdiru", "innahu", "bikulli", "shayin", "ʿalīmun", "(12)"),
+  ("lahu", "maqālīdu", "l-samāwāti", "wal-arḍi", "yabsuṭu", "l-riz'qa", "liman", "yashāu", "wayaqdiru", "innahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(12)"),
   ([天地的宝藏，只是他的；他欲使谁的给养宽裕，就使它宽裕；欲使谁的给养窘迫，就使它窘迫；他是全知万物的。]),
 )
 
@@ -142,7 +142,7 @@
 
 #quran-verse(
   ("أَمْ", "يَقُولُونَ", "ٱفْتَرَىٰ", "عَلَى", "ٱللَّهِ", "كَذِبًۭا ۖ", "فَإِن", "يَشَإِ", "ٱللَّهُ", "يَخْتِمْ", "عَلَىٰ", "قَلْبِكَ ۗ", "وَيَمْحُ", "ٱللَّهُ", "ٱلْبَـٰطِلَ", "وَيُحِقُّ", "ٱلْحَقَّ", "بِكَلِمَـٰتِهِۦٓ ۚ", "إِنَّهُۥ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٢٤"),
-  ("am", "yaqūlūna", "if'tarā", "ʿalā", "l-lahi", "kadhiban", "fa-in", "yasha-i", "l-lahu", "yakhtim", "ʿalā", "qalbika", "wayamḥu", "l-lahu", "l-bāṭila", "wayuḥiqqu", "l-ḥaqa", "bikalimātihi", "innahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(24)"),
+  ("am", "yaqūlūna", "if'tarā", "ʿalā", "l-lahi", "kadhiban", "fa-in", "yasha-i", "l-lahu", "yakhtim", "ʿalā", "qalbika", "wayamḥu", "l-lahu", "l-bāṭila", "wayuḥiqqu", "l-ḥaqa", "bikalimātihi", "innahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(24)"),
   ([不然，他们说：他假借真主的名义而捏造。如果真主意欲，他就封闭你的心。真主以其文辞抹煞虚伪，证实真理，他确是全知心事的。]),
 )
 
@@ -298,7 +298,7 @@
 
 #quran-verse(
   ("أَوْ", "يُزَوِّجُهُمْ", "ذُكْرَانًۭا", "وَإِنَـٰثًۭا ۖ", "وَيَجْعَلُ", "مَن", "يَشَآءُ", "عَقِيمًا ۚ", "إِنَّهُۥ", "عَلِيمٌۭ", "قَدِيرٌۭ", "٥٠"),
-  ("aw", "yuzawwijuhum", "dhuk'rānan", "wa-ināthan", "wayajʿalu", "man", "yashāu", "ʿaqīman", "innahu", "ʿalīmun", "qadīrun", "(50)"),
+  ("aw", "yuzawwijuhum", "dhuk'rānan", "wa-ināthan", "wayajʿalu", "man", "yashāu", "ʿaqīman", "innahu", [#h(1.75em)ʿalīmun], "qadīrun", "(50)"),
   ([或使他们兼生男孩和女孩；他使他所意欲者，成为不能生育的。他确是全知的，确是全能的。]),
 )
 

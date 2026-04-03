@@ -40,7 +40,7 @@
 
 #quran-verse(
   ("أَلَمْ", "تَرَ", "أَنَّ", "ٱللَّهَ", "يَعْلَمُ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ ۖ", "مَا", "يَكُونُ", "مِن", "نَّجْوَىٰ", "ثَلَـٰثَةٍ", "إِلَّا", "هُوَ", "رَابِعُهُمْ", "وَلَا", "خَمْسَةٍ", "إِلَّا", "هُوَ", "سَادِسُهُمْ", "وَلَآ", "أَدْنَىٰ", "مِن", "ذَٰلِكَ", "وَلَآ", "أَكْثَرَ", "إِلَّا", "هُوَ", "مَعَهُمْ", "أَيْنَ", "مَا", "كَانُوا۟ ۖ", "ثُمَّ", "يُنَبِّئُهُم", "بِمَا", "عَمِلُوا۟", "يَوْمَ", "ٱلْقِيَـٰمَةِ ۚ", "إِنَّ", "ٱللَّهَ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌ", "٧"),
-  ("alam", "tara", "anna", "l-laha", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "mā", "yakūnu", "min", "najwā", "thalāthatin", "illā", "huwa", "rābiʿuhum", "walā", "khamsatin", "illā", "huwa", "sādisuhum", "walā", "adnā", "min", "dhālika", "walā", "akthara", "illā", "huwa", "maʿahum", "ayna", "mā", "kānū", "thumma", "yunabbi-uhum", "bimā", "ʿamilū", "yawma", "l-qiyāmati", "inna", "l-laha", "bikulli", "shayin", "ʿalīmun", "(7)"),
+  ("alam", "tara", "anna", "l-laha", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "mā", "yakūnu", "min", "najwā", "thalāthatin", "illā", "huwa", "rābiʿuhum", "walā", "khamsatin", "illā", "huwa", "sādisuhum", "walā", "adnā", "min", "dhālika", "walā", "akthara", "illā", "huwa", "maʿahum", "ayna", "mā", "kānū", "thumma", "yunabbi-uhum", "bimā", "ʿamilū", "yawma", "l-qiyāmati", "inna", "l-laha", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(7)"),
   ([难道你不知道真主是全知天地万物的？凡有三个人密谈，他就是第四个参与者；凡有五个人密谈，他就是第六个参与者；凡有比那更少或更多的人密谈，无论他们在那里，他总是与他们同在的；然后在复活日，他要把他们的行为告诉他们。真主确是全知万物的。]),
 )
 

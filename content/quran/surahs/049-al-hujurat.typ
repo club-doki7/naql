@@ -4,7 +4,7 @@
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلَّذِينَ", "ءَامَنُوا۟", "لَا", "تُقَدِّمُوا۟", "بَيْنَ", "يَدَىِ", "ٱللَّهِ", "وَرَسُولِهِۦ ۖ", "وَٱتَّقُوا۟", "ٱللَّهَ ۚ", "إِنَّ", "ٱللَّهَ", "سَمِيعٌ", "عَلِيمٌۭ", "١"),
-  ("yāayyuhā", "alladhīna", "āmanū", "lā", "tuqaddimū", "bayna", "yadayi", "l-lahi", "warasūlihi", "wa-ittaqū", "l-laha", "inna", "l-laha", "samīʿun", "ʿalīmun", "(1)"),
+  ("yāayyuhā", "alladhīna", "āmanū", "lā", "tuqaddimū", "bayna", "yadayi", "l-lahi", "warasūlihi", "wa-ittaqū", "l-laha", "inna", "l-laha", "samīʿun", [#h(1.75em)ʿalīmun], "(1)"),
   ([信道的人们啊！你们在真主和使者的面前不要先做任何一件事，你们应当敬畏真主；真主确是全聪的，确是全知的。]),
 )
 
@@ -46,7 +46,7 @@
 
 #quran-verse(
   ("فَضْلًۭا", "مِّنَ", "ٱللَّهِ", "وَنِعْمَةًۭ ۚ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌۭ", "٨"),
-  ("faḍlan", "mina", "l-lahi", "waniʿ'matan", "wal-lahu", "ʿalīmun", "ḥakīmun", "(8)"),
+  ("faḍlan", "mina", "l-lahi", "waniʿ'matan", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(8)"),
   ([这是由于真主所降的恩惠和福泽。真主是全知的，是至睿。]),
 )
 
@@ -76,7 +76,7 @@
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلنَّاسُ", "إِنَّا", "خَلَقْنَـٰكُم", "مِّن", "ذَكَرٍۢ", "وَأُنثَىٰ", "وَجَعَلْنَـٰكُمْ", "شُعُوبًۭا", "وَقَبَآئِلَ", "لِتَعَارَفُوٓا۟ ۚ", "إِنَّ", "أَكْرَمَكُمْ", "عِندَ", "ٱللَّهِ", "أَتْقَىٰكُمْ ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌ", "خَبِيرٌۭ", "١٣"),
-  ("yāayyuhā", "l-nāsu", "innā", "khalaqnākum", "min", "dhakarin", "wa-unthā", "wajaʿalnākum", "shuʿūban", "waqabāila", "litaʿārafū", "inna", "akramakum", "ʿinda", "l-lahi", "atqākum", "inna", "l-laha", "ʿalīmun", "khabīrun", "(13)"),
+  ("yāayyuhā", "l-nāsu", "innā", "khalaqnākum", "min", "dhakarin", "wa-unthā", "wajaʿalnākum", "shuʿūban", "waqabāila", "litaʿārafū", "inna", "akramakum", "ʿinda", "l-lahi", "atqākum", "inna", "l-laha", [#h(1.75em)ʿalīmun], "khabīrun", "(13)"),
   ([众人啊！我确已从一男一女创造你们，我使你们成为许多民族和宗族，以便你们互相认识。在真主看来，你们中最尊贵者，是你们中最敬畏者。真主确是全知的，确是彻知的。]),
 )
 
@@ -94,7 +94,7 @@
 
 #quran-verse(
   ("قُلْ", "أَتُعَلِّمُونَ", "ٱللَّهَ", "بِدِينِكُمْ", "وَٱللَّهُ", "يَعْلَمُ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ ۚ", "وَٱللَّهُ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "١٦"),
-  ("qul", "atuʿallimūna", "l-laha", "bidīnikum", "wal-lahu", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "wal-lahu", "bikulli", "shayin", "ʿalīmun", "(16)"),
+  ("qul", "atuʿallimūna", "l-laha", "bidīnikum", "wal-lahu", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "wal-lahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(16)"),
   ([你说：难道你们以你们的宗教通知真主吗？真主是知道天地间的一切的，真主是全知万物的。]),
 )
 

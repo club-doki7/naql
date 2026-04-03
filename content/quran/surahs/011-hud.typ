@@ -28,7 +28,7 @@
 
 #quran-verse(
   ("أَلَآ", "إِنَّهُمْ", "يَثْنُونَ", "صُدُورَهُمْ", "لِيَسْتَخْفُوا۟", "مِنْهُ ۚ", "أَلَا", "حِينَ", "يَسْتَغْشُونَ", "ثِيَابَهُمْ", "يَعْلَمُ", "مَا", "يُسِرُّونَ", "وَمَا", "يُعْلِنُونَ ۚ", "إِنَّهُۥ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٥"),
-  ("alā", "innahum", "yathnūna", "ṣudūrahum", "liyastakhfū", "min'hu", "alā", "ḥīna", "yastaghshūna", "thiyābahum", "yaʿlamu", "mā", "yusirrūna", "wamā", "yuʿ'linūna", "innahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(5)"),
+  ("alā", "innahum", "yathnūna", "ṣudūrahum", "liyastakhfū", "min'hu", "alā", "ḥīna", "yastaghshūna", "thiyābahum", "yaʿlamu", "mā", "yusirrūna", "wamā", "yuʿ'linūna", "innahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(5)"),
   ([真的，他们的确胸怀怨恨，以便隐瞒真主。真的，当他们用衣服遮盖胸部的时候，真主知道他们所隐讳的和他们所表白的，他确是全知心事的。]),
 )
 

@@ -70,7 +70,7 @@
 
 #quran-verse(
   ("۞ وَلَكُمْ", "نِصْفُ", "مَا", "تَرَكَ", "أَزْوَٰجُكُمْ", "إِن", "لَّمْ", "يَكُن", "لَّهُنَّ", "وَلَدٌۭ ۚ", "فَإِن", "كَانَ", "لَهُنَّ", "وَلَدٌۭ", "فَلَكُمُ", "ٱلرُّبُعُ", "مِمَّا", "تَرَكْنَ ۚ", "مِنۢ", "بَعْدِ", "وَصِيَّةٍۢ", "يُوصِينَ", "بِهَآ", "أَوْ", "دَيْنٍۢ ۚ", "وَلَهُنَّ", "ٱلرُّبُعُ", "مِمَّا", "تَرَكْتُمْ", "إِن", "لَّمْ", "يَكُن", "لَّكُمْ", "وَلَدٌۭ ۚ", "فَإِن", "كَانَ", "لَكُمْ", "وَلَدٌۭ", "فَلَهُنَّ", "ٱلثُّمُنُ", "مِمَّا", "تَرَكْتُم ۚ", "مِّنۢ", "بَعْدِ", "وَصِيَّةٍۢ", "تُوصُونَ", "بِهَآ", "أَوْ", "دَيْنٍۢ ۗ", "وَإِن", "كَانَ", "رَجُلٌۭ", "يُورَثُ", "كَلَـٰلَةً", "أَوِ", "ٱمْرَأَةٌۭ", "وَلَهُۥٓ", "أَخٌ", "أَوْ", "أُخْتٌۭ", "فَلِكُلِّ", "وَٰحِدٍۢ", "مِّنْهُمَا", "ٱلسُّدُسُ ۚ", "فَإِن", "كَانُوٓا۟", "أَكْثَرَ", "مِن", "ذَٰلِكَ", "فَهُمْ", "شُرَكَآءُ", "فِى", "ٱلثُّلُثِ ۚ", "مِنۢ", "بَعْدِ", "وَصِيَّةٍۢ", "يُوصَىٰ", "بِهَآ", "أَوْ", "دَيْنٍ", "غَيْرَ", "مُضَآرٍّۢ ۚ", "وَصِيَّةًۭ", "مِّنَ", "ٱللَّهِ ۗ", "وَٱللَّهُ", "عَلِيمٌ", "حَلِيمٌۭ", "١٢"),
-  ("walakum", "niṣ'fu", "mā", "taraka", "azwājukum", "in", "lam", "yakun", "lahunna", "waladun", "fa-in", "kāna", "lahunna", "waladun", "falakumu", "l-rubuʿu", "mimmā", "tarakna", "min", "baʿdi", "waṣiyyatin", "yūṣīna", "bihā", "aw", "daynin", "walahunna", "l-rubuʿu", "mimmā", "taraktum", "in", "lam", "yakun", "lakum", "waladun", "fa-in", "kāna", "lakum", "waladun", "falahunna", "l-thumunu", "mimmā", "taraktum", "min", "baʿdi", "waṣiyyatin", "tūṣūna", "bihā", "aw", "daynin", "wa-in", "kāna", "rajulun", "yūrathu", "kalālatan", "awi", "im'ra-atun", "walahu", "akhun", "aw", "ukh'tun", "falikulli", "wāḥidin", "min'humā", "l-sudusu", "fa-in", "kānū", "akthara", "min", "dhālika", "fahum", "shurakāu", "fī", "l-thuluthi", "min", "baʿdi", "waṣiyyatin", "yūṣā", "bihā", "aw", "daynin", "ghayra", "muḍārrin", "waṣiyyatan", "mina", "l-lahi", "wal-lahu", "ʿalīmun", "ḥalīmun", "(12)"),
+  ("walakum", "niṣ'fu", "mā", "taraka", "azwājukum", "in", "lam", "yakun", "lahunna", "waladun", "fa-in", "kāna", "lahunna", "waladun", "falakumu", "l-rubuʿu", "mimmā", "tarakna", "min", "baʿdi", "waṣiyyatin", "yūṣīna", "bihā", "aw", "daynin", "walahunna", "l-rubuʿu", "mimmā", "taraktum", "in", "lam", "yakun", "lakum", "waladun", "fa-in", "kāna", "lakum", "waladun", "falahunna", "l-thumunu", "mimmā", "taraktum", "min", "baʿdi", "waṣiyyatin", "tūṣūna", "bihā", "aw", "daynin", "wa-in", "kāna", "rajulun", "yūrathu", "kalālatan", "awi", "im'ra-atun", "walahu", "akhun", "aw", "ukh'tun", "falikulli", "wāḥidin", "min'humā", "l-sudusu", "fa-in", "kānū", "akthara", "min", "dhālika", "fahum", "shurakāu", "fī", "l-thuluthi", "min", "baʿdi", "waṣiyyatin", "yūṣā", "bihā", "aw", "daynin", "ghayra", "muḍārrin", "waṣiyyatan", "mina", "l-lahi", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥalīmun", "(12)"),
   ([如果你们的妻室没有子女，那末，你们得受她们的遗产的二分之一。如果她们有子女，那末，你们得受她们的遗产的四分之一。（这种分配）须在交付亡人所嘱的遗赠或清偿亡人所欠的债务之后。如果你们没有子女，那末，你们的妻室得你们遗产的四分之一。如果你们有子女，那末，她们得你们遗产的八分之一。（这种分配），须在交付亡人所嘱的遗赠或清偿亡人所欠的债务之后。如果被继承的男子或女子，上无父母，下无子女，只有（同母异父的）更多的兄弟和姐妹，那末，他们和她们，均分遗产的三分之一。（这种分配），须在交付亡人所嘱的遗? <br>]),
 )
 
@@ -154,7 +154,7 @@
 
 #quran-verse(
   ("يُرِيدُ", "ٱللَّهُ", "لِيُبَيِّنَ", "لَكُمْ", "وَيَهْدِيَكُمْ", "سُنَنَ", "ٱلَّذِينَ", "مِن", "قَبْلِكُمْ", "وَيَتُوبَ", "عَلَيْكُمْ ۗ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌۭ", "٢٦"),
-  ("yurīdu", "l-lahu", "liyubayyina", "lakum", "wayahdiyakum", "sunana", "alladhīna", "min", "qablikum", "wayatūba", "ʿalaykum", "wal-lahu", "ʿalīmun", "ḥakīmun", "(26)"),
+  ("yurīdu", "l-lahu", "liyubayyina", "lakum", "wayahdiyakum", "sunana", "alladhīna", "min", "qablikum", "wayatūba", "ʿalaykum", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(26)"),
   ([真主欲为你们阐明礼义，并指示你们先民的法程，且赦宥你们。真主是全知的，是至睿的。]),
 )
 
@@ -340,7 +340,7 @@
 
 #quran-verse(
   ("وَٱلَّذِينَ", "ءَامَنُوا۟", "وَعَمِلُوا۟", "ٱلصَّـٰلِحَـٰتِ", "سَنُدْخِلُهُمْ", "جَنَّـٰتٍۢ", "تَجْرِى", "مِن", "تَحْتِهَا", "ٱلْأَنْهَـٰرُ", "خَـٰلِدِينَ", "فِيهَآ", "أَبَدًۭا ۖ", "لَّهُمْ", "فِيهَآ", "أَزْوَٰجٌۭ", "مُّطَهَّرَةٌۭ ۖ", "وَنُدْخِلُهُمْ", "ظِلًّۭا", "ظَلِيلًا", "٥٧"),
-  ("wa-alladhīna", "āmanū", "waʿamilū", "l-ṣāliḥāti", "sanud'khiluhum", "jannātin", "tajrī", "min", "taḥtihā", "l-anhāru", "khālidīna", "fīhā", "abadan", "lahum", "fīhā", "azwājun", "muṭahharatun", "wanud'khiluhum", "ẓillan", "ẓalīlan", "(57)"),
+  ("wa-alladhīna", "āmanū", "waʿamilū", "l-ṣāliḥāti", "sanud'khiluhum", "jannātin", "tajrī", "min", "taḥtihā", "l-anhāru", "khālidīna", "fīhā", "abadan", "lahum", "fīhā", [#h(2em)azwājun], "muṭahharatun", "wanud'khiluhum", "ẓillan", "ẓalīlan", "(57)"),
   ([信道而且行善者，我将使他们入下临诸河的乐园，而永居其中。他们在乐园里有纯洁的配偶，我将使他们入于永恒的庇荫中。]),
 )
 
@@ -1054,6 +1054,6 @@
 
 #quran-verse(
   ("يَسْتَفْتُونَكَ", "قُلِ", "ٱللَّهُ", "يُفْتِيكُمْ", "فِى", "ٱلْكَلَـٰلَةِ ۚ", "إِنِ", "ٱمْرُؤٌا۟", "هَلَكَ", "لَيْسَ", "لَهُۥ", "وَلَدٌۭ", "وَلَهُۥٓ", "أُخْتٌۭ", "فَلَهَا", "نِصْفُ", "مَا", "تَرَكَ ۚ", "وَهُوَ", "يَرِثُهَآ", "إِن", "لَّمْ", "يَكُن", "لَّهَا", "وَلَدٌۭ ۚ", "فَإِن", "كَانَتَا", "ٱثْنَتَيْنِ", "فَلَهُمَا", "ٱلثُّلُثَانِ", "مِمَّا", "تَرَكَ ۚ", "وَإِن", "كَانُوٓا۟", "إِخْوَةًۭ", "رِّجَالًۭا", "وَنِسَآءًۭ", "فَلِلذَّكَرِ", "مِثْلُ", "حَظِّ", "ٱلْأُنثَيَيْنِ ۗ", "يُبَيِّنُ", "ٱللَّهُ", "لَكُمْ", "أَن", "تَضِلُّوا۟ ۗ", "وَٱللَّهُ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۢ", "١٧٦"),
-  ("yastaftūnaka", "quli", "l-lahu", "yuf'tīkum", "fī", "l-kalālati", "ini", "im'ru-on", "halaka", "laysa", "lahu", "waladun", "walahu", "ukh'tun", "falahā", "niṣ'fu", "mā", "taraka", "wahuwa", "yarithuhā", "in", "lam", "yakun", "lahā", "waladun", "fa-in", "kānatā", "ith'natayni", "falahumā", "l-thuluthāni", "mimmā", "taraka", "wa-in", "kānū", "ikh'watan", "rijālan", "wanisāan", "falildhakari", "mith'lu", "ḥaẓẓi", "l-unthayayni", "yubayyinu", "l-lahu", "lakum", "an", "taḍillū", "wal-lahu", "bikulli", "shayin", "ʿalīmun", "(176)"),
+  ("yastaftūnaka", "quli", "l-lahu", "yuf'tīkum", "fī", "l-kalālati", "ini", "im'ru-on", "halaka", "laysa", "lahu", "waladun", "walahu", "ukh'tun", "falahā", "niṣ'fu", "mā", "taraka", "wahuwa", "yarithuhā", "in", "lam", "yakun", "lahā", "waladun", "fa-in", "kānatā", "ith'natayni", "falahumā", "l-thuluthāni", "mimmā", "taraka", "wa-in", "kānū", "ikh'watan", "rijālan", "wanisāan", "falildhakari", "mith'lu", "ḥaẓẓi", "l-unthayayni", "yubayyinu", "l-lahu", "lakum", "an", "taḍillū", "wal-lahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(176)"),
   ([他们请求你解释律例。你说：真主为你们解释关于孤独人的律例。如果一个男人死了，他没有儿女，只有一个姐姐或妹妹，那末，她得他的遗产的二分之一；如果他她没有儿女，那他就继承她。如果他的继承人是两个姐姐或妹妹，那末，她们俩得遗产的三分之二；如果继承人是几个兄弟姐妹，那末，一个男人得两个女人的份子。真主为你们阐明律例，以免你们迷误。真主是全知万物的。]),
 )

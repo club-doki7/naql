@@ -16,7 +16,7 @@
 
 #quran-verse(
   ("هُوَ", "ٱلْأَوَّلُ", "وَٱلْـَٔاخِرُ", "وَٱلظَّـٰهِرُ", "وَٱلْبَاطِنُ ۖ", "وَهُوَ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌ", "٣"),
-  ("huwa", "l-awalu", "wal-ākhiru", "wal-ẓāhiru", "wal-bāṭinu", "wahuwa", "bikulli", "shayin", "ʿalīmun", "(3)"),
+  ("huwa", "l-awalu", "wal-ākhiru", "wal-ẓāhiru", "wal-bāṭinu", "wahuwa", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(3)"),
   ([他是前无始后无终的，是极显著极隐微的，他是全知万物的。]),
 )
 
@@ -34,7 +34,7 @@
 
 #quran-verse(
   ("يُولِجُ", "ٱلَّيْلَ", "فِى", "ٱلنَّهَارِ", "وَيُولِجُ", "ٱلنَّهَارَ", "فِى", "ٱلَّيْلِ ۚ", "وَهُوَ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٦"),
-  ("yūliju", "al-layla", "fī", "l-nahāri", "wayūliju", "l-nahāra", "fī", "al-layli", "wahuwa", "ʿalīmun", "bidhāti", "l-ṣudūri", "(6)"),
+  ("yūliju", "al-layla", "fī", "l-nahāri", "wayūliju", "l-nahāra", "fī", "al-layli", "wahuwa", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(6)"),
   ([他使黑夜侵入白昼，使白昼侵入黑夜；他是全知心事的。]),
 )
 

@@ -166,7 +166,7 @@
 
 #quran-verse(
   ("ٱلَّذِينَ", "تَتَوَفَّىٰهُمُ", "ٱلْمَلَـٰٓئِكَةُ", "ظَالِمِىٓ", "أَنفُسِهِمْ ۖ", "فَأَلْقَوُا۟", "ٱلسَّلَمَ", "مَا", "كُنَّا", "نَعْمَلُ", "مِن", "سُوٓءٍۭ ۚ", "بَلَىٰٓ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِمَا", "كُنتُمْ", "تَعْمَلُونَ", "٢٨"),
-  ("alladhīna", "tatawaffāhumu", "l-malāikatu", "ẓālimī", "anfusihim", "fa-alqawū", "l-salama", "mā", "kunnā", "naʿmalu", "min", "sūin", "balā", "inna", "l-laha", "ʿalīmun", "bimā", "kuntum", "taʿmalūna", "(28)"),
+  ("alladhīna", "tatawaffāhumu", "l-malāikatu", "ẓālimī", "anfusihim", "fa-alqawū", "l-salama", "mā", "kunnā", "naʿmalu", "min", "sūin", "balā", "inna", "l-laha", [#h(1.75em)ʿalīmun], "bimā", "kuntum", "taʿmalūna", "(28)"),
   ([他们在自亏的情况下，天神们使他们死亡。他们表示屈服，说：我们没有犯过什么罪恶。不然！真主确是全知你们的行为的。]),
 )
 
@@ -418,7 +418,7 @@
 
 #quran-verse(
   ("وَٱللَّهُ", "خَلَقَكُمْ", "ثُمَّ", "يَتَوَفَّىٰكُمْ ۚ", "وَمِنكُم", "مَّن", "يُرَدُّ", "إِلَىٰٓ", "أَرْذَلِ", "ٱلْعُمُرِ", "لِكَىْ", "لَا", "يَعْلَمَ", "بَعْدَ", "عِلْمٍۢ", "شَيْـًٔا ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۭ", "قَدِيرٌۭ", "٧٠"),
-  ("wal-lahu", "khalaqakum", "thumma", "yatawaffākum", "waminkum", "man", "yuraddu", "ilā", "ardhali", "l-ʿumuri", "likay", "lā", "yaʿlama", "baʿda", "ʿil'min", "shayan", "inna", "l-laha", "ʿalīmun", "qadīrun", "(70)"),
+  ("wal-lahu", "khalaqakum", "thumma", "yatawaffākum", "waminkum", "man", "yuraddu", "ilā", "ardhali", "l-ʿumuri", "likay", "lā", "yaʿlama", "baʿda", "ʿil'min", "shayan", "inna", "l-laha", [#h(1.75em)ʿalīmun], "qadīrun", "(70)"),
   ([真主创造你们，然后使你们死亡。你们中有人复返于一生中最恶劣的阶段，以致他在有知识之后又变得一无所知。真主确是全知的，确是全能的。]),
 )
 
@@ -478,7 +478,7 @@
 
 #quran-verse(
   ("وَٱللَّهُ", "جَعَلَ", "لَكُم", "مِّنۢ", "بُيُوتِكُمْ", "سَكَنًۭا", "وَجَعَلَ", "لَكُم", "مِّن", "جُلُودِ", "ٱلْأَنْعَـٰمِ", "بُيُوتًۭا", "تَسْتَخِفُّونَهَا", "يَوْمَ", "ظَعْنِكُمْ", "وَيَوْمَ", "إِقَامَتِكُمْ ۙ", "وَمِنْ", "أَصْوَافِهَا", "وَأَوْبَارِهَا", "وَأَشْعَارِهَآ", "أَثَـٰثًۭا", "وَمَتَـٰعًا", "إِلَىٰ", "حِينٍۢ", "٨٠"),
-  ("wal-lahu", "jaʿala", "lakum", "min", "buyūtikum", "sakanan", "wajaʿala", "lakum", "min", "julūdi", "l-anʿāmi", "buyūtan", "tastakhiffūnahā", "yawma", "ẓaʿnikum", "wayawma", "iqāmatikum", "wamin", "aṣwāfihā", "wa-awbārihā", "wa-ashʿārihā", "athāthan", "wamatāʿan", "ilā", "ḥīnin", "(80)"),
+  ("wal-lahu", "jaʿala", "lakum", "min", "buyūtikum", "sakanan", "wajaʿala", "lakum", "min", "julūdi", "l-anʿāmi", "buyūtan", "tastakhiffūnahā", "yawma", "ẓaʿnikum", "wayawma", "iqāmatikum", "wamin", "aṣwāfihā", "wa-awbārihā", "wa-ashʿārihā", "athāthan", "wamatāʿan", "ilā", [#h(1.75em)ḥīnin], "(80)"),
   ([真主以你们的家为你们安居之所，以牲畜的皮革，为你们的房屋，你们在起程之日和住定之日，都感觉其轻便。他以绵羊毛、骆驼毛和山羊毛供你们织造家俱和暂时的享受。]),
 )
 

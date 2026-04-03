@@ -370,7 +370,7 @@
 
 #quran-verse(
   ("ٱللَّهُ", "يَبْسُطُ", "ٱلرِّزْقَ", "لِمَن", "يَشَآءُ", "مِنْ", "عِبَادِهِۦ", "وَيَقْدِرُ", "لَهُۥٓ ۚ", "إِنَّ", "ٱللَّهَ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "٦٢"),
-  ("al-lahu", "yabsuṭu", "l-riz'qa", "liman", "yashāu", "min", "ʿibādihi", "wayaqdiru", "lahu", "inna", "l-laha", "bikulli", "shayin", "ʿalīmun", "(62)"),
+  ("al-lahu", "yabsuṭu", "l-riz'qa", "liman", "yashāu", "min", "ʿibādihi", "wayaqdiru", "lahu", "inna", "l-laha", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(62)"),
   ([真主要使哪个仆人的给养宽裕，就使他宽裕，（要使哪个仆人的给养窘迫，）就使他窘迫，真主确是全知万事的。]),
 )
 

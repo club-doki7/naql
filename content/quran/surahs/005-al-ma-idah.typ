@@ -40,7 +40,7 @@
 
 #quran-verse(
   ("وَٱذْكُرُوا۟", "نِعْمَةَ", "ٱللَّهِ", "عَلَيْكُمْ", "وَمِيثَـٰقَهُ", "ٱلَّذِى", "وَاثَقَكُم", "بِهِۦٓ", "إِذْ", "قُلْتُمْ", "سَمِعْنَا", "وَأَطَعْنَا ۖ", "وَٱتَّقُوا۟", "ٱللَّهَ ۚ", "إِنَّ", "ٱللَّهَ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٧"),
-  ("wa-udh'kurū", "niʿ'mata", "l-lahi", "ʿalaykum", "wamīthāqahu", "alladhī", "wāthaqakum", "bihi", "idh", "qul'tum", "samiʿ'nā", "wa-aṭaʿnā", "wa-ittaqū", "l-laha", "inna", "l-laha", "ʿalīmun", "bidhāti", "l-ṣudūri", "(7)"),
+  ("wa-udh'kurū", "niʿ'mata", "l-lahi", "ʿalaykum", "wamīthāqahu", "alladhī", "wāthaqakum", "bihi", "idh", "qul'tum", "samiʿ'nā", "wa-aṭaʿnā", "wa-ittaqū", "l-laha", "inna", "l-laha", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(7)"),
   ([你们当铭记真主所赐你们的恩典, 和他与你们所缔的盟约; 当时, 你们曾说: 我们听从了。你们当敬畏真主。真主确是全知心事的。]),
 )
 
@@ -322,7 +322,7 @@
 
 #quran-verse(
   ("يَـٰٓأَيُّهَا", "ٱلَّذِينَ", "ءَامَنُوا۟", "مَن", "يَرْتَدَّ", "مِنكُمْ", "عَن", "دِينِهِۦ", "فَسَوْفَ", "يَأْتِى", "ٱللَّهُ", "بِقَوْمٍۢ", "يُحِبُّهُمْ", "وَيُحِبُّونَهُۥٓ", "أَذِلَّةٍ", "عَلَى", "ٱلْمُؤْمِنِينَ", "أَعِزَّةٍ", "عَلَى", "ٱلْكَـٰفِرِينَ", "يُجَـٰهِدُونَ", "فِى", "سَبِيلِ", "ٱللَّهِ", "وَلَا", "يَخَافُونَ", "لَوْمَةَ", "لَآئِمٍۢ ۚ", "ذَٰلِكَ", "فَضْلُ", "ٱللَّهِ", "يُؤْتِيهِ", "مَن", "يَشَآءُ ۚ", "وَٱللَّهُ", "وَٰسِعٌ", "عَلِيمٌ", "٥٤"),
-  ("yāayyuhā", "alladhīna", "āmanū", "man", "yartadda", "minkum", "ʿan", "dīnihi", "fasawfa", "yatī", "l-lahu", "biqawmin", "yuḥibbuhum", "wayuḥibbūnahu", "adhillatin", "ʿalā", "l-mu'minīna", "aʿizzatin", "ʿalā", "l-kāfirīna", "yujāhidūna", "fī", "sabīli", "l-lahi", "walā", "yakhāfūna", "lawmata", "lāimin", "dhālika", "faḍlu", "l-lahi", "yu'tīhi", "man", "yashāu", "wal-lahu", "wāsiʿun", "ʿalīmun", "(54)"),
+  ("yāayyuhā", "alladhīna", "āmanū", "man", "yartadda", "minkum", "ʿan", "dīnihi", "fasawfa", "yatī", "l-lahu", "biqawmin", "yuḥibbuhum", "wayuḥibbūnahu", "adhillatin", "ʿalā", "l-mu'minīna", "aʿizzatin", "ʿalā", "l-kāfirīna", "yujāhidūna", "fī", "sabīli", "l-lahi", "walā", "yakhāfūna", "lawmata", "lāimin", "dhālika", "faḍlu", "l-lahi", "yu'tīhi", "man", "yashāu", "wal-lahu", "wāsiʿun", [#h(1.75em)ʿalīmun], "(54)"),
   ([信道的人们啊! 你们中凡叛道的人，真主将以别的民众代替他们，真主喜爱那些民众，他们也喜爱真主。他们对信士是谦恭的，对外道是威严的，他们为主道而奋斗，不怕任何人的责备。这是真主的恩惠，他用来赏赐他所意欲的人。真主是宽大的，是全知的。]),
 )
 
@@ -580,7 +580,7 @@
 
 #quran-verse(
   ("۞ جَعَلَ", "ٱللَّهُ", "ٱلْكَعْبَةَ", "ٱلْبَيْتَ", "ٱلْحَرَامَ", "قِيَـٰمًۭا", "لِّلنَّاسِ", "وَٱلشَّهْرَ", "ٱلْحَرَامَ", "وَٱلْهَدْىَ", "وَٱلْقَلَـٰٓئِدَ ۚ", "ذَٰلِكَ", "لِتَعْلَمُوٓا۟", "أَنَّ", "ٱللَّهَ", "يَعْلَمُ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَمَا", "فِى", "ٱلْأَرْضِ", "وَأَنَّ", "ٱللَّهَ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌ", "٩٧"),
-  ("jaʿala", "l-lahu", "l-kaʿbata", "l-bayta", "l-ḥarāma", "qiyāman", "lilnnāsi", "wal-shahra", "l-ḥarāma", "wal-hadya", "wal-qalāida", "dhālika", "litaʿlamū", "anna", "l-laha", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "wa-anna", "l-laha", "bikulli", "shayin", "ʿalīmun", "(97)"),
+  ("jaʿala", "l-lahu", "l-kaʿbata", "l-bayta", "l-ḥarāma", "qiyāman", "lilnnāsi", "wal-shahra", "l-ḥarāma", "wal-hadya", "wal-qalāida", "dhālika", "litaʿlamū", "anna", "l-laha", "yaʿlamu", "mā", "fī", "l-samāwāti", "wamā", "fī", "l-arḍi", "wa-anna", "l-laha", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(97)"),
   ([真主以克尔白--禁寺--为众人的纲维，又以禁月、供物、项圈，为众人的纲维，这是因为要使你们知道真主全知天上的一切和地上的一切。真主是全 知万物的。]),
 )
 

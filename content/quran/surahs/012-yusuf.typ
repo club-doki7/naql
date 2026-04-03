@@ -34,7 +34,7 @@
 
 #quran-verse(
   ("وَكَذَٰلِكَ", "يَجْتَبِيكَ", "رَبُّكَ", "وَيُعَلِّمُكَ", "مِن", "تَأْوِيلِ", "ٱلْأَحَادِيثِ", "وَيُتِمُّ", "نِعْمَتَهُۥ", "عَلَيْكَ", "وَعَلَىٰٓ", "ءَالِ", "يَعْقُوبَ", "كَمَآ", "أَتَمَّهَا", "عَلَىٰٓ", "أَبَوَيْكَ", "مِن", "قَبْلُ", "إِبْرَٰهِيمَ", "وَإِسْحَـٰقَ ۚ", "إِنَّ", "رَبَّكَ", "عَلِيمٌ", "حَكِيمٌۭ", "٦"),
-  ("wakadhālika", "yajtabīka", "rabbuka", "wayuʿallimuka", "min", "tawīli", "l-aḥādīthi", "wayutimmu", "niʿ'matahu", "ʿalayka", "waʿalā", "āli", "yaʿqūba", "kamā", "atammahā", "ʿalā", "abawayka", "min", "qablu", "ib'rāhīma", "wa-is'ḥāqa", "inna", "rabbaka", "ʿalīmun", "ḥakīmun", "(6)"),
+  ("wakadhālika", "yajtabīka", "rabbuka", "wayuʿallimuka", "min", "tawīli", "l-aḥādīthi", "wayutimmu", "niʿ'matahu", "ʿalayka", "waʿalā", "āli", "yaʿqūba", "kamā", "atammahā", "ʿalā", "abawayka", "min", "qablu", "ib'rāhīma", "wa-is'ḥāqa", "inna", "rabbaka", [#h(1.75em)ʿalīmun], "ḥakīmun", "(6)"),
   ([你的主这样拣选你，他教你圆梦，他要完成对你和对叶尔孤白的后裔的恩典，犹如他以前曾完成对你的祖先易卜拉欣和易司哈格的恩典一样，你的主确是全知的，确是至睿的。]),
 )
 
@@ -112,7 +112,7 @@
 
 #quran-verse(
   ("وَجَآءَتْ", "سَيَّارَةٌۭ", "فَأَرْسَلُوا۟", "وَارِدَهُمْ", "فَأَدْلَىٰ", "دَلْوَهُۥ ۖ", "قَالَ", "يَـٰبُشْرَىٰ", "هَـٰذَا", "غُلَـٰمٌۭ ۚ", "وَأَسَرُّوهُ", "بِضَـٰعَةًۭ ۚ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِمَا", "يَعْمَلُونَ", "١٩"),
-  ("wajāat", "sayyāratun", "fa-arsalū", "wāridahum", "fa-adlā", "dalwahu", "qāla", "yābush'rā", "hādhā", "ghulāmun", "wa-asarrūhu", "biḍāʿatan", "wal-lahu", "ʿalīmun", "bimā", "yaʿmalūna", "(19)"),
+  ("wajāat", "sayyāratun", "fa-arsalū", "wāridahum", "fa-adlā", "dalwahu", "qāla", "yābush'rā", "hādhā", "ghulāmun", "wa-asarrūhu", "biḍāʿatan", "wal-lahu", [#h(1.75em)ʿalīmun], "bimā", "yaʿmalūna", "(19)"),
   ([旅客们来了，他们派人去汲水，他把水桶缒下井去，他说：啊！好消息！这是一个少年。他们秘密地把他当作货物，真主是全知他们的行为的。]),
 )
 
@@ -208,7 +208,7 @@
 
 #quran-verse(
   ("ثُمَّ", "بَدَا", "لَهُم", "مِّنۢ", "بَعْدِ", "مَا", "رَأَوُا۟", "ٱلْـَٔايَـٰتِ", "لَيَسْجُنُنَّهُۥ", "حَتَّىٰ", "حِينٍۢ", "٣٥"),
-  ("thumma", "badā", "lahum", "min", "baʿdi", "mā", "ra-awū", "l-āyāti", "layasjununnahu", "ḥattā", "ḥīnin", "(35)"),
+  ("thumma", "badā", "lahum", "min", "baʿdi", "mā", "ra-awū", "l-āyāti", "layasjununnahu", "ḥattā", [#h(1.75em)ḥīnin], "(35)"),
   ([他们看见了许多迹象之后，觉得必须把他监禁一个时期。]),
 )
 
@@ -298,7 +298,7 @@
 
 #quran-verse(
   ("وَقَالَ", "ٱلْمَلِكُ", "ٱئْتُونِى", "بِهِۦ ۖ", "فَلَمَّا", "جَآءَهُ", "ٱلرَّسُولُ", "قَالَ", "ٱرْجِعْ", "إِلَىٰ", "رَبِّكَ", "فَسْـَٔلْهُ", "مَا", "بَالُ", "ٱلنِّسْوَةِ", "ٱلَّـٰتِى", "قَطَّعْنَ", "أَيْدِيَهُنَّ ۚ", "إِنَّ", "رَبِّى", "بِكَيْدِهِنَّ", "عَلِيمٌۭ", "٥٠"),
-  ("waqāla", "l-maliku", "i'tūnī", "bihi", "falammā", "jāahu", "l-rasūlu", "qāla", "ir'jiʿ", "ilā", "rabbika", "fasalhu", "mā", "bālu", "l-nis'wati", "allātī", "qaṭṭaʿna", "aydiyahunna", "inna", "rabbī", "bikaydihinna", "ʿalīmun", "(50)"),
+  ("waqāla", "l-maliku", "i'tūnī", "bihi", "falammā", "jāahu", "l-rasūlu", "qāla", "ir'jiʿ", "ilā", "rabbika", "fasalhu", "mā", "bālu", "l-nis'wati", "allātī", "qaṭṭaʿna", "aydiyahunna", "inna", "rabbī", "bikaydihinna", [#h(1.75em)ʿalīmun], "(50)"),
   ([国王说：你们带他来见我吧！当使者到来的时候，他说：请你回去问问你的主人，曾经把自己的手割伤了的那些妇女，现在是怎样的？我的主是全知她们的诡计的。]),
 )
 
@@ -328,7 +328,7 @@
 
 #quran-verse(
   ("قَالَ", "ٱجْعَلْنِى", "عَلَىٰ", "خَزَآئِنِ", "ٱلْأَرْضِ ۖ", "إِنِّى", "حَفِيظٌ", "عَلِيمٌۭ", "٥٥"),
-  ("qāla", "ij'ʿalnī", "ʿalā", "khazāini", "l-arḍi", "innī", "ḥafīẓun", "ʿalīmun", "(55)"),
+  ("qāla", "ij'ʿalnī", "ʿalā", "khazāini", "l-arḍi", "innī", "ḥafīẓun", [#h(1.75em)ʿalīmun], "(55)"),
   ([他说：请你任命我管理全国的仓库，我确是一个内行的保管者。]),
 )
 
@@ -454,7 +454,7 @@
 
 #quran-verse(
   ("فَبَدَأَ", "بِأَوْعِيَتِهِمْ", "قَبْلَ", "وِعَآءِ", "أَخِيهِ", "ثُمَّ", "ٱسْتَخْرَجَهَا", "مِن", "وِعَآءِ", "أَخِيهِ ۚ", "كَذَٰلِكَ", "كِدْنَا", "لِيُوسُفَ ۖ", "مَا", "كَانَ", "لِيَأْخُذَ", "أَخَاهُ", "فِى", "دِينِ", "ٱلْمَلِكِ", "إِلَّآ", "أَن", "يَشَآءَ", "ٱللَّهُ ۚ", "نَرْفَعُ", "دَرَجَـٰتٍۢ", "مَّن", "نَّشَآءُ ۗ", "وَفَوْقَ", "كُلِّ", "ذِى", "عِلْمٍ", "عَلِيمٌۭ", "٧٦"),
-  ("fabada-a", "bi-awʿiyatihim", "qabla", "wiʿāi", "akhīhi", "thumma", "is'takhrajahā", "min", "wiʿāi", "akhīhi", "kadhālika", "kid'nā", "liyūsufa", "mā", "kāna", "liyakhudha", "akhāhu", "fī", "dīni", "l-maliki", "illā", "an", "yashāa", "l-lahu", "narfaʿu", "darajātin", "man", "nashāu", "wafawqa", "kulli", "dhī", "ʿil'min", "ʿalīmun", "(76)"),
+  ("fabada-a", "bi-awʿiyatihim", "qabla", "wiʿāi", "akhīhi", "thumma", "is'takhrajahā", "min", "wiʿāi", "akhīhi", "kadhālika", "kid'nā", "liyūsufa", "mā", "kāna", "liyakhudha", "akhāhu", "fī", "dīni", "l-maliki", "illā", "an", "yashāa", "l-lahu", "narfaʿu", "darajātin", "man", "nashāu", "wafawqa", "kulli", "dhī", "ʿil'min", [#h(1.75em)ʿalīmun], "(76)"),
   ([优素福在检查他弟弟的粮袋之前，先检查了他们的粮袋。随后，在他弟弟的粮袋里查出了那只酒杯。我这样为优素福定计。按照国王的法律，他不得把他弟弟当作奴仆，但真主意欲他那样做。我把我所意欲者提升若干级，每个有知识的人上面，都有一个全知者。]),
 )
 

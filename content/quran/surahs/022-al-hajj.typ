@@ -310,7 +310,7 @@
 
 #quran-verse(
   ("وَمَآ", "أَرْسَلْنَا", "مِن", "قَبْلِكَ", "مِن", "رَّسُولٍۢ", "وَلَا", "نَبِىٍّ", "إِلَّآ", "إِذَا", "تَمَنَّىٰٓ", "أَلْقَى", "ٱلشَّيْطَـٰنُ", "فِىٓ", "أُمْنِيَّتِهِۦ", "فَيَنسَخُ", "ٱللَّهُ", "مَا", "يُلْقِى", "ٱلشَّيْطَـٰنُ", "ثُمَّ", "يُحْكِمُ", "ٱللَّهُ", "ءَايَـٰتِهِۦ ۗ", "وَٱللَّهُ", "عَلِيمٌ", "حَكِيمٌۭ", "٥٢"),
-  ("wamā", "arsalnā", "min", "qablika", "min", "rasūlin", "walā", "nabiyyin", "illā", "idhā", "tamannā", "alqā", "l-shayṭānu", "fī", "um'niyyatihi", "fayansakhu", "l-lahu", "mā", "yul'qī", "l-shayṭānu", "thumma", "yuḥ'kimu", "l-lahu", "āyātihi", "wal-lahu", "ʿalīmun", "ḥakīmun", "(52)"),
+  ("wamā", "arsalnā", "min", "qablika", "min", "rasūlin", "walā", "nabiyyin", "illā", "idhā", "tamannā", "alqā", "l-shayṭānu", "fī", "um'niyyatihi", "fayansakhu", "l-lahu", "mā", "yul'qī", "l-shayṭānu", "thumma", "yuḥ'kimu", "l-lahu", "āyātihi", "wal-lahu", [#h(1.75em)ʿalīmun], "ḥakīmun", "(52)"),
   ([在你之前我所派遣的使者和先知，没有一个不是这样的：当他愿望的时候，恶魔对于他的愿望，有一种建议，但真主破除恶魔的建议，然后，真主使自己的迹象成为坚确的。真主是全知的，是至睿的。]),
 )
 

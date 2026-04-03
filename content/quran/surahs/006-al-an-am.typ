@@ -496,7 +496,7 @@
 
 #quran-verse(
   ("وَتِلْكَ", "حُجَّتُنَآ", "ءَاتَيْنَـٰهَآ", "إِبْرَٰهِيمَ", "عَلَىٰ", "قَوْمِهِۦ ۚ", "نَرْفَعُ", "دَرَجَـٰتٍۢ", "مَّن", "نَّشَآءُ ۗ", "إِنَّ", "رَبَّكَ", "حَكِيمٌ", "عَلِيمٌۭ", "٨٣"),
-  ("watil'ka", "ḥujjatunā", "ātaynāhā", "ib'rāhīma", "ʿalā", "qawmihi", "narfaʿu", "darajātin", "man", "nashāu", "inna", "rabbaka", "ḥakīmun", "ʿalīmun", "(83)"),
+  ("watil'ka", "ḥujjatunā", "ātaynāhā", "ib'rāhīma", "ʿalā", "qawmihi", "narfaʿu", "darajātin", "man", "nashāu", "inna", "rabbaka", "ḥakīmun", [#h(1.75em)ʿalīmun], "(83)"),
   ([这是我的证据，我把它赏赐易卜拉欣，以便他驳斥他的宗族，我将我所意欲的人提升若干级。你的主，确是至睿的，确是全知的。]),
 )
 
@@ -604,7 +604,7 @@
 
 #quran-verse(
   ("بَدِيعُ", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ ۖ", "أَنَّىٰ", "يَكُونُ", "لَهُۥ", "وَلَدٌۭ", "وَلَمْ", "تَكُن", "لَّهُۥ", "صَـٰحِبَةٌۭ ۖ", "وَخَلَقَ", "كُلَّ", "شَىْءٍۢ ۖ", "وَهُوَ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "١٠١"),
-  ("badīʿu", "l-samāwāti", "wal-arḍi", "annā", "yakūnu", "lahu", "waladun", "walam", "takun", "lahu", "ṣāḥibatun", "wakhalaqa", "kulla", "shayin", "wahuwa", "bikulli", "shayin", "ʿalīmun", "(101)"),
+  ("badīʿu", "l-samāwāti", "wal-arḍi", "annā", "yakūnu", "lahu", "waladun", "walam", "takun", "lahu", "ṣāḥibatun", "wakhalaqa", "kulla", "shayin", "wahuwa", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(101)"),
   ([他是天地的创造者，他没有配偶，怎么会有儿女呢？他曾创造万物，他是全知万的。]),
 )
 
@@ -766,7 +766,7 @@
 
 #quran-verse(
   ("وَيَوْمَ", "يَحْشُرُهُمْ", "جَمِيعًۭا", "يَـٰمَعْشَرَ", "ٱلْجِنِّ", "قَدِ", "ٱسْتَكْثَرْتُم", "مِّنَ", "ٱلْإِنسِ ۖ", "وَقَالَ", "أَوْلِيَآؤُهُم", "مِّنَ", "ٱلْإِنسِ", "رَبَّنَا", "ٱسْتَمْتَعَ", "بَعْضُنَا", "بِبَعْضٍۢ", "وَبَلَغْنَآ", "أَجَلَنَا", "ٱلَّذِىٓ", "أَجَّلْتَ", "لَنَا ۚ", "قَالَ", "ٱلنَّارُ", "مَثْوَىٰكُمْ", "خَـٰلِدِينَ", "فِيهَآ", "إِلَّا", "مَا", "شَآءَ", "ٱللَّهُ ۗ", "إِنَّ", "رَبَّكَ", "حَكِيمٌ", "عَلِيمٌۭ", "١٢٨"),
-  ("wayawma", "yaḥshuruhum", "jamīʿan", "yāmaʿshara", "l-jini", "qadi", "is'takthartum", "mina", "l-insi", "waqāla", "awliyāuhum", "mina", "l-insi", "rabbanā", "is'tamtaʿa", "baʿḍunā", "bibaʿḍin", "wabalaghnā", "ajalanā", "alladhī", "ajjalta", "lanā", "qāla", "l-nāru", "mathwākum", "khālidīna", "fīhā", "illā", "mā", "shāa", "l-lahu", "inna", "rabbaka", "ḥakīmun", "ʿalīmun", "(128)"),
+  ("wayawma", "yaḥshuruhum", "jamīʿan", "yāmaʿshara", "l-jini", "qadi", "is'takthartum", "mina", "l-insi", "waqāla", "awliyāuhum", "mina", "l-insi", "rabbanā", "is'tamtaʿa", "baʿḍunā", "bibaʿḍin", "wabalaghnā", "ajalanā", "alladhī", "ajjalta", "lanā", "qāla", "l-nāru", "mathwākum", "khālidīna", "fīhā", "illā", "mā", "shāa", "l-lahu", "inna", "rabbaka", "ḥakīmun", [#h(1.75em)ʿalīmun], "(128)"),
   ([我把他们完全集合之日，（或者将说）：精灵的群众啊！你们确已诱惑许多人了。这些人中的党羽将说：我们的主啊！我们已互相利用，而达到你所为我们预定的期限了！他说：火狱是你们的归宿，你们将永居其中，除非真主意欲的时候。你的主确是至睿的，确是全知的。]),
 )
 
@@ -832,7 +832,7 @@
 
 #quran-verse(
   ("وَقَالُوا۟", "مَا", "فِى", "بُطُونِ", "هَـٰذِهِ", "ٱلْأَنْعَـٰمِ", "خَالِصَةٌۭ", "لِّذُكُورِنَا", "وَمُحَرَّمٌ", "عَلَىٰٓ", "أَزْوَٰجِنَا ۖ", "وَإِن", "يَكُن", "مَّيْتَةًۭ", "فَهُمْ", "فِيهِ", "شُرَكَآءُ ۚ", "سَيَجْزِيهِمْ", "وَصْفَهُمْ ۚ", "إِنَّهُۥ", "حَكِيمٌ", "عَلِيمٌۭ", "١٣٩"),
-  ("waqālū", "mā", "fī", "buṭūni", "hādhihi", "l-anʿāmi", "khāliṣatun", "lidhukūrinā", "wamuḥarramun", "ʿalā", "azwājinā", "wa-in", "yakun", "maytatan", "fahum", "fīhi", "shurakāu", "sayajzīhim", "waṣfahum", "innahu", "ḥakīmun", "ʿalīmun", "(139)"),
+  ("waqālū", "mā", "fī", "buṭūni", "hādhihi", "l-anʿāmi", "khāliṣatun", "lidhukūrinā", "wamuḥarramun", "ʿalā", "azwājinā", "wa-in", "yakun", "maytatan", "fahum", "fīhi", "shurakāu", "sayajzīhim", "waṣfahum", "innahu", "ḥakīmun", [#h(1.75em)ʿalīmun], "(139)"),
   ([他们说：这些牲畜所怀的胎儿，是专归我们男人的，对于我们的妻子是禁物。如果那胎儿生下来是死的，他们就共同吃它。真主要为他们捏造谣言而报酬他们。他确是至睿的，确是全知的。]),
 )
 

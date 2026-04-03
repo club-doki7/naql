@@ -22,7 +22,7 @@
 
 #quran-verse(
   ("يَعْلَمُ", "مَا", "فِى", "ٱلسَّمَـٰوَٰتِ", "وَٱلْأَرْضِ", "وَيَعْلَمُ", "مَا", "تُسِرُّونَ", "وَمَا", "تُعْلِنُونَ ۚ", "وَٱللَّهُ", "عَلِيمٌۢ", "بِذَاتِ", "ٱلصُّدُورِ", "٤"),
-  ("yaʿlamu", "mā", "fī", "l-samāwāti", "wal-arḍi", "wayaʿlamu", "mā", "tusirrūna", "wamā", "tuʿ'linūna", "wal-lahu", "ʿalīmun", "bidhāti", "l-ṣudūri", "(4)"),
+  ("yaʿlamu", "mā", "fī", "l-samāwāti", "wal-arḍi", "wayaʿlamu", "mā", "tusirrūna", "wamā", "tuʿ'linūna", "wal-lahu", [#h(1.75em)ʿalīmun], "bidhāti", "l-ṣudūri", "(4)"),
   ([他知道天地万物，他知道你们所隐匿的和你们所表现的，真主是全知心事的。]),
 )
 
@@ -64,7 +64,7 @@
 
 #quran-verse(
   ("مَآ", "أَصَابَ", "مِن", "مُّصِيبَةٍ", "إِلَّا", "بِإِذْنِ", "ٱللَّهِ ۗ", "وَمَن", "يُؤْمِنۢ", "بِٱللَّهِ", "يَهْدِ", "قَلْبَهُۥ ۚ", "وَٱللَّهُ", "بِكُلِّ", "شَىْءٍ", "عَلِيمٌۭ", "١١"),
-  ("mā", "aṣāba", "min", "muṣībatin", "illā", "bi-idh'ni", "l-lahi", "waman", "yu'min", "bil-lahi", "yahdi", "qalbahu", "wal-lahu", "bikulli", "shayin", "ʿalīmun", "(11)"),
+  ("mā", "aṣāba", "min", "muṣībatin", "illā", "bi-idh'ni", "l-lahi", "waman", "yu'min", "bil-lahi", "yahdi", "qalbahu", "wal-lahu", "bikulli", "shayin", [#h(1.75em)ʿalīmun], "(11)"),
   ([凡灾难的发生，无一不是依真主的判决的。谁信真主，他将引导谁的心，真主是全知万物的。]),
 )
 
