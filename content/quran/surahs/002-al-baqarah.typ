@@ -279,13 +279,13 @@
   ([他已为你们创造了大地上的一切事物，复经营诸天，完成了七层天。他对於万物是全知的。]),
 )
 
-#tafsir(section: "2:26-29", src: tazkirul-quran)[
+#tafsir(section: "2:26-29 (1)", src: tazkirul-quran)[
   人类对真主的首要职责是忠于真主在世界之初与他的受造物所立的盟约，即人应当始终是真主的仆人。其次，人对待同胞的行为应当巩固真主所要求的一切关系。第三，人不应捏造毫无根据的论点来反对真主的仆人所发出的神圣召唤，从而使人们远离它。
 
   真理的信息旨在使人与自身本性和谐一致：那些阻止他人接受真理的人，犯下了在世间散播腐败的罪行。真主从无到有地创造了人。这是莫大的恩典，足以使人完全臣服于真主。但真主所做的并非只是造人而已：他还赐予人类一片完美契合其需求的土地。但事情远不止于此。人死后，将立即被带到真主面前，接受审判。这就要求人类全心全意侍奉真主，一生谨记真主、服从真主，永远做真主谦卑的仆人。
 ]
 
-#tafsir(section: "2:26-29", src: tazkirul-quran)[
+#tafsir(section: "2:26-29 (2)", src: tazkirul-quran)[
   既然真主的启示如此清晰合理，为何人们却不接受呢？主要原因是不愿学习，表现形式则多种多样：故意贬低真主的启示，试图通过挑剔其缺陷来轻视它，或者将其歪曲为不合逻辑或只关注琐碎之事。当有人向他提出论点时，他只是浅尝辄止，并着手寻找其中的漏洞。
 
   但那些愿意学习的人会认真思考这些论点，他们很快就会意识到自己面对的是真理。即使真理是用蚊蚋和其他同样微不足道的生物的比喻来解释的，对他们来说也无关紧要。
@@ -362,7 +362,7 @@
 #quran-verse(
   ("فَتَلَقَّىٰٓ", "ءَادَمُ", "مِن", "رَّبِّهِۦ", "كَلِمَـٰتٍۢ", "فَتَابَ", "عَلَيْهِ ۚ", "إِنَّهُۥ", "هُوَ", "ٱلتَّوَّابُ", "ٱلرَّحِيمُ", "٣٧"),
   ("fatalaqqā", "ādamu", "min", "rabbihi", "kalimātin", "fatāba", "ʿalayhi", "innahu", "huwa", "l-tawābu", "l-raḥīmu", "(37)"),
-  ([然後，阿丹奉到从主降示的几件诫命，主就恕宥了他。主确是至宥的，确是至慈的。]),
+  ([然後，阿丹奉到从主降示的几件诫命，主就恕宥#footnote[宥 (yòu): 宽容；饶恕。]了他。主确是至宥的，确是至慈的。]),
 )
 
 #quran-verse(
@@ -380,7 +380,9 @@
 #tafsir(section: "2:37-39", src: tazkirul-quran)[
   禁果的教训生动地展现了人如何因受易卜劣厮欺骗而误入歧途，超越真主为其设定的界限。一旦吃了“禁果”，人便失去了真主的恩典，也就是乐园。但这并非不可挽回。人仍有机会向真主忏悔，改正自己的行为，并祈求真主宽恕自己的罪过。当他向真主忏悔时，真主会怜悯他，洗净他的罪孽，就如他从未犯过罪。
 
-  真理的传播者如同“阿丹”，人们应当向他俯首称臣。若有人因骄傲和偏见而拒绝承认他的地位，便是步易卜劣厮的后尘。这种否认等同于未能通过真主为人设下的考验。真主不会在世间显露真容；他通过他的迹象启示自己，以此考验他的造物。只有那些能够解读他迹象的人，才能发现真主本身。
+  真理的传播者如同“阿丹”，人们应当向他俯首称臣。若有人因骄傲和偏见而拒绝承认他的地位，便是步易卜劣厮的后尘。这种否认等同于未能通过真主为人设下的考验。
+
+  真主不会在世间显露真容；他通过他的迹象启示自己，以此考验他的造物。只有那些能够解读他迹象的人，才能发现真主本身。
 ]
 
 #quran-verse(
@@ -394,6 +396,12 @@
   ("waāminū", "bimā", "anzaltu", "muṣaddiqan", "limā", "maʿakum", "walā", "takūnū", "awwala", [#h(2em)kāfirin], "bihi", "walā", "tashtarū", "biāyātī", "thamanan", "qalīlan", "wa-iyyāya", "fa-ittaqūni", "(41)"),
   ([你们当信我所降示的，这能证实你们所有的经典，你们不要做首先不信的人，不要以廉价出卖我的迹象，你们应当只敬畏我。]),
 )
+
+#tafsir(section: "2:40-41", src: tazkirul-quran)[
+  真主赐予一个民族最大的恩惠，莫过于派遣他的先知降临于他们中间，从而为他们开启通往永恒救赎的坦途。在先知穆罕默德——即诸先知之末——降世之前，这一殊荣曾专属于以色列民族。然而，不久之后，宗教对于他们而言便不再是基于自觉抉择而接受的信仰；他们任由宗教信仰蜕变为一套套毫无生气的仪式，仅仅作为一种习俗代代相传。随着先知穆罕默德的降临，真理的实相终于大白于天下。那些对真理仍保持着敏锐感知的人，发觉了他先知身份的真实性，并追随了他。然而，对于那些已将宗教视为一种世袭传统的人而言，他的教诲显得如此陌生；当真理呈现在耳畔时，他们却未能辨识。于是，他们拒绝了这一真理，并转而与先知为敌。
+
+  鉴于《讨拉特》中早已载有关于一位阿拉伯先知即将降世的明确预言，以色列人本不难发觉其先知身份的真实性并归信于他；然而，归信于他却与他们的世俗利益相悖。数百年来，一套森严的宗教体制已然成形，而以色列人在这套体制中占据着至高无上的地位。作为圣贤与先知的后裔，他们备受世人仰慕，被视为理所当然的精神领袖。人们终年不断地向他们致以敬意，并奉上各种供品。在他们看来，一旦接受了这位阿拉伯先知，他们所享有的特权宗教地位便将终结，而他们赖以生存的整个利益体系也将随之彻底崩塌。
+]
 
 #quran-verse(
   ("وَلَا", "تَلْبِسُوا۟", "ٱلْحَقَّ", "بِٱلْبَـٰطِلِ", "وَتَكْتُمُوا۟", "ٱلْحَقَّ", "وَأَنتُمْ", "تَعْلَمُونَ", "٤٢"),
@@ -424,6 +432,10 @@
   ("alladhīna", "yaẓunnūna", "annahum", "mulāqū", "rabbihim", "wa-annahum", "ilayhi", "rājiʿūna", "(46)"),
   ([他们确信自己必定见主，必定归主。]),
 )
+
+#tafsir(section: "2:42-46", src: tazkirul-quran)[
+  As the Israelites were considered representatives of revealed religion in the Arab world, people used to ask them about the Arab Prophet. Pretending innocence, they would put forward such points as would turn people away from the Prophet and his mission. They used to preach to people, exhorting them to follow the truth and live their lives according to it; in practice, however, they failed to accept the truth when their turn came to do so. When a positive response to the call of God means relinquishing positions of high honour and prestige, then those who have gained religious rank through worldly elevation find it extremely difficult to follow this course. For the truly devout, however, these considerations are not a hindrance. The fulfillment that others find in worldly pleasures, true believers find in remembering God, in spending for His cause, in obeying His commandments and being steadfast in treading His path. They know full well that it is God’s punishment that is to be feared, not worldly loss.
+]
 
 #quran-verse(
   ("يَـٰبَنِىٓ", "إِسْرَٰٓءِيلَ", "ٱذْكُرُوا۟", "نِعْمَتِىَ", "ٱلَّتِىٓ", "أَنْعَمْتُ", "عَلَيْكُمْ", "وَأَنِّى", "فَضَّلْتُكُمْ", "عَلَى", "ٱلْعَـٰلَمِينَ", "٤٧"),
