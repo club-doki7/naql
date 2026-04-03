@@ -4,13 +4,13 @@
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
-  set page(paper: "a4", numbering: "1")
-  set text(font: zh-fonts, lang: "zh", size: 12pt)
+  set page(paper: "a4", numbering: "1", margin: (top: 2cm, bottom: 2cm))
+  set text(font: zh-fonts, lang: "zh", size: 11.5pt)
   show heading: set align(center)
 
   [
     = #title (#text(lang: "ar", font: "Scheherazade New", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
-    #v(1em)
+    #v(0.75em)
 
     #body
   ]
@@ -21,12 +21,12 @@
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: 0.45em, top: 0.6em, bottom: 0.4em),
+        inset: (x: if (i == word.len() - 1) { 0.25em } else { 0.45em }, top: 0.35em, bottom: 0.35em),
         align(center,
           stack(
             dir: ttb,
-            spacing: 1.1em,
-            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 12pt } else { 18pt }, lang: "ar", word.at(i)),
+            spacing: 1em,
+            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 12pt } else { 14pt }, lang: "ar", word.at(i)),
             text(dir: ltr, size: 10pt, style: "italic", translit.at(i))
           )
         )
@@ -35,7 +35,7 @@
     colbreak()
     set text(dir: ltr)
     translation
-    v(0.5em)
+    v(0.15em)
   }, width: 100%, breakable: false)
 }
 
@@ -43,8 +43,9 @@
   block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
     *#text(size: 11pt, title)* #section #h(1fr) #text(size: 10pt, src)
 
-    #text(font: fangsong-fonts, size: 10.5pt, content)
+    #text(font: fangsong-fonts, size: 11pt, content)
   ])
+  v(0.15em)
 }
 
 #let intro = make-box("导读")
