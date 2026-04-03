@@ -1,7 +1,7 @@
 #import "@preview/cuti:0.4.0": cn-fakebold as cuti
 
 #let zh-fonts = ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC", "Scheherazade New")
-#let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
+#let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
   set page(paper: "a4", numbering: "1")
@@ -51,7 +51,12 @@
 
 #let tafsir = make-box("经注")
 
-#let qa(section: "", src: "", q, a) = make-box("问答")(section: section, src: src)[
+#let hadith = make-box("圣训")
+
+#let qa(section: "", src: "", q, a) = make-box("问答")(
+  section: section,
+  src: src
+)[
   #cuti[问：]#q
 
   #cuti[答：]#a
