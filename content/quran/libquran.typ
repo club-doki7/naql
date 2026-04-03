@@ -53,6 +53,21 @@
 
 #let hadith = make-box("圣训")
 
+// 如果某一章有奇数页，不要用“本页刻意留白”的占位符，而是使用一则提及该章的圣训。
+// 如果没有，则尽可能使用与章节主题或部分主题有关的圣训。
+// 如果再没有，选择一节符合一般意义上普世价值的圣训。
+#let hadith-page(src, ar, zh) = [
+  #colbreak()
+
+  #align(horizon, hadith(src: src)[
+    #align(right, text(dir: rtl, top-edge: 1.25em, ar))
+
+    #linebreak()
+
+    #zh
+  ])
+]
+
 #let qa(section: "", src: "", q, a) = make-box("问答")(
   section: section,
   src: src
