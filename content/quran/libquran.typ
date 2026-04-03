@@ -1,11 +1,11 @@
 #import "@preview/cuti:0.4.0": cn-fakebold as cuti
 
-#let zh-fonts = ("Libertinus Serif", "Noto Serif CJK SC", "Scheherazade New")
+#let zh-fonts = ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC", "Scheherazade New")
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
-  set page(paper: "iso-b5", numbering: "1", margin: 2cm)
-  set text(font: zh-fonts, lang: "zh", size: 11pt)
+  set page(paper: "a4", numbering: "1")
+  set text(font: zh-fonts, lang: "zh", size: 12pt)
   show heading: set align(center)
 
   [
@@ -41,9 +41,9 @@
 
 #let make-box(title) = (section: "", src: "", breakable: false, content) => {
   block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
-    *#title* #section #h(1fr) #text(size: 10pt, src)
+    *#text(size: 11pt, title)* #section #h(1fr) #text(size: 10pt, src)
 
-    #text(font: fangsong-fonts, size: 10pt, content)
+    #text(font: fangsong-fonts, size: 10.5pt, content)
   ])
 }
 
