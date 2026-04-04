@@ -9,7 +9,7 @@
   show heading: set align(center)
 
   [
-    = #title (#text(lang: "ar", font: "Scheherazade New", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
+    = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl, size: 15pt)) #if locator != none { label(locator) }
     #v(1em)
 
     #body
