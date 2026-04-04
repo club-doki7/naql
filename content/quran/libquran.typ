@@ -21,7 +21,7 @@
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: 0.35em, top: 0.25em, bottom: 0.15em),
+        inset: (x: 0.5em),
         align(center,
           stack(
             dir: ttb,
@@ -33,7 +33,6 @@
       )
     }
     colbreak(); set text(dir: ltr); translation
-    v(0.1em)
   }, width: 100%, breakable: false)
 }
 
