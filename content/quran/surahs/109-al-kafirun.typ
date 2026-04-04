@@ -1,45 +1,56 @@
 #import "../libquran.typ": *
 
-#show: quran-page.with(title: "Al-Kafirun", title-ar: "الكافرون", title-tl: "Al-Kafirun", locator: "109-al-kafirun")
+#show: quran-page.with(
+  title: "Al-Kafirun",
+  title-ar: "الكافرون",
+  title-tl: "Al-Kafirun",
+  locator: "109-al-kafirun",
+)
 
 #quran-verse(
-  (603, 603, 603, 603),
+  verse-num: 1,
+  "603",
   ("ﱁ", "ﱂ", "ﱃ", "ﱄ"),
   ("qul", "yāayyuhā", "l-kāfirūna", "(1)"),
-  ([你说：不信道的人们啊！]),
+  [你说：不信道的人们啊！],
 )
 
 #quran-verse(
-  (603, 603, 603, 603, 603),
+  verse-num: 2,
+  "603",
   ("ﱅ", "ﱆ", "ﱇ", "ﱈ", "ﱉ"),
   ("lā", "aʿbudu", "mā", "taʿbudūna", "(2)"),
-  ([我不崇拜你们所崇拜的,]),
+  [我不崇拜你们所崇拜的,],
 )
 
 #quran-verse(
-  (603, 603, 603, 603, 603, 603),
+  verse-num: 3,
+  "603",
   ("ﱊ", "ﱋ", "ﱌ", "ﱍ", "ﱎ", "ﱏ"),
   ("walā", "antum", "ʿābidūna", "mā", "aʿbudu", "(3)"),
-  ([你们也不崇拜我所崇拜的;]),
+  [你们也不崇拜我所崇拜的;],
 )
 
 #quran-verse(
-  (603, 603, 603, 603, 603, 603),
+  verse-num: 4,
+  "603",
   ("ﱐ", "ﱑ", "ﱒ", "ﱓ", "ﱔ", "ﱕ"),
   ("walā", "anā", "ʿābidun", "mā", "ʿabadttum", "(4)"),
-  ([我不会崇拜你们所崇拜的,]),
+  [我不会崇拜你们所崇拜的,],
 )
 
 #quran-verse(
-  (603, 603, 603, 603, 603, 603),
+  verse-num: 5,
+  "603",
   ("ﱖ", "ﱗ", "ﱘ", "ﱙ", "ﱚ", "ﱛ"),
   ("walā", "antum", "ʿābidūna", "mā", "aʿbudu", "(5)"),
-  ([你们也不会崇拜我所崇拜的;]),
+  [你们也不会崇拜我所崇拜的;],
 )
 
 #quran-verse(
-  (603, 603, 603, 603, 603),
+  verse-num: 6,
+  "603",
   ("ﱜ", "ﱝ", "ﱞ", "ﱟ", "ﱠ"),
   ("lakum", "dīnukum", "waliya", "dīni", "(6)"),
-  ([你们有你们的报应, 我也有我的报应。 　]),
+  [你们有你们的报应, 我也有我的报应。　],
 )

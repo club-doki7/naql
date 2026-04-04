@@ -9,12 +9,7 @@ function escapeTypst(s) {
   return s.replace(/\\/g, '\\\\').replace(/"/g, '\\"')
 }
 
-function stripHtml(s) {
-  // Remove HTML tags (e.g. <sup>, footnotes)
-  return s.replace(/<[^>]+>/g, '')
-}
-
-function generateVerse(verse) {
+function generateVerse(verse, verseNum) {
   const words = verse.words.filter(w => w.charTypeName === 'word')
   const endMark = verse.words.find(w => w.charTypeName === 'end')
 
@@ -27,18 +22,26 @@ function generateVerse(verse) {
   if (endMark) {
     arWords.push(endMark.codeV2)
     v2Pages.push(endMark.v2Page)
-    translitWords.push(endMark.translation?.text || `(${verse.verseNumber})`)
+    translitWords.push(endMark.translation?.text || '')
   }
 
   const fmt = arr => arr.map(s => `"${escapeTypst(s)}"`).join(', ')
-  const fmtNums = arr => arr.join(', ')
+  const fmtV2PageNums = arr => {
+    const uniqueSet = new Set(arr)
+    if (uniqueSet.size === 1) {
+      return '"' + arr[0].toString().padStart(3, '0') + '"'
+    }
+
+    throw new Error(`Multiple v2Page numbers found in verse ${verseNum}: ${[...uniqueSet].join(', ')}`)
+  }
 
   let lines = []
   lines.push(`#quran-verse(`)
-  lines.push(`  (${fmtNums(v2Pages)}),`)
+  lines.push(`  verse-num: ${verseNum},`)
+  lines.push(`  ${fmtV2PageNums(v2Pages)},`)
   lines.push(`  (${fmt(arWords)}),`)
   lines.push(`  (${fmt(translitWords)}),`)
-  lines.push(`  ([${zhTranslation}]),`)
+  lines.push(`  [${zhTranslation}],`)
   lines.push(`)`)
 
   return lines.join('\n')
@@ -49,11 +52,17 @@ function generateChapter(chapter, locator) {
 
   lines.push(`#import "../libquran.typ": *`)
   lines.push(``)
-  lines.push(`#show: quran-page.with(title: "${chapter.nameSimple}", title-ar: "${chapter.nameArabic}", title-tl: "${chapter.nameSimple}", locator: "${locator}")`)
+  lines.push(`#show: quran-page.with(`)
+  lines.push(`  title: "${chapter.nameSimple}",`)
+  lines.push(`  title-ar: "${chapter.nameArabic}",`)
+  lines.push(`  title-tl: "${chapter.nameSimple}",`)
+  lines.push(`  locator: "${locator}",`)
+  lines.push(`)`)
   lines.push(``)
 
-  for (const verse of chapter.verses) {
-    lines.push(generateVerse(verse))
+  for (let verseId = 0; verseId < chapter.versesCount; verseId++) {
+    const verse = chapter.verses[verseId]
+    lines.push(generateVerse(verse, verseId + 1))
     lines.push(``)
   }
 

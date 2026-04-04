@@ -1,38 +1,48 @@
 #import "../libquran.typ": *
 
-#show: quran-page.with(title: "Al-Falaq", title-ar: "الفلق", title-tl: "Al-Falaq", locator: "113-al-falaq")
+#show: quran-page.with(
+  title: "Al-Falaq",
+  title-ar: "الفلق",
+  title-tl: "Al-Falaq",
+  locator: "113-al-falaq",
+)
 
 #quran-verse(
-  (604, 604, 604, 604, 604),
+  verse-num: 1,
+  "604",
   ("ﱔ", "ﱕ", "ﱖ", "ﱗ", "ﱘ"),
   ("qul", "aʿūdhu", "birabbi", "l-falaqi", "(1)"),
-  ([你说: 我求庇于曙光的主,]),
+  [你说: 我求庇于曙光的主,],
 )
 
 #quran-verse(
-  (604, 604, 604, 604, 604),
+  verse-num: 2,
+  "604",
   ("ﱙ", "ﱚ", "ﱛ", "ﱜ", "ﱝ"),
   ("min", "sharri", "mā", "khalaqa", "(2)"),
-  ([免遭他所创造者的毒害;]),
+  [免遭他所创造者的毒害;],
 )
 
 #quran-verse(
-  (604, 604, 604, 604, 604, 604),
+  verse-num: 3,
+  "604",
   ("ﱞ", "ﱟ", "ﱠ", "ﱡ", "ﱢ", "ﱣ"),
   ("wamin", "sharri", "ghāsiqin", "idhā", "waqaba", "(3)"),
-  ([免遭黑夜笼罩时的毒害;]),
+  [免遭黑夜笼罩时的毒害;],
 )
 
 #quran-verse(
-  (604, 604, 604, 604, 604, 604),
+  verse-num: 4,
+  "604",
   ("ﱤ", "ﱥ", "ﱦ", "ﱧ", "ﱨ", "ﱩ"),
   ("wamin", "sharri", "l-nafāthāti", "fī", "l-ʿuqadi", "(4)"),
-  ([免遭吹破坚决的主意者的毒害;]),
+  [免遭吹破坚决的主意者的毒害;],
 )
 
 #quran-verse(
-  (604, 604, 604, 604, 604, 604),
+  verse-num: 5,
+  "604",
   ("ﱪ", "ﱫ", "ﱬ", "ﱭ", "ﱮ", "ﱯ"),
   ("wamin", "sharri", "ḥāsidin", "idhā", "ḥasada", "(5)"),
-  ([免遭嫉妒时的毒害。 　]),
+  [免遭嫉妒时的毒害。　],
 )
