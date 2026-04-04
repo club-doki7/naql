@@ -81,4 +81,5 @@
 #let pbuh = text(font: "Scheherazade New")[ﷺ]
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
-#let tazkirul-quran = [Wahiduddin Khan, _Tazkirul Quran_]
+#let tazkirul-quran = [Maulana Wahiduddin Khan, _Tazkirul Quran_]
+#let maarif-al-quran = [Mufti Muhammad Shafi Usmani, _Maarif al-Quran_]
