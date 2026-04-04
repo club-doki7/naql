@@ -16,7 +16,7 @@
   - #cuti[年表：]按降示顺序排列，它被视为第 18 章，降示于《麦欧乃章》之后、而《象章》之前。
 
   #cuti[名称节数：]
-  - #cuti[名称：]本章有多个名称：根据其开篇语，它被称为“不信者章” (_Sūrat al-Kāfirūn_) 和 _Qul Yā Ayyuhā al-Kāfirūn_。鉴于本章所涉及的主题及词汇，它亦被称为“崇拜章”(_Sūrat al-ʿIbādah_) 和“宗教章” (_Sūrat al-Dīn_)。此外，它还有一个名称是“纯正信仰章” (_Sūrat al-Ikhlāṣ_)，尽管这一名称通常是指《古兰经》第112章 (_Qul huwa Allāhu aḥad_)。
+  - #cuti[名称：]本章有多个名称：根据其开篇语，它被称为“不信者章” (_Sūrat al-Kāfirūn_) 和 _Qul Yā Ayyuhā al-Kāfirūn_。鉴于本章所涉及的主题及词汇，它亦被称为“崇拜章” (_Sūrat al-ʿIbādah_) 和“宗教章” (_Sūrat al-Dīn_)。此外，它还有一个名称是“纯正信仰章” (_Sūrat al-Ikhlāṣ_)，尽管这一名称通常是指《古兰经》第112章 (_Qul huwa Allāhu aḥad_)。
   - #cuti[节数：]6 节。
 
   #cuti[经文总览：]
