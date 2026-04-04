@@ -4,7 +4,7 @@
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
-  set page(paper: "a4", numbering: "1", margin: (top: 2.125cm, bottom: 2.125cm))
+  set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2cm))
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
 
