@@ -291,7 +291,7 @@
   verse-num: 36,
   "480",
   ("ﲙ", "ﲚ", "ﲛ", "ﲜ", "ﲝ", "ﲞ", "ﲟﲠ", "ﲡ", "ﲢ", "ﲣ", "ﲤ", "ﲥ"),
-  ("wa-immā", "yanzaghannaka", "mina", "l-shayṭāni", "nazghun", "fa-is'taʿidh", "bil-lahi", "innahu", "huwa", "l-samīʿu", "l-ʿalīmu", "(36)"),
+  ("wa-immā", "yanzaghannaka", "mina", "l-shayṭāni", "nazghun", "fa-is'taʿidh", "bil-lahi", "innahu", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(36)"),
   [如果恶魔怂恿你，你应当求庇于真主。他确是全聪的，确是全知的。],
 )
 

@@ -523,7 +523,7 @@
   verse-num: 65,
   "216",
   ("ﱣ", "ﱤ", "ﱥﱦ", "ﱧ", "ﱨ", "ﱩ", "ﱪﱫ", "ﱬ", "ﱭ", "ﱮ", "ﱯ"),
-  ("walā", "yaḥzunka", "qawluhum", "inna", "l-ʿizata", "lillahi", "jamīʿan", "huwa", "l-samīʿu", "l-ʿalīmu", "(65)"),
+  ("walā", "yaḥzunka", "qawluhum", "inna", "l-ʿizata", "lillahi", "jamīʿan", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(65)"),
   [你不要让他们的胡言乱语而使你忧愁；一切权势归真主，他确是全聪的，全知的。],
 )
 

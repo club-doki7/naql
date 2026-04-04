@@ -107,7 +107,7 @@
   verse-num: 13,
   "129",
   ("ﲂ ﲃ", "ﲄ", "ﲅ", "ﲆ", "ﲇ", "ﲈﲉ", "ﲊ", "ﲋ", "ﲌ", "ﲍ"),
-  ("walahu", "mā", "sakana", "fī", "al-layli", "wal-nahāri", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(13)"),
+  ("walahu", "mā", "sakana", "fī", "al-layli", "wal-nahāri", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(13)"),
   [凡居住在昼夜里的事物，都为真主所有。他是全聪的，是全知的。],
 )
 
@@ -923,7 +923,7 @@
   verse-num: 115,
   "142",
   ("ﲚ", "ﲛ", "ﲜ", "ﲝ", "ﲞﲟ", "ﲠ", "ﲡ", "ﲢﲣ", "ﲤ", "ﲥ", "ﲦ", "ﲧ"),
-  ("watammat", "kalimatu", "rabbika", "ṣid'qan", "waʿadlan", "lā", "mubaddila", "likalimātihi", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(115)"),
+  ("watammat", "kalimatu", "rabbika", "ṣid'qan", "waʿadlan", "lā", "mubaddila", "likalimātihi", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(115)"),
   [你的主的言辞，诚实极了，公平极了。绝没有人能变更他的言辞。他确是全聪的，确是全知的。],
 )
 

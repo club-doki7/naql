@@ -1404,7 +1404,7 @@
   verse-num: 127,
   "020",
   ("ﱁ", "ﱂ", "ﱃ", "ﱄ", "ﱅ", "ﱆ", "ﱇ", "ﱈ", "ﱉ", "ﱊﱋ", "ﱌ", "ﱍ", "ﱎ", "ﱏ", "ﱐ"),
-  ("wa-idh", "yarfaʿu", "ib'rāhīmu", "l-qawāʿida", "mina", "l-bayti", "wa-is'māʿīlu", "rabbanā", "taqabbal", "minnā", "innaka", "anta", "l-samīʿu", "l-ʿalīmu", "(127)"),
+  ("wa-idh", "yarfaʿu", "ib'rāhīmu", "l-qawāʿida", "mina", "l-bayti", "wa-is'māʿīlu", "rabbanā", "taqabbal", "minnā", "innaka", "anta", [#h(2em)l-samīʿu], "l-ʿalīmu", "(127)"),
   [当时，易卜拉欣和易司马仪树起天房的基础，他们俩祈祷说：我们的主啊！求你接受我们的敬意，你确是全聪的，确是全知的。],
 )
 
@@ -1484,7 +1484,7 @@
   verse-num: 137,
   "021",
   ("ﱳ", "ﱴ", "ﱵ", "ﱶ", "ﱷ", "ﱸ", "ﱹ", "ﱺﱻ", "ﱼ", "ﱽ", "ﱾ", "ﱿ", "ﲀ", "ﲁﲂ", "ﲃ", "ﲄﲅ", "ﲆ", "ﲇ", "ﲈ", "ﲉ"),
-  ("fa-in", "āmanū", "bimith'li", "mā", "āmantum", "bihi", "faqadi", "ih'tadaw", "wa-in", "tawallaw", "fa-innamā", "hum", "fī", "shiqāqin", "fasayakfīkahumu", "l-lahu", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(137)"),
+  ("fa-in", "āmanū", "bimith'li", "mā", "āmantum", "bihi", "faqadi", "ih'tadaw", "wa-in", "tawallaw", "fa-innamā", "hum", "fī", "shiqāqin", "fasayakfīkahumu", "l-lahu", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(137)"),
   [如果他们象你们样信道，那么，他们确已遵循正道了；如果他们背弃正道，那么，他们只陷于反对中；真主将替你们抵御他们。他确是全聪的，确是全知 的。],
 )
 

@@ -611,7 +611,7 @@
   verse-num: 76,
   "120",
   ("ﲽ", "ﲾ", "ﲿ", "ﳀ", "ﳁ", "ﳂ", "ﳃ", "ﳄ", "ﳅ", "ﳆ", "ﳇ", "ﳈﳉ", "ﳊ", "ﳋ", "ﳌ", "ﳍ", "ﳎ"),
-  ("qul", "ataʿbudūna", "min", "dūni", "l-lahi", "mā", "lā", "yamliku", "lakum", "ḍarran", "walā", "nafʿan", "wal-lahu", "huwa", "l-samīʿu", "l-ʿalīmu", "(76)"),
+  ("qul", "ataʿbudūna", "min", "dūni", "l-lahi", "mā", "lā", "yamliku", "lakum", "ḍarran", "walā", "nafʿan", "wal-lahu", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(76)"),
   [你说：难道你们要舍真主而崇拜那不能为你们主持祸福的么﹖真主确是全聪的，确是全明的。],
 )
 

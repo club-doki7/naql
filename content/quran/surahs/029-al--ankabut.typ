@@ -43,7 +43,7 @@
   verse-num: 5,
   "396",
   ("ﲷ", "ﲸ", "ﲹ", "ﲺ", "ﲻ", "ﲼ", "ﲽ", "ﲾ", "ﲿﳀ", "ﳁ", "ﳂ", "ﳃ", "ﳄ"),
-  ("man", "kāna", "yarjū", "liqāa", "l-lahi", "fa-inna", "ajala", "l-lahi", "laātin", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(5)"),
+  ("man", "kāna", "yarjū", "liqāa", "l-lahi", "fa-inna", "ajala", "l-lahi", "laātin", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(5)"),
   [凡希望会见真主者，谁都应当知道真主的期限是必定降临的，真主确是全聪的，确是全知的。],
 )
 
@@ -483,7 +483,7 @@
   verse-num: 60,
   "403",
   ("ﲏ", "ﲐ", "ﲑ", "ﲒ", "ﲓ", "ﲔ", "ﲕ", "ﲖ", "ﲗﲘ", "ﲙ", "ﲚ", "ﲛ", "ﲜ"),
-  ("waka-ayyin", "min", "dābbatin", "lā", "taḥmilu", "riz'qahā", "l-lahu", "yarzuquhā", "wa-iyyākum", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(60)"),
+  ("waka-ayyin", "min", "dābbatin", "lā", "taḥmilu", "riz'qahā", "l-lahu", "yarzuquhā", "wa-iyyākum", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(60)"),
   [许多动物，不能担负自己的给养，真主供给他们和你们，他是全聪的，是全知的。],
 )
 

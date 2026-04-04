@@ -275,7 +275,7 @@
   verse-num: 34,
   "239",
   ("ﲌ", "ﲍ", "ﲎ", "ﲏ", "ﲐ", "ﲑﲒ", "ﲓ", "ﲔ", "ﲕ", "ﲖ", "ﲗ"),
-  ("fa-is'tajāba", "lahu", "rabbuhu", "faṣarafa", "ʿanhu", "kaydahunna", "innahu", "huwa", "l-samīʿu", "l-ʿalīmu", "(34)"),
+  ("fa-is'tajāba", "lahu", "rabbuhu", "faṣarafa", "ʿanhu", "kaydahunna", "innahu", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(34)"),
   [他的主就答应了他，并且为他排除了她们的诡计。他确是全聪的，确是全知的。],
 )
 

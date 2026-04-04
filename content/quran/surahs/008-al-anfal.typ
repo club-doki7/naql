@@ -491,7 +491,7 @@
   verse-num: 61,
   "184",
   ("ﳈ ﳉ", "ﳊ", "ﳋ", "ﳌ", "ﳍ", "ﳎ", "ﳏ", "ﳐﳑ", "ﳒ", "ﳓ", "ﳔ", "ﳕ", "ﳖ"),
-  ("wa-in", "janaḥū", "lilssalmi", "fa-ij'naḥ", "lahā", "watawakkal", "ʿalā", "l-lahi", "innahu", "huwa", "l-samīʿu", "l-ʿalīmu", "(61)"),
+  ("wa-in", "janaḥū", "lilssalmi", "fa-ij'naḥ", "lahā", "watawakkal", "ʿalā", "l-lahi", "innahu", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(61)"),
   [如果他们倾向和平，你也应当倾向和平，应当信赖真主。他确是全聪的，确是全知的。],
 )
 

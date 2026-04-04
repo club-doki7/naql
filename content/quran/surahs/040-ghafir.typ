@@ -163,7 +163,7 @@
   verse-num: 20,
   "469",
   ("ﱩ", "ﱪ", "ﱫﱬ", "ﱭ", "ﱮ", "ﱯ", "ﱰ", "ﱱ", "ﱲ", "ﱳﱴ", "ﱵ", "ﱶ", "ﱷ", "ﱸ", "ﱹ", "ﱺ"),
-  ("wal-lahu", "yaqḍī", "bil-ḥaqi", "wa-alladhīna", "yadʿūna", "min", "dūnihi", "lā", "yaqḍūna", "bishayin", "inna", "l-laha", "huwa", "l-samīʿu", "l-baṣīru", "(20)"),
+  ("wal-lahu", "yaqḍī", "bil-ḥaqi", "wa-alladhīna", "yadʿūna", "min", "dūnihi", "lā", "yaqḍūna", "bishayin", "inna", "l-laha", "huwa", [#h(2em)l-samīʿu], "l-baṣīru", "(20)"),
   [真主本真理而裁判。他们舍他而崇拜的，不奉任何物而裁判。真主确是全聪的，确是全知的。],
 )
 
@@ -451,7 +451,7 @@
   verse-num: 56,
   "473",
   ("ﲈ", "ﲉ", "ﲊ", "ﲋ", "ﲌ", "ﲍ", "ﲎ", "ﲏ", "ﲐ", "ﲑ", "ﲒ", "ﲓ", "ﲔ", "ﲕ", "ﲖ", "ﲗ", "ﲘﲙ", "ﲚ", "ﲛﲜ", "ﲝ", "ﲞ", "ﲟ", "ﲠ", "ﲡ"),
-  ("inna", "alladhīna", "yujādilūna", "fī", "āyāti", "l-lahi", "bighayri", "sul'ṭānin", "atāhum", "in", "fī", "ṣudūrihim", "illā", "kib'run", "mā", "hum", "bibālighīhi", "fa-is'taʿidh", "bil-lahi", "innahu", "huwa", "l-samīʿu", "l-baṣīru", "(56)"),
+  ("inna", "alladhīna", "yujādilūna", "fī", "āyāti", "l-lahi", "bighayri", "sul'ṭānin", "atāhum", "in", "fī", "ṣudūrihim", "illā", "kib'run", "mā", "hum", "bibālighīhi", "fa-is'taʿidh", "bil-lahi", "innahu", "huwa", [#h(2em)l-samīʿu], "l-baṣīru", "(56)"),
   [没有真凭实据而争论真主的迹象者，他们的胸中，的确只有一个念头，就是要想达到他们绝不能达到的伟大。故你当求庇于真主，他确是全聪的，确是全明的。],
 )
 

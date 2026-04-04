@@ -11,7 +11,7 @@
   verse-num: 1,
   "282",
   ("ﱁ", "ﱂ", "ﱃ", "ﱄ", "ﱅ", "ﱆ", "ﱇ", "ﱈ", "ﱉ", "ﱊ", "ﱋ", "ﱌ", "ﱍ", "ﱎ", "ﱏ", "ﱐ", "ﱑﱒ", "ﱓ", "ﱔ", "ﱕ", "ﱖ", "ﱗ"),
-  ("sub'ḥāna", "alladhī", "asrā", "biʿabdihi", "laylan", "mina", "l-masjidi", "l-ḥarāmi", "ilā", "l-masjidi", "l-aqṣā", "alladhī", "bāraknā", "ḥawlahu", "linuriyahu", "min", "āyātinā", "innahu", "huwa", "l-samīʿu", "l-baṣīru", "(1)"),
+  ("sub'ḥāna", "alladhī", "asrā", "biʿabdihi", "laylan", "mina", "l-masjidi", "l-ḥarāmi", "ilā", "l-masjidi", "l-aqṣā", "alladhī", "bāraknā", "ḥawlahu", "linuriyahu", "min", "āyātinā", "innahu", "huwa", [#h(2em)l-samīʿu], "l-baṣīru", "(1)"),
   [赞美真主，超绝万物，他在一夜之间，使他的仆人，从禁寺行到远寺。我在远寺的四周降福，以便我昭示他我的一部分迹象。真主确是全聪的，确是全明的。],
 )
 

@@ -51,7 +51,7 @@
   verse-num: 6,
   "496",
   ("ﱞ", "ﱟ", "ﱠﱡ", "ﱢ", "ﱣ", "ﱤ", "ﱥ", "ﱦ"),
-  ("raḥmatan", "min", "rabbika", "innahu", "huwa", "l-samīʿu", "l-ʿalīmu", "(6)"),
+  ("raḥmatan", "min", "rabbika", "innahu", "huwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(6)"),
   [那是由于从你的主发出的恩惠。他确是全聪的，确是全知的。],
 )
 

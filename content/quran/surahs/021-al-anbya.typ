@@ -35,7 +35,7 @@
   verse-num: 4,
   "322",
   ("ﱧ", "ﱨ", "ﱩ", "ﱪ", "ﱫ", "ﱬ", "ﱭﱮ", "ﱯ", "ﱰ", "ﱱ", "ﱲ"),
-  ("qāla", "rabbī", "yaʿlamu", "l-qawla", "fī", "l-samāi", "wal-arḍi", "wahuwa", "l-samīʿu", "l-ʿalīmu", "(4)"),
+  ("qāla", "rabbī", "yaʿlamu", "l-qawla", "fī", "l-samāi", "wal-arḍi", "wahuwa", [#h(2em)l-samīʿu], "l-ʿalīmu", "(4)"),
   [他说：我的主知道在天上和地上所说的话，他确是全聪的，确是全知的。],
 )
 

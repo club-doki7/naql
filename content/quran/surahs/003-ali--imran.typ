@@ -283,7 +283,7 @@
   verse-num: 35,
   "054",
   ("ﲑ", "ﲒ", "ﲓ", "ﲔ", "ﲕ", "ﲖ", "ﲗ", "ﲘ", "ﲙ", "ﲚ", "ﲛ", "ﲜ", "ﲝ", "ﲞﲟ", "ﲠ", "ﲡ", "ﲢ", "ﲣ", "ﲤ"),
-  ("idh", "qālati", "im'ra-atu", "ʿim'rāna", "rabbi", "innī", "nadhartu", "laka", "mā", "fī", "baṭnī", "muḥarraran", "fataqabbal", "minnī", "innaka", "anta", "l-samīʿu", "l-ʿalīmu", "(35)"),
+  ("idh", "qālati", "im'ra-atu", "ʿim'rāna", "rabbi", "innī", "nadhartu", "laka", "mā", "fī", "baṭnī", "muḥarraran", "fataqabbal", "minnī", "innaka", "anta", [#h(2em)l-samīʿu], "l-ʿalīmu", "(35)"),
   [当时仪姆兰的女人说：我的主啊！我誓愿以我腹里所怀的，奉献你，求你接受我的奉献。你确是全聪的，确是全知的。],
 )
 
