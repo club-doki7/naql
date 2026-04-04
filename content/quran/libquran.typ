@@ -16,17 +16,17 @@
   ]
 }
 
-#let quran-verse(word, translit, translation) = {
+#let quran-verse(v2page, word, translit, translation) = {
   block({
     set text(dir: rtl)
     for i in range(word.len()) {
       box(
-        inset: (x: if (i == word.len() - 1) { 0.25em } else { 0.35em }, top: 0.35em, bottom: 0.25em),
+        inset: (x: 0.35em, top: 0.25em, bottom: 0.15em),
         align(center,
           stack(
             dir: ttb,
-            spacing: 0.9em,
-            text(font: "Scheherazade New", weight: 600, size: if (i == word.len() - 1) { 10pt } else { 14pt }, lang: "ar", word.at(i)),
+            spacing: 0.75em,
+            text(font: "p" + str(v2page.at(i)) + ".ttf", size: 14pt, lang: "ar", word.at(i)),
             text(dir: ltr, size: if (i == word.len() - 1) { 9pt } else { 10pt } , style: "italic", translit.at(i))
           )
         )

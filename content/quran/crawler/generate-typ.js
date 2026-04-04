@@ -18,22 +18,24 @@ function generateVerse(verse) {
   const words = verse.words.filter(w => w.charTypeName === 'word')
   const endMark = verse.words.find(w => w.charTypeName === 'end')
 
-  const arWords = words.map(w => w.textUthmani)
+  const arWords = words.map(w => w.codeV2)
+  const v2Pages = words.map(w => w.v2Page)
   const translitWords = words.map(w => w.transliteration?.text || '')
   const zhTranslation = verse.translations?.find(t => t.resourceId === 56)?.text || ''
-  // const zhWords = words.map(w => w.translation?.text || '')
 
   // Append verse number marker
   if (endMark) {
-    arWords.push(endMark.textUthmani)
+    arWords.push(endMark.codeV2)
+    v2Pages.push(endMark.v2Page)
     translitWords.push(endMark.translation?.text || `(${verse.verseNumber})`)
-    // zhWords.push('')
   }
 
   const fmt = arr => arr.map(s => `"${escapeTypst(s)}"`).join(', ')
+  const fmtNums = arr => arr.join(', ')
 
   let lines = []
   lines.push(`#quran-verse(`)
+  lines.push(`  (${fmtNums(v2Pages)}),`)
   lines.push(`  (${fmt(arWords)}),`)
   lines.push(`  (${fmt(translitWords)}),`)
   lines.push(`  ([${zhTranslation}]),`)

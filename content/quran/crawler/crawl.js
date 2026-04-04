@@ -12,20 +12,20 @@ const TRANSLATIONS = [20, 56] // Sahih International, Chinese (Ma Jian)
 
 const VERSE_FIELDS = {
     chapterId: false,
-    textUthmani: true,
+    textUthmani: false,
     textUthmaniSimple: false,
-    textImlaei: false,
+    textImlaei: true,
     textImlaeiSimple: false,
 }
 
 const WORD_FIELDS = {
     v1Page: false,
-    v2Page: false,
+    v2Page: true,
     codeV1: false,
-    codeV2: false,
+    codeV2: true,
     verseKey: false,
-    textImlaei: false,
-    textUthmani: true,
+    textImlaei: true,
+    textUthmani: false,
     textIndopak: false,
     location: false,
 }
@@ -66,7 +66,7 @@ async function fetchChapterVerses(client, chapterId, versesCount) {
         if (totalPages > 1) {
             process.stdout.write(` p${page}/${totalPages}`)
         }
-        await sleep(5000) // rate limiting
+        await sleep(3000) // rate limiting
     }
 
     return allVerses
