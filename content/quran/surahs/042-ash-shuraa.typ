@@ -44,7 +44,7 @@
   "483",
   ("ﱜ", "ﱝ", "ﱞ", "ﱟ", "ﱠﱡ", "ﱢ", "ﱣ", "ﱤ", "ﱥ", "ﱦ", "ﱧ", "ﱨ", "ﱩﱪ", "ﱫ", "ﱬ", "ﱭ", "ﱮ", "ﱯ", "ﱰ", "ﱱ"),
   ("takādu", "l-samāwātu", "yatafaṭṭarna", "min", "fawqihinna", "wal-malāikatu", "yusabbiḥūna", "biḥamdi", "rabbihim", "wayastaghfirūna", "liman", "fī", "l-arḍi", "alā", "inna", "l-laha", "huwa", "l-ghafūru", "l-raḥīmu", "(5)"),
-  [诸天体几乎从上面破裂，众天神赞颂他们的主，并为地面上的人求饶。真的，真主确是至赦的，确是至慈的。],
+  [诸天体几乎从上面破裂，众天使赞颂他们的主，并为地面上的人求饶。真的，真主确是至赦的，确是至慈的。],
 )
 
 #quran-verse(
