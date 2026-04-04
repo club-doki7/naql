@@ -25,7 +25,7 @@
         align(center,
           stack(
             dir: ttb,
-            spacing: 0.75em,
+            spacing: 0.85em,
             text(font: "QCF2" + str(v2page), size: 14pt, lang: "ar", word.at(i)),
             text(dir: ltr, size: if (i == word.len() - 1) { 9pt } else { 10pt } , style: "italic", translit.at(i))
           )
@@ -36,9 +36,9 @@
   }, width: 100%, breakable: false)
 }
 
-#let make-box(title) = (section: "", src: "", breakable: false, content) => {
+#let make-box(title) = (verse: "", src: "", breakable: false, content) => {
   block(inset: 0.75em, stroke: 0.5pt + black, width: 100%, breakable: breakable, [
-    *#text(size: 12pt, title)* #section #h(1fr) #text(size: 10pt, src)
+    *#text(size: 12pt, title)* #verse #h(1fr) #text(size: 10pt, src)
 
     #text(font: fangsong-fonts, size: 11pt, content)
   ])
@@ -66,13 +66,15 @@
   ])
 ]
 
-#let qa(section: "", src: "", q, a) = make-box("问答")(
-  section: section,
-  src: src
+#let qa(verse: "", no: none, q, a, s) = make-box("问答")(
+  verse: verse,
+  src: text(link("https://quran.com/" + verse + "/answers/" + str(no)), fill: rgb("#00007F"))
 )[
   #cuti[问：]#q
 
   #cuti[答：]#a
+
+  #cuti[总结：]#s
 ]
 
 #let bismillah = align(center, text(font: "Noto Naskh Arabic")[﷽])
@@ -80,4 +82,3 @@
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
 #let tazkirul-quran = [Wahiduddin Khan, _Tazkirul Quran_]
-#let quran-com-answer(verse, answer) = text(link("https://quran.com/" + verse + "/answers/" + answer), fill: rgb("#00007F"))
