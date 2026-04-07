@@ -1,7 +1,7 @@
 #import "../libquran.typ": *
 
 #show: quran-page.with(
-  title: "Ali 'Imran",
+  title: "仪姆兰家属章",
   title-ar: "آل عمران",
   title-tl: "Ali 'Imran",
   locator: "003-ali--imran",

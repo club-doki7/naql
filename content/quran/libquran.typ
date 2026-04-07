@@ -9,7 +9,7 @@
   show heading: set align(center)
 
   [
-    = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl, size: 15pt)) #if locator != none { label(locator) }
+    = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
     #v(1em)
 
     #body
@@ -17,7 +17,7 @@
 }
 
 #let quran-verse(verse-num: none, v2page, word, translit, translation) = {
-  if calc.rem(verse-num, 50) == 0 {
+  if calc.rem(verse-num, 40) == 0 {
     {
       show heading: none
 
