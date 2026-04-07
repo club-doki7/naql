@@ -17,6 +17,16 @@
 }
 
 #let quran-verse(verse-num: none, v2page, word, translit, translation) = {
+  if calc.rem(verse-num, 50) == 0 {
+    {
+      show heading: none
+
+      [
+        == 经文 #verse-num
+      ]
+    }
+  }
+
   block({
     set text(dir: rtl)
     for i in range(word.len()) {
