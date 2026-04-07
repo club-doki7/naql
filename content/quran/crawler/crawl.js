@@ -66,7 +66,7 @@ async function fetchChapterVerses(client, chapterId, versesCount) {
         if (totalPages > 1) {
             process.stdout.write(` p${page}/${totalPages}`)
         }
-        await sleep(3000) // rate limiting
+        await sleep(3000) // Be a good muslim, don't CC/DoS the API :P
     }
 
     return allVerses
