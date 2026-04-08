@@ -1,8 +1,9 @@
+#include "cover2.typ"
+
+#counter(page).update(1)
 #outline()
+#include "preface.typ"
 
-#include "./preface-tazkirul-quran.typ"
-
-// reset page counter
 #counter(page).update(1)
 
 #include "./surahs/001-al-fatihah.typ"

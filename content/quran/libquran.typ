@@ -7,6 +7,7 @@
   set page(paper: "a4", numbering: numbering, margin: (top: 2.25cm, bottom: 2cm))
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
+  counter(footnote).update(1)
 
   body
 }
