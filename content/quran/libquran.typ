@@ -3,6 +3,14 @@
 #let zh-fonts = ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC", "Scheherazade New")
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)", "Scheherazade New")
 
+#let index-page(numbering: "i", body) = {
+  set page(paper: "a4", numbering: numbering, margin: (top: 2.25cm, bottom: 2cm))
+  set text(font: zh-fonts, lang: "zh", size: 11pt)
+  show heading: set align(center)
+
+  body
+}
+
 #let quran-page(title: "", title-tl: "", title-ar: "", locator: none, body) = {
   set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2cm))
   set text(font: zh-fonts, lang: "zh", size: 11pt)
