@@ -192,3 +192,7 @@ The writing of the Quran by hand continued till the printing press was invented 
 
 #h(1fr) 毛拉纳·瓦希杜丁·坎
 
+#colbreak()
+
+= 年表
+#v(1em)
