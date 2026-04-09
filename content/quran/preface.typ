@@ -1,5 +1,7 @@
 #import "libquran.typ": index-page
 
+#counter(page).update(1)
+
 #show: index-page
 
 = 译者序
