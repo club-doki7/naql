@@ -43,7 +43,7 @@
 
 #colbreak()
 
-= Takzirul Quran - Introduction
+= Tazkirul Quran - Introduction
 #v(1em)
 
 The Quran is the Book of God. It has been preserved in its entirety for all time to come. Although written originally in Arabic, it has been made accessible, thanks to translations, to those who have no knowledge of Arabic. While no substitute for the original, translations serve the signal purpose of spreading the word of God far beyond the Arabic-speaking peoples to a far broader spectrum of humanity.

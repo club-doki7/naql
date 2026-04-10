@@ -20,7 +20,7 @@ async function main() {
 
   // Include all surah files
   for (const ch of chapters) {
-    lines.push(`#include("./surahs/${ch.locator}.typ")`)
+    lines.push(`#include "./surahs/${ch.locator}.typ"`)
   }
   lines.push(``)
 
