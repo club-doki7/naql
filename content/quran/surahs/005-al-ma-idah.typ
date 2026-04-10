@@ -1,7 +1,7 @@
 #import "../libquran.typ": *
 
 #show: quran-page.with(
-  title: "Al-Ma'idah",
+  title: "筵席章",
   title-ar: "المائدة",
   title-tl: "Al-Ma'idah",
   locator: "005-al-ma-idah",

@@ -1,7 +1,7 @@
 #import "../libquran.typ": *
 
 #show: quran-page.with(
-  title: "An-Nisa",
+  title: "妇女章",
   title-ar: "النساء",
   title-tl: "An-Nisa",
   locator: "004-an-nisa",
