@@ -103,5 +103,5 @@
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
 #let tazkirul-quran = [Maulana Wahiduddin Khan, _Tazkirul Quran_]
-#let maarif-al-quran = [Mufti Muhammad Shafi Usmani, _Maarif al-Quran_]
+#let maarif-al-quran = [Mufti Muhammad Shafi Usmani, _Ma'arif al-Quran_]
 #let ibn-kathir-src = [Ibn Kathir, _Tafsir Ibn Kathir_]
