@@ -16,6 +16,7 @@
   set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2cm))
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
+  counter(footnote).update(1)
 
   [
     = #title (#text(lang: "ar", font: "Noto Naskh Arabic", title-ar), #text(lang: "en", font: "Libertinus Serif", style: "italic", title-tl)) #if locator != none { label(locator) }
