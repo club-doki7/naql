@@ -6,9 +6,10 @@
 
 *注意：本册为样品，内容不完且有措误，且#text(tracking: -0.15em)[排版]质量差*
 
-#counter(page).update(1)
 #outline(title: "目录")
 #colbreak()
+
+#counter(page).update(1)
 
 #include "preface.typ"
 
