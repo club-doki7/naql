@@ -100,7 +100,7 @@
 
 *问：*所以你们哲学家用一套新词重新发明了我们早就习以为常的东西——不可证、不可控、不可测、不可算……我们早就习惯这样的日子了。那话说回来，既然终极意义不可证，那么，嗯……
 
-*答：*嗯……也许大他者存在呢 @ghazali_ihya？也许可以纵身一跃 @kierkegaard1843？一定需要终极意义吗 @camus1942？在无意义中挣扎是意义吗 @sartre1946？你真正感到的无意义，真的是讨论的结果吗 @marx1844 @marx1846 @debord1967？意义可以是无吗 @nagarjuna_mmk？谁规定必须讨论终极意义 @derrida1967grammatology @derrida1967writing @lyotard1979？我们现在讨论意义又算什么 @wittgenstein1953？语言的讨论在什么情况下近似有效 @ghazali_tahafut @razi_matalib @hume1748 @kant1781 @nietzsche1873 @wittgenstein1921 @heidegger1927 @quine1951 @gadamer1960 @marx1845 @mao1937？
+*答：*嗯……也许大他者存在呢 @ghazali_ihya？也许可以纵身一跃 @kierkegaard1843？一定需要终极意义吗 @camus1942？在无意义中挣扎是意义吗 @sartre1946？你真正感到的无意义，真的是讨论的结果吗 @marx1844 @marx1846 @debord1967？意义可以是无吗 @nagarjuna_mmk？谁规定必须讨论终极意义 @derrida1967grammatology @derrida1967writing @lyotard1979？我们现在讨论意义又算什么 @wittgenstein1953？语言的讨论在什么情况下近似有效 @ghazali_tahafut @razi_matalib @hume1748 @kant1781 @nietzsche1873 @wittgenstein1921 @heidegger1927 @quine1951 @gadamer1960 @marx1845 @mao1937 @rmrb1978？
 
 *问：*机械唯物主义去哪了？
 
