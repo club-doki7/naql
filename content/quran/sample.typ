@@ -1,3 +1,9 @@
+#import "./cover.typ": cover-page
+
+#{
+  show: cover-page.with(spine-width: 2cm, spine-text: "I")
+}
+
 #include "cover2.typ"
 
 #import "./libquran.typ": index-page
