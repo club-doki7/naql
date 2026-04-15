@@ -3,9 +3,10 @@
 #let zh-fonts = ("Libertinus Serif", "Noto Serif SC", "Noto Serif CJK SC")
 #let fangsong-fonts = ("Libertinus Serif", "Zhuque Fangsong (technical preview)")
 #let mono-fonts = ("LXGW Bright Code",)
+#let math-fonts = ("Libertinus Math", "Zhuque Fangsong (technical preview)")
 
 #let index-page(numbering: "i", body) = {
-  set page(paper: "a4", numbering: numbering, margin: (top: 2.25cm, bottom: 2cm))
+  set page(paper: "a4", numbering: numbering)
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
   counter(footnote).update(1)
@@ -14,10 +15,21 @@
 }
 
 #let chapter-page(title: "", title-en: "", locator: none, body) = {
-  set page(paper: "a4", numbering: "1", margin: (top: 2.25cm, bottom: 2cm))
+  set page(paper: "a4", numbering: "1")
   set text(font: zh-fonts, lang: "zh", size: 11pt)
   show heading: set align(center)
   counter(footnote).update(1)
+  show raw: set text(font: mono-fonts, size: 10pt, weight: 350, ligatures: false, features: (
+    liga: 0,
+    dlig: 0,
+    clig: 0,
+    calt: 0,
+    locl: 0,
+  ))
+  show raw.where(block: true): set block(breakable: false)
+  show raw.where(block: true): pad.with(left: 2em, right: 2em)
+  show math.equation: set text(font: math-fonts)
+  show math.equation.where(block: true): set block(breakable: false)
 
   [
     = #title (#text(lang: "en", font: "Libertinus Serif", style: "italic", title-en)) #if locator != none { label(locator) }
