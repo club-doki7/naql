@@ -12,7 +12,7 @@ const TRANSLATIONS = [20, 56] // Sahih International, Chinese (Ma Jian)
 
 const VERSE_FIELDS = {
     chapterId: false,
-    textUthmani: false,
+    textUthmani: true,
     textUthmaniSimple: false,
     textImlaei: true,
     textImlaeiSimple: false,
