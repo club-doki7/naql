@@ -24,3 +24,4 @@
 #include "./surahs/001-al-fatihah.typ"
 #include "./surahs/002-al-baqarah.typ"
 #include "./surahs/003-ali--imran.typ"
+#include "./surahs/004-an-nisa.typ"

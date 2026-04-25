@@ -37,7 +37,10 @@
   - 结语部分的祈祷词 [284-286]。
 ]
 
-#align(center, text(font: "Noto Naskh Arabic")[﷽#footnote[这也是太斯米（“奉至仁至慈的真主之名”）的一种书写形式。]])
+#[
+  #align(center, text(font: "Noto Naskh Arabic")[﷽#footnote[这也是太斯米（“奉至仁至慈的真主之名”）的一种书写形式。]])
+  #linebreak()
+]
 
 #quran-verse(
   verse-num: 1,

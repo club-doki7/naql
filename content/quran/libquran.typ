@@ -99,7 +99,10 @@
   #cuti[总结：]#s
 ]
 
-#let bismillah = align(center, text(font: "Noto Naskh Arabic")[﷽])
+#let bismillah = [
+  #align(center, text(font: "Noto Naskh Arabic")[﷽])
+  #linebreak()
+]
 #let pbuh = text(font: "Scheherazade New")[ﷺ]
 
 #let ibn-ashur-src = [Ibn Ashur, _Tafsir Ibn Ashur_]
