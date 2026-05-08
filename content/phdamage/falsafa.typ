@@ -180,9 +180,8 @@
 本文也不感谢齐泽克——当代的杜林。他所做的事情比杜林更坏：杜林看到了规范性赤字的真问题，但以一种自大的姿态和笨拙的方式去修补它，问题严不严重、补的好不好可以讨论，可以批评；齐泽克看到了意识形态运作的真问题，但以一种戏谑的姿态寄生其上，通过系统性地表演如何不解决问题来无限增殖符号，用通胀的语言消解一切解决方案的意义，并永远缩在解构、戏谑、笑话和弄臣姿态的龟壳里。任何“清醒有意识的人带着目的所做的操作”都可以被解释成“意识形态运作”，action 的外延是全集，它的补集 Act 是空集，“穿越幻象后的绝对行动”本质上就是不可能的，但关于 Act 的命题却永远可以是真空真 (vacuous true) 的。
 
 ```coq
-Axiom Operation : Type.
-Axiom IsAct : Operation -> Prop.
-Axiom IsAction : Operation -> Prop.
+Axiom IsAct : Type -> Prop.
+Axiom IsAction : Type -> Prop.
 
 (* Zizek's axiom. *)
 Axiom action_is_not_act : forall x, IsAct x -> ~(IsAction x).
@@ -193,11 +192,7 @@ Axiom operation_is_action : forall x, IsAction x.
 Theorem act_impossible : (exists x, IsAct x) -> False.
 Proof.
     intros [x x_is_act].
-    assert (IsAction x) as x_is_action.
-    apply operation_is_action.
-    apply action_is_not_act in x_is_action.
-    trivial.
-    exact x_is_act.
+    apply (action_is_not_act x x_is_act), operation_is_action.
 Qed.
 ```
 
