@@ -1,0 +1,124 @@
+{
+  "ancient_greek_roman": [
+    { "code": "SCT", "name_en": "Socrates",       "name_zh": "苏格拉底" },
+    { "code": "PLT", "name_en": "Plato",           "name_zh": "柏拉图" },
+    { "code": "ARS", "name_en": "Aristotle",       "name_zh": "亚里士多德" },
+    { "code": "HRC", "name_en": "Heraclitus",      "name_zh": "赫拉克利特" },
+    { "code": "PRM", "name_en": "Parmenides",      "name_zh": "巴门尼德" },
+    { "code": "DMC", "name_en": "Democritus",      "name_zh": "德谟克利特" },
+    { "code": "PYT", "name_en": "Pythagoras",      "name_zh": "毕达哥拉斯" },
+    { "code": "EPC", "name_en": "Epicurus",         "name_zh": "伊壁鸠鲁" },
+    { "code": "ZEN", "name_en": "Zeno",             "name_zh": "芝诺" },
+    { "code": "DGN", "name_en": "Diogenes",         "name_zh": "第欧根尼" },
+    { "code": "PLN", "name_en": "Plotinus",         "name_zh": "普罗提诺" },
+    { "code": "SNC", "name_en": "Seneca",           "name_zh": "塞涅卡" },
+    { "code": "AUR", "name_en": "Marcus Aurelius",  "name_zh": "马可·奥勒留" }
+  ],
+
+  "medieval_christian": [
+    { "code": "AGS", "name_en": "Augustine",  "name_zh": "奥古斯丁" },
+    { "code": "AQN", "name_en": "Aquinas",    "name_zh": "阿奎那" },
+    { "code": "ASL", "name_en": "Anselm",     "name_zh": "安瑟伦" },
+    { "code": "OCK", "name_en": "Ockham",     "name_zh": "奥卡姆" }
+  ],
+
+  "islamic": [
+    { "code": "KND", "name_en": "Al-Kindī",                "name_zh": "肯迪",               "name_ar": "الكندي" },
+    { "code": "RZI", "name_en": "Abū Bakr al-Rāzī",       "name_zh": "拉齐（旧）",          "name_ar": "أبو بكر الرازي" },
+    { "code": "FRB", "name_en": "Al-Fārābī",               "name_zh": "法拉比",              "name_ar": "الفارابي" },
+    { "code": "SNA", "name_en": "Ibn Sīnā",                "name_zh": "伊本·西纳",           "name_ar": "ابن سينا" },
+    { "code": "GZL", "name_en": "Al-Ghazālī",              "name_zh": "安萨里",              "name_ar": "الغزالي" },
+    { "code": "RSD", "name_en": "Ibn Rushd",                "name_zh": "伊本·鲁世德",         "name_ar": "ابن رشد" },
+    { "code": "FDR", "name_en": "Fakhr al-Dīn al-Rāzī",   "name_zh": "法赫尔丁·拉齐（新）", "name_ar": "فخر الدين الرازي" },
+    { "code": "ARB", "name_en": "Ibn ʿArabī",              "name_zh": "伊本·阿拉比",         "name_ar": "ابن عربي" },
+    { "code": "TYM", "name_en": "Ibn Taymiyyah",           "name_zh": "伊本·泰米叶",         "name_ar": "ابن تيمية" },
+    { "code": "KLD", "name_en": "Ibn Khaldūn",             "name_zh": "伊本·赫勒敦",         "name_ar": "ابن خلدون" },
+    { "code": "SDR", "name_en": "Mullā Ṣadrā",            "name_zh": "穆拉·萨德拉",         "name_ar": "ملا صدرا" }
+  ],
+
+  "early_modern": [
+    { "code": "DSC", "name_en": "Descartes",    "name_zh": "笛卡尔" },
+    { "code": "SPN", "name_en": "Spinoza",      "name_zh": "斯宾诺莎" },
+    { "code": "LBZ", "name_en": "Leibniz",      "name_zh": "莱布尼茨" },
+    { "code": "BCN", "name_en": "Bacon",        "name_zh": "培根" },
+    { "code": "HBS", "name_en": "Hobbes",       "name_zh": "霍布斯" },
+    { "code": "LCK", "name_en": "Locke",        "name_zh": "洛克" },
+    { "code": "BKL", "name_en": "Berkeley",     "name_zh": "贝克莱" },
+    { "code": "HUM", "name_en": "Hume",         "name_zh": "休谟" },
+    { "code": "RSS", "name_en": "Rousseau",     "name_zh": "卢梭" },
+    { "code": "VLT", "name_en": "Voltaire",     "name_zh": "伏尔泰" },
+    { "code": "MTQ", "name_en": "Montesquieu",  "name_zh": "孟德斯鸠" }
+  ],
+
+  "german_idealism": [
+    { "code": "KNT", "name_en": "Kant",        "name_zh": "康德" },
+    { "code": "FCT", "name_en": "Fichte",      "name_zh": "费希特" },
+    { "code": "SCH", "name_en": "Schelling",   "name_zh": "谢林" },
+    { "code": "HGL", "name_en": "Hegel",       "name_zh": "黑格尔" },
+    { "code": "FRH", "name_en": "Feuerbach",   "name_zh": "费尔巴哈" }
+  ],
+
+  "nineteenth_century": [
+    { "code": "SHP", "name_en": "Schopenhauer",  "name_zh": "叔本华" },
+    { "code": "KKG", "name_en": "Kierkegaard",   "name_zh": "克尔凯郭尔" },
+    { "code": "NTZ", "name_en": "Nietzsche",     "name_zh": "尼采" },
+    { "code": "MRX", "name_en": "Marx",          "name_zh": "马克思" },
+    { "code": "EGS", "name_en": "Engels",        "name_zh": "恩格斯" },
+    { "code": "MLL", "name_en": "Mill",          "name_zh": "密尔" },
+    { "code": "BTM", "name_en": "Bentham",       "name_zh": "边沁" },
+    { "code": "PRC", "name_en": "Peirce",        "name_zh": "皮尔士" },
+    { "code": "JMS", "name_en": "James",         "name_zh": "詹姆士" },
+    { "code": "DWY", "name_en": "Dewey",         "name_zh": "杜威" }
+  ],
+
+  "twentieth_century_continental": [
+    { "code": "HSL", "name_en": "Husserl",        "name_zh": "胡塞尔" },
+    { "code": "HDG", "name_en": "Heidegger",      "name_zh": "海德格尔" },
+    { "code": "SRT", "name_en": "Sartre",         "name_zh": "萨特" },
+    { "code": "CMS", "name_en": "Camus",          "name_zh": "加缪" },
+    { "code": "MLP", "name_en": "Merleau-Ponty",  "name_zh": "梅洛-庞蒂" },
+    { "code": "BVR", "name_en": "Beauvoir",       "name_zh": "波伏娃" },
+    { "code": "LVN", "name_en": "Levinas",        "name_zh": "列维纳斯" },
+    { "code": "GDM", "name_en": "Gadamer",        "name_zh": "伽达默尔" },
+    { "code": "ARD", "name_en": "Arendt",         "name_zh": "阿伦特" },
+    { "code": "BJM", "name_en": "Benjamin",       "name_zh": "本雅明" },
+    { "code": "ADN", "name_en": "Adorno",         "name_zh": "阿多诺" },
+    { "code": "HBM", "name_en": "Habermas",       "name_zh": "哈贝马斯" },
+    { "code": "FCO", "name_en": "Foucault",       "name_zh": "福柯" },
+    { "code": "DRD", "name_en": "Derrida",        "name_zh": "德里达" },
+    { "code": "DLZ", "name_en": "Deleuze",        "name_zh": "德勒兹" },
+    { "code": "LYT", "name_en": "Lyotard",        "name_zh": "利奥塔" },
+    { "code": "BDL", "name_en": "Baudrillard",    "name_zh": "鲍德里亚" },
+    { "code": "ZZK", "name_en": "Žižek",          "name_zh": "齐泽克" }
+  ],
+
+  "twentieth_century_analytic": [
+    { "code": "FRG", "name_en": "Frege",         "name_zh": "弗雷格" },
+    { "code": "RSL", "name_en": "Russell",       "name_zh": "罗素" },
+    { "code": "WTG", "name_en": "Wittgenstein",  "name_zh": "维特根斯坦" },
+    { "code": "CNP", "name_en": "Carnap",        "name_zh": "卡尔纳普" },
+    { "code": "PPR", "name_en": "Popper",        "name_zh": "波普尔" },
+    { "code": "QUN", "name_en": "Quine",         "name_zh": "蒯因" },
+    { "code": "KHN", "name_en": "Kuhn",          "name_zh": "库恩" },
+    { "code": "RWS", "name_en": "Rawls",         "name_zh": "罗尔斯" },
+    { "code": "NZK", "name_en": "Nozick",        "name_zh": "诺齐克" },
+    { "code": "KPK", "name_en": "Kripke",        "name_zh": "克里普克" },
+    { "code": "DVS", "name_en": "Davidson",      "name_zh": "戴维森" },
+    { "code": "PTN", "name_en": "Putnam",        "name_zh": "普特南" },
+    { "code": "RRT", "name_en": "Rorty",         "name_zh": "罗蒂" },
+    { "code": "SRL", "name_en": "Searle",        "name_zh": "塞尔" },
+    { "code": "CLM", "name_en": "Chalmers",      "name_zh": "查尔默斯" },
+    { "code": "DNT", "name_en": "Dennett",       "name_zh": "丹尼特" },
+    { "code": "MCI", "name_en": "MacIntyre",     "name_zh": "麦金泰尔" }
+  ],
+
+  "eastern": [
+    { "code": "KFZ", "name_en": "Confucius",      "name_zh": "孔子" },
+    { "code": "LZI", "name_en": "Laozi",          "name_zh": "老子" },
+    { "code": "ZZI", "name_en": "Zhuangzi",       "name_zh": "庄子" },
+    { "code": "MNG", "name_en": "Mencius",        "name_zh": "孟子" },
+    { "code": "XNZ", "name_en": "Xunzi",          "name_zh": "荀子" },
+    { "code": "ZHX", "name_en": "Zhu Xi",         "name_zh": "朱熹" },
+    { "code": "WYM", "name_en": "Wang Yangming",  "name_zh": "王阳明" }
+  ]
+}
