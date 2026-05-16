@@ -25,3 +25,4 @@
 #include "./surahs/002-al-baqarah.typ"
 #include "./surahs/003-ali--imran.typ"
 #include "./surahs/004-an-nisa.typ"
+#include "./surahs/005-al-ma-idah.typ"
