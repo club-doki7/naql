@@ -42,27 +42,12 @@ content/quran/
 |------|------|
 | Libertinus Serif | 西文正文 |
 | Noto Serif SC / Noto Serif CJK SC | 中文正文 |
+| Zhuque Fangsong (Technical Preview) | 中文经注 |
 | Scheherazade New | 阿拉伯文辅助（太斯米、先知祝福语等） |
 | Noto Naskh Arabic | 阿拉伯文章节标题 |
 | QCF2 系列（QCF2001 ~ QCF2604） | 古兰经逐词原文排版（Quran Print Color v2） |
 
 QCF2 字体的获取方式见 [fonts/README.md](fonts/README.md)。
-
-## 构建
-
-构建样本（前 3 章）：
-
-```sh
-typst compile content/quran/sample.typ
-```
-
-构建全本（114 章）：
-
-```sh
-typst compile content/quran/index.typ
-```
-
-> 注意：`sample.typ` 自述"内容不完且有措误，且排版质量差"，仅供预览参考。
 
 ## 核心排版函数（libquran.typ）
 

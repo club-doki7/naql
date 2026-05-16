@@ -1,7 +1,7 @@
 #import "./cover.typ": cover-page
 
 #{
-  show: cover-page.with(spine-width: 2cm, spine-text: "I")
+  show: cover-page.with(spine-width: 2.54cm, spine-text: "I")
 }
 
 #include "cover2.typ"
