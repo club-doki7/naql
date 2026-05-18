@@ -1,12 +1,12 @@
 {
   "ancient_greek_roman": [
-    { "code": "SCT", "name_en": "Socrates",       "name_zh": "苏格拉底" },
-    { "code": "PLT", "name_en": "Plato",           "name_zh": "柏拉图" },
-    { "code": "ARS", "name_en": "Aristotle",       "name_zh": "亚里士多德" },
-    { "code": "HRC", "name_en": "Heraclitus",      "name_zh": "赫拉克利特" },
-    { "code": "PRM", "name_en": "Parmenides",      "name_zh": "巴门尼德" },
-    { "code": "DMC", "name_en": "Democritus",      "name_zh": "德谟克利特" },
-    { "code": "PYT", "name_en": "Pythagoras",      "name_zh": "毕达哥拉斯" },
+    { "code": "SCT", "name_en": "Socrates",         "name_zh": "苏格拉底" },
+    { "code": "PLT", "name_en": "Plato",            "name_zh": "柏拉图" },
+    { "code": "ARS", "name_en": "Aristotle",        "name_zh": "亚里士多德" },
+    { "code": "HRC", "name_en": "Heraclitus",       "name_zh": "赫拉克利特" },
+    { "code": "PRM", "name_en": "Parmenides",       "name_zh": "巴门尼德" },
+    { "code": "DMC", "name_en": "Democritus",       "name_zh": "德谟克利特" },
+    { "code": "PYT", "name_en": "Pythagoras",       "name_zh": "毕达哥拉斯" },
     { "code": "EPC", "name_en": "Epicurus",         "name_zh": "伊壁鸠鲁" },
     { "code": "ZEN", "name_en": "Zeno",             "name_zh": "芝诺" },
     { "code": "DGN", "name_en": "Diogenes",         "name_zh": "第欧根尼" },
@@ -24,22 +24,22 @@
 
   "islamic": [
     { "code": "KND", "name_en": "Al-Kindī",                "name_zh": "肯迪",               "name_ar": "الكندي" },
-    { "code": "RZI", "name_en": "Abū Bakr al-Rāzī",       "name_zh": "拉齐（旧）",          "name_ar": "أبو بكر الرازي" },
+    { "code": "RZI", "name_en": "Abū Bakr al-Rāzī",        "name_zh": "阿布·伯克尔·拉齐",    "name_ar": "أبو بكر الرازي" },
     { "code": "FRB", "name_en": "Al-Fārābī",               "name_zh": "法拉比",              "name_ar": "الفارابي" },
     { "code": "SNA", "name_en": "Ibn Sīnā",                "name_zh": "伊本·西纳",           "name_ar": "ابن سينا" },
     { "code": "GZL", "name_en": "Al-Ghazālī",              "name_zh": "安萨里",              "name_ar": "الغزالي" },
-    { "code": "RSD", "name_en": "Ibn Rushd",                "name_zh": "伊本·鲁世德",         "name_ar": "ابن رشد" },
-    { "code": "FDR", "name_en": "Fakhr al-Dīn al-Rāzī",   "name_zh": "法赫尔丁·拉齐（新）", "name_ar": "فخر الدين الرازي" },
+    { "code": "RSD", "name_en": "Ibn Rushd",               "name_zh": "伊本·鲁世德",         "name_ar": "ابن رشد" },
+    { "code": "FDR", "name_en": "Fakhr al-Dīn al-Rāzī",    "name_zh": "法赫尔丁·拉齐",       "name_ar": "فخر الدين الرازي" },
     { "code": "ARB", "name_en": "Ibn ʿArabī",              "name_zh": "伊本·阿拉比",         "name_ar": "ابن عربي" },
     { "code": "TYM", "name_en": "Ibn Taymiyyah",           "name_zh": "伊本·泰米叶",         "name_ar": "ابن تيمية" },
     { "code": "KLD", "name_en": "Ibn Khaldūn",             "name_zh": "伊本·赫勒敦",         "name_ar": "ابن خلدون" },
-    { "code": "SDR", "name_en": "Mullā Ṣadrā",            "name_zh": "穆拉·萨德拉",         "name_ar": "ملا صدرا" }
+    { "code": "SDR", "name_en": "Mullā Ṣadrā",             "name_zh": "穆拉·萨德拉",         "name_ar": "ملا صدرا" }
   ],
 
   "buddhist": [
-    { "code": "BDH", "name_en": "Siddhartha Gautama", "name_zh": "乔达摩·悉达多", "name_alter": "释迦牟尼" },
-    { "code": "NGJ", "name_en": "Nāgārjuna",          "name_zh": "龙树" },
-    { "code": "ASG", "name_en": "Asaṅga",             "name_zh": "无著" },
+    { "code": "BDH", "name_en": "Siddhartha Gautama",  "name_zh": "乔达摩·悉达多", "name_alter": "释迦牟尼" },
+    { "code": "NGJ", "name_en": "Nāgārjuna",           "name_zh": "龙树" },
+    { "code": "ASG", "name_en": "Asaṅga",              "name_zh": "无著" },
     { "code": "VSB", "name_en": "Vasubandhu",          "name_zh": "世亲" },
     { "code": "BDR", "name_en": "Bodhidharma",         "name_zh": "菩提达摩" },
     { "code": "HYN", "name_en": "Huineng",             "name_zh": "惠能" },
@@ -123,8 +123,8 @@
   ],
 
   "prophets": [
-    { "code": "ADM", "name_en": "Adam",             "name_zh": "阿丹",       "name_ar": "آدم",       "name_alter": "亚当" },
-    { "code": "NUH", "name_en": "Noah",             "name_zh": "努哈",       "name_ar": "نوح",       "name_alter": "诺亚" },
+    { "code": "ADM", "name_en": "Adam",              "name_zh": "阿丹",       "name_ar": "آدم",       "name_alter": "亚当" },
+    { "code": "NUH", "name_en": "Noah",              "name_zh": "努哈",       "name_ar": "نوح",       "name_alter": "诺亚" },
     { "code": "IBR", "name_en": "Abraham",           "name_zh": "易卜拉欣",   "name_ar": "إبراهيم",   "name_alter": "亚伯拉罕" },
     { "code": "ISM", "name_en": "Ishmael",           "name_zh": "易司马仪",   "name_ar": "إسماعيل",   "name_alter": "以实玛利" },
     { "code": "ISH", "name_en": "Isaac",             "name_zh": "易司哈格",   "name_ar": "إسحاق",     "name_alter": "以撒" },
@@ -140,16 +140,19 @@
     { "code": "YHY", "name_en": "John",              "name_zh": "叶哈雅",     "name_ar": "يحيى",      "name_alter": "施洗约翰" },
     { "code": "ISA", "name_en": "Jesus",             "name_zh": "尔撒",       "name_ar": "عيسى",      "name_alter": "耶稣" },
     { "code": "MHD", "name_en": "Muhammad",          "name_zh": "穆罕默德",   "name_ar": "محمد" },
-    { "code": "ZRT", "name_en": "Zoroaster",         "name_zh": "祖尔基福勒", "name_ar": "ذو الكفل",   "name_alter": ["琐罗亚斯德","查拉斯图拉","查拉图斯特拉"], "supposed": true }
+    { "code": "ZRT", "name_en": "Zoroaster",         "name_zh": "祖尔基福勒", "name_ar": "ذو الكفل",  "name_alter": ["琐罗亚斯德","查拉斯图拉","查拉图斯特拉"], "supposed": true }
   ],
 
   "eastern": [
-    { "code": "KFZ", "name_en": "Confucius",      "name_zh": "孔子" },
-    { "code": "LZI", "name_en": "Laozi",          "name_zh": "老子" },
-    { "code": "ZZI", "name_en": "Zhuangzi",       "name_zh": "庄子" },
-    { "code": "MNG", "name_en": "Mencius",        "name_zh": "孟子" },
-    { "code": "XNZ", "name_en": "Xunzi",          "name_zh": "荀子" },
-    { "code": "ZHX", "name_en": "Zhu Xi",         "name_zh": "朱熹" },
-    { "code": "WYM", "name_en": "Wang Yangming",  "name_zh": "王阳明" }
+    { "code": "JIC", "name_en": "Ji Chang",        "name_zh": "姬昌",   "name_alter": "周文王" },
+    { "code": "KQU", "name_en": "Kong Qiu",        "name_zh": "孔丘",   "name_alter": "孔子" },
+    { "code": "LER", "name_en": "Li Er",           "name_zh": "李耳",   "name_alter": "老子" },
+    { "code": "ZZU", "name_en": "Zhuang Zhou",     "name_zh": "庄周",   "name_alter": "庄子" },
+    { "code": "MNK", "name_en": "Meng Ke",         "name_zh": "孟轲",   "name_alter": "孟子" },
+    { "code": "MDI", "name_en": "Mo Di",           "name_zh": "墨翟",   "name_alter": "墨子" },
+    { "code": "XNK", "name_en": "Xun Kuang",       "name_zh": "荀况",   "name_alter": "荀子" },
+    { "code": "HFZ", "name_en": "Han Fei",         "name_zh": "韩非",   "name_alter": "韩非子" },
+    { "code": "ZHX", "name_en": "Zhu Xi",          "name_zh": "朱熹",   "name_alter": "朱子" },
+    { "code": "WSR", "name_en": "Wang Shouren",    "name_zh": "王守仁", "name_alter": "王阳明" }
   ]
 }
