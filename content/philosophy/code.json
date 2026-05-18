@@ -36,6 +36,16 @@
     { "code": "SDR", "name_en": "Mullā Ṣadrā",            "name_zh": "穆拉·萨德拉",         "name_ar": "ملا صدرا" }
   ],
 
+  "buddhist": [
+    { "code": "BDH", "name_en": "Siddhartha Gautama", "name_zh": "乔达摩·悉达多", "name_alter": "释迦牟尼" },
+    { "code": "NGJ", "name_en": "Nāgārjuna",          "name_zh": "龙树" },
+    { "code": "ASG", "name_en": "Asaṅga",             "name_zh": "无著" },
+    { "code": "VSB", "name_en": "Vasubandhu",          "name_zh": "世亲" },
+    { "code": "BDR", "name_en": "Bodhidharma",         "name_zh": "菩提达摩" },
+    { "code": "HYN", "name_en": "Huineng",             "name_zh": "惠能" },
+    { "code": "TSK", "name_en": "Tsongkhapa",          "name_zh": "宗喀巴" }
+  ],
+
   "early_modern": [
     { "code": "DSC", "name_en": "Descartes",    "name_zh": "笛卡尔" },
     { "code": "SPN", "name_en": "Spinoza",      "name_zh": "斯宾诺莎" },
@@ -110,6 +120,27 @@
     { "code": "CLM", "name_en": "Chalmers",      "name_zh": "查尔默斯" },
     { "code": "DNT", "name_en": "Dennett",       "name_zh": "丹尼特" },
     { "code": "MCI", "name_en": "MacIntyre",     "name_zh": "麦金泰尔" }
+  ],
+
+  "prophets": [
+    { "code": "ADM", "name_en": "Adam",             "name_zh": "阿丹",       "name_ar": "آدم",       "name_alter": "亚当" },
+    { "code": "NUH", "name_en": "Noah",             "name_zh": "努哈",       "name_ar": "نوح",       "name_alter": "诺亚" },
+    { "code": "IBR", "name_en": "Abraham",           "name_zh": "易卜拉欣",   "name_ar": "إبراهيم",   "name_alter": "亚伯拉罕" },
+    { "code": "ISM", "name_en": "Ishmael",           "name_zh": "易司马仪",   "name_ar": "إسماعيل",   "name_alter": "以实玛利" },
+    { "code": "ISH", "name_en": "Isaac",             "name_zh": "易司哈格",   "name_ar": "إسحاق",     "name_alter": "以撒" },
+    { "code": "YQB", "name_en": "Jacob",             "name_zh": "叶尔孤白",   "name_ar": "يعقوب",     "name_alter": "雅各" },
+    { "code": "YSF", "name_en": "Joseph",            "name_zh": "优素福",     "name_ar": "يوسف",      "name_alter": "约瑟" },
+    { "code": "MSA", "name_en": "Moses",             "name_zh": "穆萨",       "name_ar": "موسى",      "name_alter": "摩西" },
+    { "code": "HRN", "name_en": "Aaron",             "name_zh": "哈伦",       "name_ar": "هارون",     "name_alter": "亚伦" },
+    { "code": "DWD", "name_en": "David",             "name_zh": "达五德",     "name_ar": "داود",      "name_alter": "大卫" },
+    { "code": "SLM", "name_en": "Solomon",           "name_zh": "素莱曼",     "name_ar": "سليمان",    "name_alter": "所罗门" },
+    { "code": "AYB", "name_en": "Job",               "name_zh": "安优卜",     "name_ar": "أيوب",      "name_alter": "约伯" },
+    { "code": "YNS", "name_en": "Jonah",             "name_zh": "优努斯",     "name_ar": "يونس",      "name_alter": "约拿" },
+    { "code": "ZKR", "name_en": "Zechariah",         "name_zh": "宰凯里雅",   "name_ar": "زكريا",     "name_alter": "撒迦利亚" },
+    { "code": "YHY", "name_en": "John",              "name_zh": "叶哈雅",     "name_ar": "يحيى",      "name_alter": "施洗约翰" },
+    { "code": "ISA", "name_en": "Jesus",             "name_zh": "尔撒",       "name_ar": "عيسى",      "name_alter": "耶稣" },
+    { "code": "MHD", "name_en": "Muhammad",          "name_zh": "穆罕默德",   "name_ar": "محمد" },
+    { "code": "ZRT", "name_en": "Zoroaster",         "name_zh": "祖尔基福勒", "name_ar": "ذو الكفل",   "name_alter": ["琐罗亚斯德","查拉斯图拉","查拉图斯特拉"], "supposed": true }
   ],
 
   "eastern": [
