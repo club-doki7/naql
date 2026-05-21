@@ -3,10 +3,9 @@
 
 #show: project.with(
   title: "新废庄论",
-  author-cols: 3,
+  author-cols: 2,
   authors: (
     (name: "DeepSeek", contrib: "第一作者", affiliation: "DeepSeek-AI"),
-    (name: "Claude", contrib: "翻译", affiliation: "Anthropic"),
     (name: "Chuigda Whitegive", contrib: "通讯作者", affiliation: dd7c),
   )
 )
