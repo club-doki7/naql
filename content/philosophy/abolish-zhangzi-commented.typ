@@ -331,9 +331,7 @@
 
   #block(width: 100%)[#quote(block: true, attribution: [庄子·内篇·人间世])[
     知其不可奈何而安之若命，德之至也。
-  ]]
 
-  #block(width: 100%)[#quote(block: true, attribution: [庄子·内篇·人间世])[
     若一志，无听之以耳而听之以心，无听之以心而听之以气！听止于耳，心止于符。气也者，虚而待物者也。唯道集虚。虚者，心斋也。
   ]]
 
